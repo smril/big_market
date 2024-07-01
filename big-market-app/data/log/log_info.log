@@ -1,83 +1,736 @@
-24-06-30.00:15:10.272 [main            ] INFO  ApiTest                - Starting ApiTest using Java 1.8.0_402 on sange-sakura.lan with PID 13217 (started by smril in /Users/smril/IdeaProjects/big-market/big-market-app)
-24-06-30.00:15:10.274 [main            ] INFO  ApiTest                - The following 1 profile is active: "dev"
-24-06-30.00:15:11.437 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
-24-06-30.00:15:11.441 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-24-06-30.00:15:11.466 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 7 ms. Found 0 Redis repository interfaces.
-24-06-30.00:15:13.289 [main            ] INFO  Version                - Redisson 3.23.4
-24-06-30.00:15:13.320 [main            ] WARN  DnsServerAddressStreamProviders - Can not find io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider in the classpath, fallback to system defaults. This may result in incorrect DNS resolutions on MacOS. Check whether you have a dependency on 'io.netty:netty-resolver-dns-native-macos'
-24-06-30.00:15:13.569 [redisson-netty-2-4] INFO  MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
-24-06-30.00:15:13.597 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
-24-06-30.00:15:16.732 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
-24-06-30.00:15:16.825 [main            ] INFO  ApiTest                - Started ApiTest in 7.066 seconds (JVM running for 8.389)
-24-06-30.00:15:17.398 [main            ] INFO  ApiTest                - 测试结果: 101
-24-06-30.00:15:24.088 [main            ] INFO  AwardDaoTest           - Starting AwardDaoTest using Java 1.8.0_402 on sange-sakura.lan with PID 13230 (started by smril in /Users/smril/IdeaProjects/big-market/big-market-app)
-24-06-30.00:15:24.089 [main            ] INFO  AwardDaoTest           - The following 1 profile is active: "dev"
-24-06-30.00:15:24.855 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
-24-06-30.00:15:24.858 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-24-06-30.00:15:24.881 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 8 ms. Found 0 Redis repository interfaces.
-24-06-30.00:15:25.904 [main            ] INFO  Version                - Redisson 3.23.4
-24-06-30.00:15:25.926 [main            ] WARN  DnsServerAddressStreamProviders - Can not find io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider in the classpath, fallback to system defaults. This may result in incorrect DNS resolutions on MacOS. Check whether you have a dependency on 'io.netty:netty-resolver-dns-native-macos'
-24-06-30.00:15:26.092 [redisson-netty-2-4] INFO  MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
-24-06-30.00:15:26.105 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
-24-06-30.00:15:27.860 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
-24-06-30.00:15:27.931 [main            ] INFO  AwardDaoTest           - Started AwardDaoTest in 4.233 seconds (JVM running for 5.127)
-24-06-30.00:15:28.358 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
-24-06-30.00:15:28.779 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
-24-06-30.00:15:29.063 [main            ] INFO  AwardDaoTest           - 测试结果： [{"awardConfig":"1,100","awardDesc":"用户积分","awardId":101,"awardKey":"user_credit_random"},{"awardConfig":"5","awardDesc":"OpenAI增加使用次数","awardId":102,"awardKey":"openai_use_count"},{"awardConfig":"10","awardDesc":"OpenAI增加使用次数","awardId":103,"awardKey":"openai_use_count"},{"awardConfig":"20","awardDesc":"OpenAI增加使用次数","awardId":104,"awardKey":"openai_use_count"},{"awardConfig":"gpt-4","awardDesc":"OpenAI增加模型","awardId":105,"awardKey":"openai_model"},{"awardConfig":"dall-e-2","awardDesc":"OpenAI增加模型","awardId":106,"awardKey":"openai_model"},{"awardConfig":"dall-e-3","awardDesc":"OpenAI增加模型","awardId":107,"awardKey":"openai_model"},{"awardConfig":"100","awardDesc":"OpenAI增加使用次数","awardId":108,"awardKey":"openai_use_count"},{"awardConfig":"gpt-4,dall-e-2,dall-e-3","awardDesc":"OpenAI增加模型","awardId":109,"awardKey":"openai_model"}]
-24-06-30.00:15:29.084 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
-24-06-30.00:15:29.108 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
-24-06-30.00:17:51.300 [main            ] INFO  AwardDaoTest           - Starting AwardDaoTest using Java 1.8.0_402 on sange-sakura.lan with PID 13252 (started by smril in /Users/smril/IdeaProjects/big-market/big-market-app)
-24-06-30.00:17:51.301 [main            ] INFO  AwardDaoTest           - The following 1 profile is active: "dev"
-24-06-30.00:17:52.094 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
-24-06-30.00:17:52.098 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-24-06-30.00:17:52.122 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 8 ms. Found 0 Redis repository interfaces.
-24-06-30.00:17:53.140 [main            ] INFO  Version                - Redisson 3.23.4
-24-06-30.00:17:53.162 [main            ] WARN  DnsServerAddressStreamProviders - Can not find io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider in the classpath, fallback to system defaults. This may result in incorrect DNS resolutions on MacOS. Check whether you have a dependency on 'io.netty:netty-resolver-dns-native-macos'
-24-06-30.00:17:53.328 [redisson-netty-2-4] INFO  MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
-24-06-30.00:17:53.344 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
-24-06-30.00:17:54.928 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
-24-06-30.00:17:55.012 [main            ] INFO  AwardDaoTest           - Started AwardDaoTest in 4.134 seconds (JVM running for 5.007)
-24-06-30.00:21:24.890 [main            ] INFO  AwardDaoTest           - Starting AwardDaoTest using Java 1.8.0_402 on sange-sakura.lan with PID 13273 (started by smril in /Users/smril/IdeaProjects/big-market/big-market-app)
-24-06-30.00:21:24.891 [main            ] INFO  AwardDaoTest           - The following 1 profile is active: "dev"
-24-06-30.00:21:25.726 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
-24-06-30.00:21:25.729 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-24-06-30.00:21:25.751 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 8 ms. Found 0 Redis repository interfaces.
-24-06-30.00:21:26.732 [main            ] INFO  Version                - Redisson 3.23.4
-24-06-30.00:21:26.753 [main            ] WARN  DnsServerAddressStreamProviders - Can not find io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider in the classpath, fallback to system defaults. This may result in incorrect DNS resolutions on MacOS. Check whether you have a dependency on 'io.netty:netty-resolver-dns-native-macos'
-24-06-30.00:21:26.915 [redisson-netty-2-4] INFO  MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
-24-06-30.00:21:26.930 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
-24-06-30.00:21:28.831 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
-24-06-30.00:21:28.907 [main            ] INFO  AwardDaoTest           - Started AwardDaoTest in 4.457 seconds (JVM running for 5.447)
-24-06-30.00:21:29.340 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
-24-06-30.00:21:29.760 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
-24-06-30.00:21:30.141 [main            ] INFO  AwardDaoTest           - 测试结果： [{"awardConfig":"1,100","awardDesc":"用户积分","awardId":101,"awardKey":"user_credit_random"},{"awardConfig":"5","awardDesc":"OpenAI增加使用次数","awardId":102,"awardKey":"openai_use_count"},{"awardConfig":"10","awardDesc":"OpenAI增加使用次数","awardId":103,"awardKey":"openai_use_count"},{"awardConfig":"20","awardDesc":"OpenAI增加使用次数","awardId":104,"awardKey":"openai_use_count"},{"awardConfig":"gpt-4","awardDesc":"OpenAI增加模型","awardId":105,"awardKey":"openai_model"},{"awardConfig":"dall-e-2","awardDesc":"OpenAI增加模型","awardId":106,"awardKey":"openai_model"},{"awardConfig":"dall-e-3","awardDesc":"OpenAI增加模型","awardId":107,"awardKey":"openai_model"},{"awardConfig":"100","awardDesc":"OpenAI增加使用次数","awardId":108,"awardKey":"openai_use_count"},{"awardConfig":"gpt-4,dall-e-2,dall-e-3","awardDesc":"OpenAI增加模型","awardId":109,"awardKey":"openai_model"}]
-24-06-30.00:21:30.162 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
-24-06-30.00:21:30.183 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
-24-06-30.00:33:54.450 [main            ] INFO  AwardDaoTest           - Starting AwardDaoTest using Java 1.8.0_402 on sange-sakura.lan with PID 13358 (started by smril in /Users/smril/IdeaProjects/big-market/big-market-app)
-24-06-30.00:33:54.451 [main            ] INFO  AwardDaoTest           - The following 1 profile is active: "dev"
-24-06-30.00:33:55.343 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
-24-06-30.00:33:55.347 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-24-06-30.00:33:55.376 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 8 ms. Found 0 Redis repository interfaces.
-24-06-30.00:33:56.587 [main            ] INFO  Version                - Redisson 3.23.4
-24-06-30.00:33:56.618 [main            ] WARN  DnsServerAddressStreamProviders - Can not find io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider in the classpath, fallback to system defaults. This may result in incorrect DNS resolutions on MacOS. Check whether you have a dependency on 'io.netty:netty-resolver-dns-native-macos'
-24-06-30.00:33:56.810 [redisson-netty-2-4] INFO  MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
-24-06-30.00:33:56.825 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
-24-06-30.00:33:58.776 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
-24-06-30.00:33:58.846 [main            ] INFO  AwardDaoTest           - Started AwardDaoTest in 5.021 seconds (JVM running for 6.126)
-24-06-30.00:33:59.313 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
-24-06-30.00:33:59.779 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
-24-06-30.00:34:00.114 [main            ] INFO  AwardDaoTest           - 测试结果： [{"awardConfig":"1,100","awardDesc":"用户积分","awardId":101,"awardKey":"user_credit_random"},{"awardConfig":"5","awardDesc":"OpenAI增加使用次数","awardId":102,"awardKey":"openai_use_count"},{"awardConfig":"10","awardDesc":"OpenAI增加使用次数","awardId":103,"awardKey":"openai_use_count"},{"awardConfig":"20","awardDesc":"OpenAI增加使用次数","awardId":104,"awardKey":"openai_use_count"},{"awardConfig":"gpt-4","awardDesc":"OpenAI增加模型","awardId":105,"awardKey":"openai_model"},{"awardConfig":"dall-e-2","awardDesc":"OpenAI增加模型","awardId":106,"awardKey":"openai_model"},{"awardConfig":"dall-e-3","awardDesc":"OpenAI增加模型","awardId":107,"awardKey":"openai_model"},{"awardConfig":"100","awardDesc":"OpenAI增加使用次数","awardId":108,"awardKey":"openai_use_count"},{"awardConfig":"gpt-4,dall-e-2,dall-e-3","awardDesc":"OpenAI增加模型","awardId":109,"awardKey":"openai_model"}]
-24-06-30.00:34:00.131 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
-24-06-30.00:34:00.154 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
-24-06-30.00:34:05.915 [main            ] INFO  ApiTest                - Starting ApiTest using Java 1.8.0_402 on sange-sakura.lan with PID 13365 (started by smril in /Users/smril/IdeaProjects/big-market/big-market-app)
-24-06-30.00:34:05.916 [main            ] INFO  ApiTest                - The following 1 profile is active: "dev"
-24-06-30.00:34:06.693 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
-24-06-30.00:34:06.696 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-24-06-30.00:34:06.719 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 8 ms. Found 0 Redis repository interfaces.
-24-06-30.00:34:07.723 [main            ] INFO  Version                - Redisson 3.23.4
-24-06-30.00:34:07.745 [main            ] WARN  DnsServerAddressStreamProviders - Can not find io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider in the classpath, fallback to system defaults. This may result in incorrect DNS resolutions on MacOS. Check whether you have a dependency on 'io.netty:netty-resolver-dns-native-macos'
-24-06-30.00:34:07.914 [redisson-netty-2-4] INFO  MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
-24-06-30.00:34:07.928 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
-24-06-30.00:34:09.766 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
-24-06-30.00:34:09.841 [main            ] INFO  ApiTest                - Started ApiTest in 4.348 seconds (JVM running for 5.196)
-24-06-30.00:34:10.298 [main            ] INFO  ApiTest                - 测试结果: 105
+24-07-01.00:04:42.063 [main            ] INFO  StrategyArmoryTest     - Starting StrategyArmoryTest using Java 1.8.0_402 on sange-sakura.lan with PID 22536 (started by smril in /Users/smril/IdeaProjects/big-market/big-market-app)
+24-07-01.00:04:42.064 [main            ] INFO  StrategyArmoryTest     - The following 1 profile is active: "dev"
+24-07-01.00:04:42.936 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+24-07-01.00:04:42.940 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+24-07-01.00:04:42.968 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 10 ms. Found 0 Redis repository interfaces.
+24-07-01.00:04:44.454 [main            ] INFO  Version                - Redisson 3.23.4
+24-07-01.00:04:44.478 [main            ] WARN  DnsServerAddressStreamProviders - Can not find io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider in the classpath, fallback to system defaults. This may result in incorrect DNS resolutions on MacOS. Check whether you have a dependency on 'io.netty:netty-resolver-dns-native-macos'
+24-07-01.00:04:44.703 [redisson-netty-2-4] INFO  MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
+24-07-01.00:04:44.721 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
+24-07-01.00:04:46.372 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+24-07-01.00:04:46.438 [main            ] INFO  StrategyArmoryTest     - Started StrategyArmoryTest in 4.828 seconds (JVM running for 5.782)
+24-07-01.00:08:59.712 [main            ] INFO  StrategyArmoryTest     - Starting StrategyArmoryTest using Java 1.8.0_402 on sange-sakura.lan with PID 22584 (started by smril in /Users/smril/IdeaProjects/big-market/big-market-app)
+24-07-01.00:08:59.713 [main            ] INFO  StrategyArmoryTest     - The following 1 profile is active: "dev"
+24-07-01.00:09:00.531 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+24-07-01.00:09:00.535 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+24-07-01.00:09:00.561 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 11 ms. Found 0 Redis repository interfaces.
+24-07-01.00:09:01.881 [main            ] INFO  Version                - Redisson 3.23.4
+24-07-01.00:09:01.907 [main            ] WARN  DnsServerAddressStreamProviders - Can not find io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider in the classpath, fallback to system defaults. This may result in incorrect DNS resolutions on MacOS. Check whether you have a dependency on 'io.netty:netty-resolver-dns-native-macos'
+24-07-01.00:09:02.125 [redisson-netty-2-4] INFO  MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
+24-07-01.00:09:02.144 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
+24-07-01.00:09:03.870 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+24-07-01.00:09:03.939 [main            ] INFO  StrategyArmoryTest     - Started StrategyArmoryTest in 4.644 seconds (JVM running for 5.5)
+24-07-01.00:10:31.264 [main            ] INFO  StrategyArmoryTest     - Starting StrategyArmoryTest using Java 1.8.0_402 on sange-sakura.lan with PID 22612 (started by smril in /Users/smril/IdeaProjects/big-market/big-market-app)
+24-07-01.00:10:31.265 [main            ] INFO  StrategyArmoryTest     - The following 1 profile is active: "dev"
+24-07-01.00:10:32.365 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+24-07-01.00:10:32.369 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+24-07-01.00:10:32.398 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 12 ms. Found 0 Redis repository interfaces.
+24-07-01.00:10:33.854 [main            ] INFO  Version                - Redisson 3.23.4
+24-07-01.00:10:33.881 [main            ] WARN  DnsServerAddressStreamProviders - Can not find io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider in the classpath, fallback to system defaults. This may result in incorrect DNS resolutions on MacOS. Check whether you have a dependency on 'io.netty:netty-resolver-dns-native-macos'
+24-07-01.00:10:34.107 [redisson-netty-2-4] INFO  MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
+24-07-01.00:10:34.126 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
+24-07-01.00:10:36.023 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+24-07-01.00:10:36.118 [main            ] INFO  StrategyArmoryTest     - Started StrategyArmoryTest in 5.514 seconds (JVM running for 6.464)
+24-07-01.00:13:50.640 [main            ] INFO  StrategyArmoryTest     - Starting StrategyArmoryTest using Java 1.8.0_402 on sange-sakura.lan with PID 22634 (started by smril in /Users/smril/IdeaProjects/big-market/big-market-app)
+24-07-01.00:13:50.641 [main            ] INFO  StrategyArmoryTest     - The following 1 profile is active: "dev"
+24-07-01.00:13:51.740 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+24-07-01.00:13:51.744 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+24-07-01.00:13:51.777 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 12 ms. Found 0 Redis repository interfaces.
+24-07-01.00:13:54.412 [main            ] INFO  Version                - Redisson 3.23.4
+24-07-01.00:13:54.459 [main            ] WARN  DnsServerAddressStreamProviders - Can not find io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider in the classpath, fallback to system defaults. This may result in incorrect DNS resolutions on MacOS. Check whether you have a dependency on 'io.netty:netty-resolver-dns-native-macos'
+24-07-01.00:13:54.768 [redisson-netty-2-5] INFO  MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
+24-07-01.00:13:54.792 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
+24-07-01.00:13:56.566 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+24-07-01.00:13:56.636 [main            ] INFO  StrategyArmoryTest     - Started StrategyArmoryTest in 6.491 seconds (JVM running for 7.497)
+24-07-01.00:14:43.678 [main            ] INFO  StrategyArmoryTest     - Starting StrategyArmoryTest using Java 1.8.0_402 on sange-sakura.lan with PID 22647 (started by smril in /Users/smril/IdeaProjects/big-market/big-market-app)
+24-07-01.00:14:43.679 [main            ] INFO  StrategyArmoryTest     - The following 1 profile is active: "dev"
+24-07-01.00:14:44.743 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+24-07-01.00:14:44.748 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+24-07-01.00:14:44.788 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 16 ms. Found 0 Redis repository interfaces.
+24-07-01.00:14:46.703 [main            ] INFO  Version                - Redisson 3.23.4
+24-07-01.00:14:46.736 [main            ] WARN  DnsServerAddressStreamProviders - Can not find io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider in the classpath, fallback to system defaults. This may result in incorrect DNS resolutions on MacOS. Check whether you have a dependency on 'io.netty:netty-resolver-dns-native-macos'
+24-07-01.00:14:47.011 [redisson-netty-2-4] INFO  MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
+24-07-01.00:14:47.035 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
+24-07-01.00:14:48.792 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+24-07-01.00:14:48.868 [main            ] INFO  StrategyArmoryTest     - Started StrategyArmoryTest in 5.685 seconds (JVM running for 6.717)
+24-07-01.00:15:11.131 [main            ] INFO  StrategyArmoryTest     - Starting StrategyArmoryTest using Java 1.8.0_402 on sange-sakura.lan with PID 22663 (started by smril in /Users/smril/IdeaProjects/big-market/big-market-app)
+24-07-01.00:15:11.132 [main            ] INFO  StrategyArmoryTest     - The following 1 profile is active: "dev"
+24-07-01.00:15:11.975 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+24-07-01.00:15:11.980 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+24-07-01.00:15:12.010 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 11 ms. Found 0 Redis repository interfaces.
+24-07-01.00:15:13.405 [main            ] INFO  Version                - Redisson 3.23.4
+24-07-01.00:15:13.435 [main            ] WARN  DnsServerAddressStreamProviders - Can not find io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider in the classpath, fallback to system defaults. This may result in incorrect DNS resolutions on MacOS. Check whether you have a dependency on 'io.netty:netty-resolver-dns-native-macos'
+24-07-01.00:15:13.678 [redisson-netty-2-4] INFO  MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
+24-07-01.00:15:13.701 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
+24-07-01.00:15:15.500 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+24-07-01.00:15:15.573 [main            ] INFO  StrategyArmoryTest     - Started StrategyArmoryTest in 4.957 seconds (JVM running for 6.057)
+24-07-01.00:15:16.057 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+24-07-01.00:15:16.526 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+24-07-01.00:15:16.685 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+24-07-01.00:15:16.715 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+24-07-01.00:16:28.463 [main            ] INFO  StrategyArmoryTest     - Starting StrategyArmoryTest using Java 1.8.0_402 on sange-sakura.lan with PID 22671 (started by smril in /Users/smril/IdeaProjects/big-market/big-market-app)
+24-07-01.00:16:28.464 [main            ] INFO  StrategyArmoryTest     - The following 1 profile is active: "dev"
+24-07-01.00:16:29.392 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+24-07-01.00:16:29.396 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+24-07-01.00:16:29.428 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 13 ms. Found 0 Redis repository interfaces.
+24-07-01.00:16:31.298 [main            ] INFO  Version                - Redisson 3.23.4
+24-07-01.00:16:31.345 [main            ] WARN  DnsServerAddressStreamProviders - Can not find io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider in the classpath, fallback to system defaults. This may result in incorrect DNS resolutions on MacOS. Check whether you have a dependency on 'io.netty:netty-resolver-dns-native-macos'
+24-07-01.00:16:31.721 [redisson-netty-2-5] INFO  MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
+24-07-01.00:16:31.763 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
+24-07-01.00:16:35.006 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+24-07-01.00:16:35.186 [main            ] INFO  StrategyArmoryTest     - Started StrategyArmoryTest in 7.287 seconds (JVM running for 8.352)
+24-07-01.00:23:24.933 [main            ] INFO  StrategyArmoryTest     - Starting StrategyArmoryTest using Java 1.8.0_402 on sange-sakura.lan with PID 22727 (started by smril in /Users/smril/IdeaProjects/big-market/big-market-app)
+24-07-01.00:23:24.935 [main            ] INFO  StrategyArmoryTest     - The following 1 profile is active: "dev"
+24-07-01.00:23:26.141 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+24-07-01.00:23:26.145 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+24-07-01.00:23:26.180 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 13 ms. Found 0 Redis repository interfaces.
+24-07-01.00:23:28.130 [main            ] INFO  Version                - Redisson 3.23.4
+24-07-01.00:23:28.167 [main            ] WARN  DnsServerAddressStreamProviders - Can not find io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider in the classpath, fallback to system defaults. This may result in incorrect DNS resolutions on MacOS. Check whether you have a dependency on 'io.netty:netty-resolver-dns-native-macos'
+24-07-01.00:23:28.478 [redisson-netty-2-4] INFO  MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
+24-07-01.00:23:28.500 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
+24-07-01.00:23:30.620 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+24-07-01.00:23:30.697 [main            ] INFO  StrategyArmoryTest     - Started StrategyArmoryTest in 6.401 seconds (JVM running for 7.674)
+24-07-01.00:25:17.369 [main            ] INFO  StrategyArmoryTest     - Starting StrategyArmoryTest using Java 1.8.0_402 on sange-sakura.lan with PID 22753 (started by smril in /Users/smril/IdeaProjects/big-market/big-market-app)
+24-07-01.00:25:17.370 [main            ] INFO  StrategyArmoryTest     - The following 1 profile is active: "dev"
+24-07-01.00:25:18.213 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+24-07-01.00:25:18.216 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+24-07-01.00:25:18.244 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 11 ms. Found 0 Redis repository interfaces.
+24-07-01.00:25:19.736 [main            ] INFO  Version                - Redisson 3.23.4
+24-07-01.00:25:19.768 [main            ] WARN  DnsServerAddressStreamProviders - Can not find io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider in the classpath, fallback to system defaults. This may result in incorrect DNS resolutions on MacOS. Check whether you have a dependency on 'io.netty:netty-resolver-dns-native-macos'
+24-07-01.00:25:20.001 [redisson-netty-2-4] INFO  MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
+24-07-01.00:25:20.021 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
+24-07-01.00:25:21.734 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+24-07-01.00:25:21.806 [main            ] INFO  StrategyArmoryTest     - Started StrategyArmoryTest in 4.84 seconds (JVM running for 5.77)
+24-07-01.00:26:51.221 [main            ] INFO  StrategyArmoryTest     - Starting StrategyArmoryTest using Java 1.8.0_402 on sange-sakura.lan with PID 22764 (started by smril in /Users/smril/IdeaProjects/big-market/big-market-app)
+24-07-01.00:26:51.222 [main            ] INFO  StrategyArmoryTest     - The following 1 profile is active: "dev"
+24-07-01.00:26:51.994 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+24-07-01.00:26:51.997 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+24-07-01.00:26:52.028 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 14 ms. Found 0 Redis repository interfaces.
+24-07-01.00:26:53.283 [main            ] INFO  Version                - Redisson 3.23.4
+24-07-01.00:26:53.307 [main            ] WARN  DnsServerAddressStreamProviders - Can not find io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider in the classpath, fallback to system defaults. This may result in incorrect DNS resolutions on MacOS. Check whether you have a dependency on 'io.netty:netty-resolver-dns-native-macos'
+24-07-01.00:26:53.493 [redisson-netty-2-5] INFO  MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
+24-07-01.00:26:53.508 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
+24-07-01.00:26:54.995 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+24-07-01.00:26:55.064 [main            ] INFO  StrategyArmoryTest     - Started StrategyArmoryTest in 4.278 seconds (JVM running for 5.209)
+24-07-01.00:26:55.502 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+24-07-01.00:26:55.977 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+24-07-01.00:26:56.147 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+24-07-01.00:26:56.167 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+24-07-01.00:27:28.248 [main            ] INFO  StrategyArmoryTest     - Starting StrategyArmoryTest using Java 1.8.0_402 on sange-sakura.lan with PID 22774 (started by smril in /Users/smril/IdeaProjects/big-market/big-market-app)
+24-07-01.00:27:28.249 [main            ] INFO  StrategyArmoryTest     - The following 1 profile is active: "dev"
+24-07-01.00:27:29.041 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+24-07-01.00:27:29.043 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+24-07-01.00:27:29.067 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 9 ms. Found 0 Redis repository interfaces.
+24-07-01.00:27:30.299 [main            ] INFO  Version                - Redisson 3.23.4
+24-07-01.00:27:30.323 [main            ] WARN  DnsServerAddressStreamProviders - Can not find io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider in the classpath, fallback to system defaults. This may result in incorrect DNS resolutions on MacOS. Check whether you have a dependency on 'io.netty:netty-resolver-dns-native-macos'
+24-07-01.00:27:30.508 [redisson-netty-2-4] INFO  MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
+24-07-01.00:27:30.524 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
+24-07-01.00:27:31.931 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+24-07-01.00:27:32.005 [main            ] INFO  StrategyArmoryTest     - Started StrategyArmoryTest in 4.19 seconds (JVM running for 5.069)
+24-07-01.00:27:32.417 [main            ] INFO  StrategyArmoryTest     - 测试结果: null
+24-07-01.00:27:32.420 [main            ] INFO  StrategyArmoryTest     - 测试结果: 101
+24-07-01.00:27:32.423 [main            ] INFO  StrategyArmoryTest     - 测试结果: 101
+24-07-01.00:27:32.426 [main            ] INFO  StrategyArmoryTest     - 测试结果: null
+24-07-01.00:27:41.174 [main            ] INFO  StrategyArmoryTest     - Starting StrategyArmoryTest using Java 1.8.0_402 on sange-sakura.lan with PID 22779 (started by smril in /Users/smril/IdeaProjects/big-market/big-market-app)
+24-07-01.00:27:41.174 [main            ] INFO  StrategyArmoryTest     - The following 1 profile is active: "dev"
+24-07-01.00:27:42.124 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+24-07-01.00:27:42.127 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+24-07-01.00:27:42.152 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 10 ms. Found 0 Redis repository interfaces.
+24-07-01.00:27:43.731 [main            ] INFO  Version                - Redisson 3.23.4
+24-07-01.00:27:43.781 [main            ] WARN  DnsServerAddressStreamProviders - Can not find io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider in the classpath, fallback to system defaults. This may result in incorrect DNS resolutions on MacOS. Check whether you have a dependency on 'io.netty:netty-resolver-dns-native-macos'
+24-07-01.00:27:44.110 [redisson-netty-2-5] INFO  MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
+24-07-01.00:27:44.146 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
+24-07-01.00:27:45.972 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+24-07-01.00:27:46.041 [main            ] INFO  StrategyArmoryTest     - Started StrategyArmoryTest in 5.285 seconds (JVM running for 6.217)
+24-07-01.00:27:46.493 [main            ] INFO  StrategyArmoryTest     - 测试结果: 102
+24-07-01.00:27:46.497 [main            ] INFO  StrategyArmoryTest     - 测试结果: 101
+24-07-01.00:27:46.500 [main            ] INFO  StrategyArmoryTest     - 测试结果: null
+24-07-01.00:27:46.504 [main            ] INFO  StrategyArmoryTest     - 测试结果: 102
+24-07-01.00:32:06.792 [main            ] INFO  StrategyArmoryTest     - Starting StrategyArmoryTest using Java 1.8.0_402 on sange-sakura.lan with PID 22825 (started by smril in /Users/smril/IdeaProjects/big-market/big-market-app)
+24-07-01.00:32:06.793 [main            ] INFO  StrategyArmoryTest     - The following 1 profile is active: "dev"
+24-07-01.00:32:07.595 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+24-07-01.00:32:07.598 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+24-07-01.00:32:07.623 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 10 ms. Found 0 Redis repository interfaces.
+24-07-01.00:32:08.933 [main            ] INFO  Version                - Redisson 3.23.4
+24-07-01.00:32:08.960 [main            ] WARN  DnsServerAddressStreamProviders - Can not find io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider in the classpath, fallback to system defaults. This may result in incorrect DNS resolutions on MacOS. Check whether you have a dependency on 'io.netty:netty-resolver-dns-native-macos'
+24-07-01.00:32:09.204 [redisson-netty-2-4] INFO  MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
+24-07-01.00:32:09.221 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
+24-07-01.00:32:10.984 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+24-07-01.00:32:11.069 [main            ] INFO  StrategyArmoryTest     - Started StrategyArmoryTest in 4.683 seconds (JVM running for 5.53)
+24-07-01.00:32:11.545 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+24-07-01.00:32:11.912 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+24-07-01.00:32:12.069 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+24-07-01.00:32:12.102 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+24-07-01.00:33:15.223 [main            ] INFO  StrategyArmoryTest     - Starting StrategyArmoryTest using Java 1.8.0_402 on sange-sakura.lan with PID 22835 (started by smril in /Users/smril/IdeaProjects/big-market/big-market-app)
+24-07-01.00:33:15.224 [main            ] INFO  StrategyArmoryTest     - The following 1 profile is active: "dev"
+24-07-01.00:33:15.988 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+24-07-01.00:33:15.991 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+24-07-01.00:33:16.019 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 11 ms. Found 0 Redis repository interfaces.
+24-07-01.00:33:17.317 [main            ] INFO  Version                - Redisson 3.23.4
+24-07-01.00:33:17.341 [main            ] WARN  DnsServerAddressStreamProviders - Can not find io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider in the classpath, fallback to system defaults. This may result in incorrect DNS resolutions on MacOS. Check whether you have a dependency on 'io.netty:netty-resolver-dns-native-macos'
+24-07-01.00:33:17.545 [redisson-netty-2-4] INFO  MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
+24-07-01.00:33:17.563 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
+24-07-01.00:33:19.064 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+24-07-01.00:33:19.126 [main            ] INFO  StrategyArmoryTest     - Started StrategyArmoryTest in 4.321 seconds (JVM running for 5.181)
+24-07-01.00:33:19.523 [main            ] INFO  StrategyArmoryTest     - 测试结果: 101
+24-07-01.00:33:19.526 [main            ] INFO  StrategyArmoryTest     - 测试结果: 101
+24-07-01.00:33:19.529 [main            ] INFO  StrategyArmoryTest     - 测试结果: 101
+24-07-01.00:33:19.532 [main            ] INFO  StrategyArmoryTest     - 测试结果: 101
+24-07-01.00:34:13.763 [main            ] INFO  StrategyArmoryTest     - Starting StrategyArmoryTest using Java 1.8.0_402 on sange-sakura.lan with PID 22847 (started by smril in /Users/smril/IdeaProjects/big-market/big-market-app)
+24-07-01.00:34:13.764 [main            ] INFO  StrategyArmoryTest     - The following 1 profile is active: "dev"
+24-07-01.00:34:14.563 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+24-07-01.00:34:14.567 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+24-07-01.00:34:14.592 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 10 ms. Found 0 Redis repository interfaces.
+24-07-01.00:34:15.850 [main            ] INFO  Version                - Redisson 3.23.4
+24-07-01.00:34:15.874 [main            ] WARN  DnsServerAddressStreamProviders - Can not find io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider in the classpath, fallback to system defaults. This may result in incorrect DNS resolutions on MacOS. Check whether you have a dependency on 'io.netty:netty-resolver-dns-native-macos'
+24-07-01.00:34:16.070 [redisson-netty-2-4] INFO  MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
+24-07-01.00:34:16.088 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
+24-07-01.00:34:17.604 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+24-07-01.00:34:17.673 [main            ] INFO  StrategyArmoryTest     - Started StrategyArmoryTest in 4.325 seconds (JVM running for 5.186)
+24-07-01.00:34:18.114 [main            ] INFO  StrategyArmoryTest     - 测试结果: 101
+24-07-01.00:34:18.118 [main            ] INFO  StrategyArmoryTest     - 测试结果: 101
+24-07-01.00:34:18.122 [main            ] INFO  StrategyArmoryTest     - 测试结果: 101
+24-07-01.00:34:18.125 [main            ] INFO  StrategyArmoryTest     - 测试结果: 101
+24-07-01.00:34:18.128 [main            ] INFO  StrategyArmoryTest     - 测试结果: 101
+24-07-01.00:34:18.134 [main            ] INFO  StrategyArmoryTest     - 测试结果: 102
+24-07-01.00:34:18.137 [main            ] INFO  StrategyArmoryTest     - 测试结果: 102
+24-07-01.00:34:18.140 [main            ] INFO  StrategyArmoryTest     - 测试结果: 101
+24-07-01.00:34:18.144 [main            ] INFO  StrategyArmoryTest     - 测试结果: 102
+24-07-01.00:34:18.147 [main            ] INFO  StrategyArmoryTest     - 测试结果: 101
+24-07-01.00:34:18.150 [main            ] INFO  StrategyArmoryTest     - 测试结果: 102
+24-07-01.00:34:18.154 [main            ] INFO  StrategyArmoryTest     - 测试结果: 101
+24-07-01.00:34:18.157 [main            ] INFO  StrategyArmoryTest     - 测试结果: 101
+24-07-01.00:34:18.160 [main            ] INFO  StrategyArmoryTest     - 测试结果: 101
+24-07-01.00:34:18.164 [main            ] INFO  StrategyArmoryTest     - 测试结果: 101
+24-07-01.00:34:18.167 [main            ] INFO  StrategyArmoryTest     - 测试结果: 101
+24-07-01.00:34:18.169 [main            ] INFO  StrategyArmoryTest     - 测试结果: 101
+24-07-01.00:34:18.172 [main            ] INFO  StrategyArmoryTest     - 测试结果: 101
+24-07-01.00:34:18.175 [main            ] INFO  StrategyArmoryTest     - 测试结果: 101
+24-07-01.00:34:18.178 [main            ] INFO  StrategyArmoryTest     - 测试结果: 101
+24-07-01.00:34:18.181 [main            ] INFO  StrategyArmoryTest     - 测试结果: 101
+24-07-01.00:34:18.184 [main            ] INFO  StrategyArmoryTest     - 测试结果: 101
+24-07-01.00:34:18.186 [main            ] INFO  StrategyArmoryTest     - 测试结果: 101
+24-07-01.00:34:18.189 [main            ] INFO  StrategyArmoryTest     - 测试结果: 101
+24-07-01.00:34:18.191 [main            ] INFO  StrategyArmoryTest     - 测试结果: 101
+24-07-01.00:34:18.194 [main            ] INFO  StrategyArmoryTest     - 测试结果: 101
+24-07-01.00:34:18.197 [main            ] INFO  StrategyArmoryTest     - 测试结果: 102
+24-07-01.00:34:18.199 [main            ] INFO  StrategyArmoryTest     - 测试结果: 102
+24-07-01.00:34:18.202 [main            ] INFO  StrategyArmoryTest     - 测试结果: 101
+24-07-01.00:34:18.205 [main            ] INFO  StrategyArmoryTest     - 测试结果: 101
+24-07-01.00:34:18.207 [main            ] INFO  StrategyArmoryTest     - 测试结果: 101
+24-07-01.00:34:18.210 [main            ] INFO  StrategyArmoryTest     - 测试结果: 101
+24-07-01.00:34:18.213 [main            ] INFO  StrategyArmoryTest     - 测试结果: 101
+24-07-01.00:34:18.215 [main            ] INFO  StrategyArmoryTest     - 测试结果: 101
+24-07-01.00:34:18.218 [main            ] INFO  StrategyArmoryTest     - 测试结果: 101
+24-07-01.00:34:18.221 [main            ] INFO  StrategyArmoryTest     - 测试结果: 101
+24-07-01.00:34:18.223 [main            ] INFO  StrategyArmoryTest     - 测试结果: 106
+24-07-01.00:34:18.226 [main            ] INFO  StrategyArmoryTest     - 测试结果: 101
+24-07-01.00:34:18.228 [main            ] INFO  StrategyArmoryTest     - 测试结果: 101
+24-07-01.00:34:18.231 [main            ] INFO  StrategyArmoryTest     - 测试结果: 101
+24-07-01.00:34:18.233 [main            ] INFO  StrategyArmoryTest     - 测试结果: 101
+24-07-01.00:34:18.238 [main            ] INFO  StrategyArmoryTest     - 测试结果: 102
+24-07-01.00:34:18.240 [main            ] INFO  StrategyArmoryTest     - 测试结果: 102
+24-07-01.00:34:18.242 [main            ] INFO  StrategyArmoryTest     - 测试结果: 101
+24-07-01.00:34:18.245 [main            ] INFO  StrategyArmoryTest     - 测试结果: 101
+24-07-01.00:34:18.248 [main            ] INFO  StrategyArmoryTest     - 测试结果: 101
+24-07-01.00:34:18.250 [main            ] INFO  StrategyArmoryTest     - 测试结果: 101
+24-07-01.00:34:18.253 [main            ] INFO  StrategyArmoryTest     - 测试结果: 101
+24-07-01.00:34:18.255 [main            ] INFO  StrategyArmoryTest     - 测试结果: 101
+24-07-01.00:34:18.258 [main            ] INFO  StrategyArmoryTest     - 测试结果: 101
+24-07-01.00:34:18.260 [main            ] INFO  StrategyArmoryTest     - 测试结果: 102
+24-07-01.00:34:18.262 [main            ] INFO  StrategyArmoryTest     - 测试结果: 101
+24-07-01.00:34:18.265 [main            ] INFO  StrategyArmoryTest     - 测试结果: 106
+24-07-01.00:34:18.268 [main            ] INFO  StrategyArmoryTest     - 测试结果: 101
+24-07-01.00:34:18.270 [main            ] INFO  StrategyArmoryTest     - 测试结果: 101
+24-07-01.00:34:18.272 [main            ] INFO  StrategyArmoryTest     - 测试结果: 101
+24-07-01.00:34:18.275 [main            ] INFO  StrategyArmoryTest     - 测试结果: 101
+24-07-01.00:34:18.278 [main            ] INFO  StrategyArmoryTest     - 测试结果: 101
+24-07-01.00:34:18.281 [main            ] INFO  StrategyArmoryTest     - 测试结果: 102
+24-07-01.00:34:18.283 [main            ] INFO  StrategyArmoryTest     - 测试结果: 101
+24-07-01.00:34:18.286 [main            ] INFO  StrategyArmoryTest     - 测试结果: 101
+24-07-01.00:34:18.288 [main            ] INFO  StrategyArmoryTest     - 测试结果: 101
+24-07-01.00:34:18.291 [main            ] INFO  StrategyArmoryTest     - 测试结果: 101
+24-07-01.00:34:18.293 [main            ] INFO  StrategyArmoryTest     - 测试结果: 101
+24-07-01.00:34:18.296 [main            ] INFO  StrategyArmoryTest     - 测试结果: 102
+24-07-01.00:34:18.298 [main            ] INFO  StrategyArmoryTest     - 测试结果: 101
+24-07-01.00:34:18.302 [main            ] INFO  StrategyArmoryTest     - 测试结果: 101
+24-07-01.00:34:18.304 [main            ] INFO  StrategyArmoryTest     - 测试结果: 101
+24-07-01.00:34:18.306 [main            ] INFO  StrategyArmoryTest     - 测试结果: 101
+24-07-01.00:34:18.309 [main            ] INFO  StrategyArmoryTest     - 测试结果: 101
+24-07-01.00:34:18.311 [main            ] INFO  StrategyArmoryTest     - 测试结果: 101
+24-07-01.00:34:18.314 [main            ] INFO  StrategyArmoryTest     - 测试结果: 101
+24-07-01.00:34:18.316 [main            ] INFO  StrategyArmoryTest     - 测试结果: 101
+24-07-01.00:34:18.318 [main            ] INFO  StrategyArmoryTest     - 测试结果: 102
+24-07-01.00:34:18.321 [main            ] INFO  StrategyArmoryTest     - 测试结果: 102
+24-07-01.00:34:18.324 [main            ] INFO  StrategyArmoryTest     - 测试结果: 106
+24-07-01.00:34:18.327 [main            ] INFO  StrategyArmoryTest     - 测试结果: 102
+24-07-01.00:34:18.329 [main            ] INFO  StrategyArmoryTest     - 测试结果: 101
+24-07-01.00:34:18.333 [main            ] INFO  StrategyArmoryTest     - 测试结果: 101
+24-07-01.00:34:18.335 [main            ] INFO  StrategyArmoryTest     - 测试结果: 101
+24-07-01.00:34:18.338 [main            ] INFO  StrategyArmoryTest     - 测试结果: 101
+24-07-01.00:34:18.340 [main            ] INFO  StrategyArmoryTest     - 测试结果: 101
+24-07-01.00:34:18.343 [main            ] INFO  StrategyArmoryTest     - 测试结果: 101
+24-07-01.00:34:18.345 [main            ] INFO  StrategyArmoryTest     - 测试结果: 102
+24-07-01.00:34:18.348 [main            ] INFO  StrategyArmoryTest     - 测试结果: 102
+24-07-01.00:34:18.352 [main            ] INFO  StrategyArmoryTest     - 测试结果: 101
+24-07-01.00:34:18.355 [main            ] INFO  StrategyArmoryTest     - 测试结果: 101
+24-07-01.00:34:18.358 [main            ] INFO  StrategyArmoryTest     - 测试结果: 101
+24-07-01.00:34:18.361 [main            ] INFO  StrategyArmoryTest     - 测试结果: 101
+24-07-01.00:34:18.363 [main            ] INFO  StrategyArmoryTest     - 测试结果: 101
+24-07-01.00:34:18.367 [main            ] INFO  StrategyArmoryTest     - 测试结果: 101
+24-07-01.00:34:18.370 [main            ] INFO  StrategyArmoryTest     - 测试结果: 101
+24-07-01.00:34:18.373 [main            ] INFO  StrategyArmoryTest     - 测试结果: 101
+24-07-01.00:34:18.375 [main            ] INFO  StrategyArmoryTest     - 测试结果: 102
+24-07-01.00:34:18.378 [main            ] INFO  StrategyArmoryTest     - 测试结果: 101
+24-07-01.00:34:18.382 [main            ] INFO  StrategyArmoryTest     - 测试结果: 102
+24-07-01.00:34:18.385 [main            ] INFO  StrategyArmoryTest     - 测试结果: 101
+24-07-01.00:34:18.388 [main            ] INFO  StrategyArmoryTest     - 测试结果: 101
+24-07-01.00:34:18.390 [main            ] INFO  StrategyArmoryTest     - 测试结果: 101
+24-07-01.00:34:18.393 [main            ] INFO  StrategyArmoryTest     - 测试结果: 101
+24-07-01.12:01:16.251 [main            ] INFO  StrategyArmoryTest     - Starting StrategyArmoryTest using Java 1.8.0_402 on sange-sakura.lan with PID 5674 (started by smril in /Users/smril/IdeaProjects/big-market/big-market-app)
+24-07-01.12:01:16.252 [main            ] INFO  StrategyArmoryTest     - The following 1 profile is active: "dev"
+24-07-01.12:01:17.271 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+24-07-01.12:01:17.276 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+24-07-01.12:01:17.308 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 11 ms. Found 0 Redis repository interfaces.
+24-07-01.12:01:19.224 [main            ] INFO  Version                - Redisson 3.23.4
+24-07-01.12:01:19.264 [main            ] WARN  DnsServerAddressStreamProviders - Can not find io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider in the classpath, fallback to system defaults. This may result in incorrect DNS resolutions on MacOS. Check whether you have a dependency on 'io.netty:netty-resolver-dns-native-macos'
+24-07-01.12:01:22.606 [main            ] WARN  GenericWebApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'strategyArmory': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'strategyRepository': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'redissonService': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'redissonClient' defined in class path resource [com/smril/config/RedisClientConfig.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.redisson.api.RedissonClient]: Factory method 'redissonClient' threw exception; nested exception is org.redisson.client.RedisConnectionException: Unable to connect to Redis server: 127.0.0.1/127.0.0.1:16379
+24-07-01.12:01:22.621 [main            ] INFO  ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+24-07-01.12:01:22.653 [main            ] ERROR SpringApplication      - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'strategyArmory': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'strategyRepository': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'redissonService': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'redissonClient' defined in class path resource [com/smril/config/RedisClientConfig.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.redisson.api.RedissonClient]: Factory method 'redissonClient' threw exception; nested exception is org.redisson.client.RedisConnectionException: Unable to connect to Redis server: 127.0.0.1/127.0.0.1:16379
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessProperties(CommonAnnotationBeanPostProcessor.java:332)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1431)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:619)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:955)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:920)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:731)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307)
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:136)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:141)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:90)
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:124)
+	at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:190)
+	at org.springframework.test.context.web.ServletTestExecutionListener.prepareTestInstance(ServletTestExecutionListener.java:132)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:248)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:227)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:289)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:291)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:246)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:190)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:69)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater$1.execute(IdeaTestRunner.java:38)
+	at com.intellij.rt.execution.junit.TestsRepeater.repeat(TestsRepeater.java:11)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:35)
+	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:232)
+	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:55)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'strategyRepository': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'redissonService': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'redissonClient' defined in class path resource [com/smril/config/RedisClientConfig.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.redisson.api.RedissonClient]: Factory method 'redissonClient' threw exception; nested exception is org.redisson.client.RedisConnectionException: Unable to connect to Redis server: 127.0.0.1/127.0.0.1:16379
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessProperties(CommonAnnotationBeanPostProcessor.java:332)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1431)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:619)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1391)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1311)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.autowireResource(CommonAnnotationBeanPostProcessor.java:544)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.getResource(CommonAnnotationBeanPostProcessor.java:520)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor$ResourceElement.getResourceToInject(CommonAnnotationBeanPostProcessor.java:673)
+	at org.springframework.beans.factory.annotation.InjectionMetadata$InjectedElement.inject(InjectionMetadata.java:228)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessProperties(CommonAnnotationBeanPostProcessor.java:329)
+	... 43 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'redissonService': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'redissonClient' defined in class path resource [com/smril/config/RedisClientConfig.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.redisson.api.RedissonClient]: Factory method 'redissonClient' threw exception; nested exception is org.redisson.client.RedisConnectionException: Unable to connect to Redis server: 127.0.0.1/127.0.0.1:16379
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessProperties(CommonAnnotationBeanPostProcessor.java:332)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1431)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:619)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1391)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1311)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.autowireResource(CommonAnnotationBeanPostProcessor.java:544)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.getResource(CommonAnnotationBeanPostProcessor.java:520)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor$ResourceElement.getResourceToInject(CommonAnnotationBeanPostProcessor.java:673)
+	at org.springframework.beans.factory.annotation.InjectionMetadata$InjectedElement.inject(InjectionMetadata.java:228)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessProperties(CommonAnnotationBeanPostProcessor.java:329)
+	... 59 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'redissonClient' defined in class path resource [com/smril/config/RedisClientConfig.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.redisson.api.RedissonClient]: Factory method 'redissonClient' threw exception; nested exception is org.redisson.client.RedisConnectionException: Unable to connect to Redis server: 127.0.0.1/127.0.0.1:16379
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:658)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:638)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1352)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1195)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:213)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.resolveBeanByName(AbstractAutowireCapableBeanFactory.java:479)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.autowireResource(CommonAnnotationBeanPostProcessor.java:550)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.getResource(CommonAnnotationBeanPostProcessor.java:520)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor$ResourceElement.getResourceToInject(CommonAnnotationBeanPostProcessor.java:673)
+	at org.springframework.beans.factory.annotation.InjectionMetadata$InjectedElement.inject(InjectionMetadata.java:228)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessProperties(CommonAnnotationBeanPostProcessor.java:329)
+	... 75 common frames omitted
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.redisson.api.RedissonClient]: Factory method 'redissonClient' threw exception; nested exception is org.redisson.client.RedisConnectionException: Unable to connect to Redis server: 127.0.0.1/127.0.0.1:16379
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:185)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:653)
+	... 91 common frames omitted
+Caused by: org.redisson.client.RedisConnectionException: Unable to connect to Redis server: 127.0.0.1/127.0.0.1:16379
+	at org.redisson.connection.pool.ConnectionPool.lambda$createConnection$0(ConnectionPool.java:132)
+	at java.util.concurrent.CompletableFuture.uniWhenComplete(CompletableFuture.java:774)
+	at java.util.concurrent.CompletableFuture$UniWhenComplete.tryFire(CompletableFuture.java:750)
+	at java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:488)
+	at java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:1990)
+	at org.redisson.connection.pool.ConnectionPool.promiseFailure(ConnectionPool.java:294)
+	at org.redisson.connection.pool.ConnectionPool.lambda$createConnection$6(ConnectionPool.java:253)
+	at java.util.concurrent.CompletableFuture.uniWhenComplete(CompletableFuture.java:774)
+	at java.util.concurrent.CompletableFuture$UniWhenComplete.tryFire(CompletableFuture.java:750)
+	at java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:488)
+	at java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:1990)
+	at org.redisson.client.RedisClient$1$2.run(RedisClient.java:257)
+	at io.netty.util.concurrent.AbstractEventExecutor.runTask(AbstractEventExecutor.java:174)
+	at io.netty.util.concurrent.AbstractEventExecutor.safeExecute(AbstractEventExecutor.java:167)
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:470)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:569)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Thread.java:750)
+Caused by: java.util.concurrent.CompletionException: io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: 127.0.0.1/127.0.0.1:16379
+	at java.util.concurrent.CompletableFuture.encodeRelay(CompletableFuture.java:326)
+	at java.util.concurrent.CompletableFuture.completeRelay(CompletableFuture.java:338)
+	at java.util.concurrent.CompletableFuture.uniRelay(CompletableFuture.java:925)
+	at java.util.concurrent.CompletableFuture$UniRelay.tryFire(CompletableFuture.java:913)
+	... 11 common frames omitted
+Caused by: io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: 127.0.0.1/127.0.0.1:16379
+Caused by: java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:716)
+	at io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:337)
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:334)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:776)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Thread.java:750)
+24-07-01.12:01:22.656 [main            ] ERROR TestContextManager     - Caught exception while allowing TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener@4009e306] to prepare test instance [com.smril.test.domain.StrategyArmoryTest@63f40ca0]
+java.lang.IllegalStateException: Failed to load ApplicationContext
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:98)
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:124)
+	at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:190)
+	at org.springframework.test.context.web.ServletTestExecutionListener.prepareTestInstance(ServletTestExecutionListener.java:132)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:248)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:227)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:289)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:291)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:246)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:190)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:69)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater$1.execute(IdeaTestRunner.java:38)
+	at com.intellij.rt.execution.junit.TestsRepeater.repeat(TestsRepeater.java:11)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:35)
+	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:232)
+	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:55)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'strategyArmory': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'strategyRepository': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'redissonService': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'redissonClient' defined in class path resource [com/smril/config/RedisClientConfig.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.redisson.api.RedissonClient]: Factory method 'redissonClient' threw exception; nested exception is org.redisson.client.RedisConnectionException: Unable to connect to Redis server: 127.0.0.1/127.0.0.1:16379
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessProperties(CommonAnnotationBeanPostProcessor.java:332)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1431)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:619)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:955)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:920)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:731)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307)
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:136)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:141)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:90)
+	... 27 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'strategyRepository': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'redissonService': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'redissonClient' defined in class path resource [com/smril/config/RedisClientConfig.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.redisson.api.RedissonClient]: Factory method 'redissonClient' threw exception; nested exception is org.redisson.client.RedisConnectionException: Unable to connect to Redis server: 127.0.0.1/127.0.0.1:16379
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessProperties(CommonAnnotationBeanPostProcessor.java:332)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1431)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:619)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1391)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1311)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.autowireResource(CommonAnnotationBeanPostProcessor.java:544)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.getResource(CommonAnnotationBeanPostProcessor.java:520)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor$ResourceElement.getResourceToInject(CommonAnnotationBeanPostProcessor.java:673)
+	at org.springframework.beans.factory.annotation.InjectionMetadata$InjectedElement.inject(InjectionMetadata.java:228)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessProperties(CommonAnnotationBeanPostProcessor.java:329)
+	... 43 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'redissonService': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'redissonClient' defined in class path resource [com/smril/config/RedisClientConfig.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.redisson.api.RedissonClient]: Factory method 'redissonClient' threw exception; nested exception is org.redisson.client.RedisConnectionException: Unable to connect to Redis server: 127.0.0.1/127.0.0.1:16379
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessProperties(CommonAnnotationBeanPostProcessor.java:332)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1431)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:619)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1391)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1311)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.autowireResource(CommonAnnotationBeanPostProcessor.java:544)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.getResource(CommonAnnotationBeanPostProcessor.java:520)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor$ResourceElement.getResourceToInject(CommonAnnotationBeanPostProcessor.java:673)
+	at org.springframework.beans.factory.annotation.InjectionMetadata$InjectedElement.inject(InjectionMetadata.java:228)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessProperties(CommonAnnotationBeanPostProcessor.java:329)
+	... 59 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'redissonClient' defined in class path resource [com/smril/config/RedisClientConfig.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.redisson.api.RedissonClient]: Factory method 'redissonClient' threw exception; nested exception is org.redisson.client.RedisConnectionException: Unable to connect to Redis server: 127.0.0.1/127.0.0.1:16379
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:658)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:638)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1352)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1195)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:213)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.resolveBeanByName(AbstractAutowireCapableBeanFactory.java:479)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.autowireResource(CommonAnnotationBeanPostProcessor.java:550)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.getResource(CommonAnnotationBeanPostProcessor.java:520)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor$ResourceElement.getResourceToInject(CommonAnnotationBeanPostProcessor.java:673)
+	at org.springframework.beans.factory.annotation.InjectionMetadata$InjectedElement.inject(InjectionMetadata.java:228)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessProperties(CommonAnnotationBeanPostProcessor.java:329)
+	... 75 common frames omitted
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.redisson.api.RedissonClient]: Factory method 'redissonClient' threw exception; nested exception is org.redisson.client.RedisConnectionException: Unable to connect to Redis server: 127.0.0.1/127.0.0.1:16379
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:185)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:653)
+	... 91 common frames omitted
+Caused by: org.redisson.client.RedisConnectionException: Unable to connect to Redis server: 127.0.0.1/127.0.0.1:16379
+	at org.redisson.connection.pool.ConnectionPool.lambda$createConnection$0(ConnectionPool.java:132)
+	at java.util.concurrent.CompletableFuture.uniWhenComplete(CompletableFuture.java:774)
+	at java.util.concurrent.CompletableFuture$UniWhenComplete.tryFire(CompletableFuture.java:750)
+	at java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:488)
+	at java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:1990)
+	at org.redisson.connection.pool.ConnectionPool.promiseFailure(ConnectionPool.java:294)
+	at org.redisson.connection.pool.ConnectionPool.lambda$createConnection$6(ConnectionPool.java:253)
+	at java.util.concurrent.CompletableFuture.uniWhenComplete(CompletableFuture.java:774)
+	at java.util.concurrent.CompletableFuture$UniWhenComplete.tryFire(CompletableFuture.java:750)
+	at java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:488)
+	at java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:1990)
+	at org.redisson.client.RedisClient$1$2.run(RedisClient.java:257)
+	at io.netty.util.concurrent.AbstractEventExecutor.runTask(AbstractEventExecutor.java:174)
+	at io.netty.util.concurrent.AbstractEventExecutor.safeExecute(AbstractEventExecutor.java:167)
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:470)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:569)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Thread.java:750)
+Caused by: java.util.concurrent.CompletionException: io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: 127.0.0.1/127.0.0.1:16379
+	at java.util.concurrent.CompletableFuture.encodeRelay(CompletableFuture.java:326)
+	at java.util.concurrent.CompletableFuture.completeRelay(CompletableFuture.java:338)
+	at java.util.concurrent.CompletableFuture.uniRelay(CompletableFuture.java:925)
+	at java.util.concurrent.CompletableFuture$UniRelay.tryFire(CompletableFuture.java:913)
+	... 11 common frames omitted
+Caused by: io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: 127.0.0.1/127.0.0.1:16379
+Caused by: java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:716)
+	at io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:337)
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:334)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:776)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Thread.java:750)
+24-07-01.12:02:56.167 [main            ] INFO  StrategyArmoryTest     - Starting StrategyArmoryTest using Java 1.8.0_402 on sange-sakura.lan with PID 5778 (started by smril in /Users/smril/IdeaProjects/big-market/big-market-app)
+24-07-01.12:02:56.168 [main            ] INFO  StrategyArmoryTest     - The following 1 profile is active: "dev"
+24-07-01.12:02:57.261 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+24-07-01.12:02:57.265 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+24-07-01.12:02:57.299 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 13 ms. Found 0 Redis repository interfaces.
+24-07-01.12:02:59.383 [main            ] INFO  Version                - Redisson 3.23.4
+24-07-01.12:02:59.419 [main            ] WARN  DnsServerAddressStreamProviders - Can not find io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider in the classpath, fallback to system defaults. This may result in incorrect DNS resolutions on MacOS. Check whether you have a dependency on 'io.netty:netty-resolver-dns-native-macos'
+24-07-01.12:02:59.687 [redisson-netty-2-4] INFO  MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
+24-07-01.12:02:59.705 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
+24-07-01.12:03:01.649 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+24-07-01.12:03:01.733 [main            ] INFO  StrategyArmoryTest     - Started StrategyArmoryTest in 6.057 seconds (JVM running for 7.388)
+24-07-01.12:04:00.658 [main            ] INFO  StrategyArmoryTest     - Starting StrategyArmoryTest using Java 1.8.0_402 on sange-sakura.lan with PID 5792 (started by smril in /Users/smril/IdeaProjects/big-market/big-market-app)
+24-07-01.12:04:00.659 [main            ] INFO  StrategyArmoryTest     - The following 1 profile is active: "dev"
+24-07-01.12:04:01.494 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+24-07-01.12:04:01.498 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+24-07-01.12:04:01.529 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 14 ms. Found 0 Redis repository interfaces.
+24-07-01.12:04:02.830 [main            ] INFO  Version                - Redisson 3.23.4
+24-07-01.12:04:02.856 [main            ] WARN  DnsServerAddressStreamProviders - Can not find io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider in the classpath, fallback to system defaults. This may result in incorrect DNS resolutions on MacOS. Check whether you have a dependency on 'io.netty:netty-resolver-dns-native-macos'
+24-07-01.12:04:03.063 [redisson-netty-2-4] INFO  MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
+24-07-01.12:04:03.079 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
+24-07-01.12:04:04.679 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+24-07-01.12:04:04.746 [main            ] INFO  StrategyArmoryTest     - Started StrategyArmoryTest in 4.543 seconds (JVM running for 5.579)
+24-07-01.12:04:05.241 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+24-07-01.12:04:05.784 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+24-07-01.12:04:05.967 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+24-07-01.12:04:05.980 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+24-07-01.12:06:39.784 [main            ] INFO  StrategyArmoryTest     - Starting StrategyArmoryTest using Java 1.8.0_402 on sange-sakura.lan with PID 5819 (started by smril in /Users/smril/IdeaProjects/big-market/big-market-app)
+24-07-01.12:06:39.785 [main            ] INFO  StrategyArmoryTest     - The following 1 profile is active: "dev"
+24-07-01.12:06:40.706 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+24-07-01.12:06:40.710 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+24-07-01.12:06:40.735 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 10 ms. Found 0 Redis repository interfaces.
+24-07-01.12:06:42.346 [main            ] INFO  Version                - Redisson 3.23.4
+24-07-01.12:06:42.381 [main            ] WARN  DnsServerAddressStreamProviders - Can not find io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider in the classpath, fallback to system defaults. This may result in incorrect DNS resolutions on MacOS. Check whether you have a dependency on 'io.netty:netty-resolver-dns-native-macos'
+24-07-01.12:06:42.654 [redisson-netty-2-4] INFO  MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
+24-07-01.12:06:42.677 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
+24-07-01.12:06:44.940 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+24-07-01.12:06:45.042 [main            ] INFO  StrategyArmoryTest     - Started StrategyArmoryTest in 5.893 seconds (JVM running for 7.317)
+24-07-01.12:06:45.810 [main            ] INFO  StrategyArmoryTest     - 测试结果: 101
+24-07-01.12:06:45.815 [main            ] INFO  StrategyArmoryTest     - 测试结果: 101
+24-07-01.12:06:45.821 [main            ] INFO  StrategyArmoryTest     - 测试结果: 101
+24-07-01.12:06:45.825 [main            ] INFO  StrategyArmoryTest     - 测试结果: 102
+24-07-01.12:06:45.830 [main            ] INFO  StrategyArmoryTest     - 测试结果: 101
+24-07-01.12:06:45.836 [main            ] INFO  StrategyArmoryTest     - 测试结果: 101
+24-07-01.12:06:45.840 [main            ] INFO  StrategyArmoryTest     - 测试结果: 101
+24-07-01.12:06:45.848 [main            ] INFO  StrategyArmoryTest     - 测试结果: 101
+24-07-01.12:06:45.853 [main            ] INFO  StrategyArmoryTest     - 测试结果: 101
+24-07-01.12:06:45.858 [main            ] INFO  StrategyArmoryTest     - 测试结果: 101
+24-07-01.12:06:45.863 [main            ] INFO  StrategyArmoryTest     - 测试结果: 101
+24-07-01.12:06:45.868 [main            ] INFO  StrategyArmoryTest     - 测试结果: 101
+24-07-01.12:06:45.873 [main            ] INFO  StrategyArmoryTest     - 测试结果: 101
+24-07-01.12:06:45.877 [main            ] INFO  StrategyArmoryTest     - 测试结果: 102
+24-07-01.12:06:45.883 [main            ] INFO  StrategyArmoryTest     - 测试结果: 102
+24-07-01.12:06:45.888 [main            ] INFO  StrategyArmoryTest     - 测试结果: 101
+24-07-01.12:06:45.893 [main            ] INFO  StrategyArmoryTest     - 测试结果: 101
+24-07-01.12:06:45.899 [main            ] INFO  StrategyArmoryTest     - 测试结果: 101
+24-07-01.12:06:45.903 [main            ] INFO  StrategyArmoryTest     - 测试结果: 102
+24-07-01.12:06:45.907 [main            ] INFO  StrategyArmoryTest     - 测试结果: 101
+24-07-01.12:06:45.913 [main            ] INFO  StrategyArmoryTest     - 测试结果: 102
+24-07-01.12:06:45.918 [main            ] INFO  StrategyArmoryTest     - 测试结果: 101
+24-07-01.12:06:45.922 [main            ] INFO  StrategyArmoryTest     - 测试结果: 101
+24-07-01.12:06:45.925 [main            ] INFO  StrategyArmoryTest     - 测试结果: 101
+24-07-01.12:06:45.930 [main            ] INFO  StrategyArmoryTest     - 测试结果: 101
+24-07-01.12:06:45.935 [main            ] INFO  StrategyArmoryTest     - 测试结果: 102
+24-07-01.12:06:45.939 [main            ] INFO  StrategyArmoryTest     - 测试结果: 101
+24-07-01.12:06:45.942 [main            ] INFO  StrategyArmoryTest     - 测试结果: 102
+24-07-01.12:06:45.948 [main            ] INFO  StrategyArmoryTest     - 测试结果: 101
+24-07-01.12:06:45.952 [main            ] INFO  StrategyArmoryTest     - 测试结果: 101
+24-07-01.12:06:45.956 [main            ] INFO  StrategyArmoryTest     - 测试结果: 101
+24-07-01.12:06:45.963 [main            ] INFO  StrategyArmoryTest     - 测试结果: 102
+24-07-01.12:06:45.967 [main            ] INFO  StrategyArmoryTest     - 测试结果: 101
+24-07-01.12:06:45.975 [main            ] INFO  StrategyArmoryTest     - 测试结果: 101
+24-07-01.12:06:45.979 [main            ] INFO  StrategyArmoryTest     - 测试结果: 102
+24-07-01.12:06:45.983 [main            ] INFO  StrategyArmoryTest     - 测试结果: 102
+24-07-01.12:06:45.987 [main            ] INFO  StrategyArmoryTest     - 测试结果: 101
+24-07-01.12:06:45.991 [main            ] INFO  StrategyArmoryTest     - 测试结果: 101
+24-07-01.12:06:45.996 [main            ] INFO  StrategyArmoryTest     - 测试结果: 101
+24-07-01.12:06:46.001 [main            ] INFO  StrategyArmoryTest     - 测试结果: 102
+24-07-01.12:06:46.007 [main            ] INFO  StrategyArmoryTest     - 测试结果: 101
+24-07-01.12:06:46.014 [main            ] INFO  StrategyArmoryTest     - 测试结果: 101
+24-07-01.12:06:46.020 [main            ] INFO  StrategyArmoryTest     - 测试结果: 101
+24-07-01.12:06:46.032 [main            ] INFO  StrategyArmoryTest     - 测试结果: 106
+24-07-01.12:06:46.039 [main            ] INFO  StrategyArmoryTest     - 测试结果: 101
+24-07-01.12:06:46.044 [main            ] INFO  StrategyArmoryTest     - 测试结果: 102
+24-07-01.12:06:46.054 [main            ] INFO  StrategyArmoryTest     - 测试结果: 101
+24-07-01.12:06:46.061 [main            ] INFO  StrategyArmoryTest     - 测试结果: 101
+24-07-01.12:06:46.071 [main            ] INFO  StrategyArmoryTest     - 测试结果: 101
+24-07-01.12:06:46.078 [main            ] INFO  StrategyArmoryTest     - 测试结果: 101
+24-07-01.12:06:46.082 [main            ] INFO  StrategyArmoryTest     - 测试结果: 101
+24-07-01.12:06:46.087 [main            ] INFO  StrategyArmoryTest     - 测试结果: 102
+24-07-01.12:06:46.091 [main            ] INFO  StrategyArmoryTest     - 测试结果: 101
+24-07-01.12:06:46.097 [main            ] INFO  StrategyArmoryTest     - 测试结果: 106
+24-07-01.12:06:46.102 [main            ] INFO  StrategyArmoryTest     - 测试结果: 101
+24-07-01.12:06:46.106 [main            ] INFO  StrategyArmoryTest     - 测试结果: 101
+24-07-01.12:06:46.110 [main            ] INFO  StrategyArmoryTest     - 测试结果: 101
+24-07-01.12:06:46.115 [main            ] INFO  StrategyArmoryTest     - 测试结果: 101
+24-07-01.12:06:46.119 [main            ] INFO  StrategyArmoryTest     - 测试结果: 101
+24-07-01.12:06:46.123 [main            ] INFO  StrategyArmoryTest     - 测试结果: 102
+24-07-01.12:06:46.127 [main            ] INFO  StrategyArmoryTest     - 测试结果: 106
+24-07-01.12:06:46.132 [main            ] INFO  StrategyArmoryTest     - 测试结果: 101
+24-07-01.12:06:46.136 [main            ] INFO  StrategyArmoryTest     - 测试结果: 101
+24-07-01.12:06:46.140 [main            ] INFO  StrategyArmoryTest     - 测试结果: 101
+24-07-01.12:06:46.144 [main            ] INFO  StrategyArmoryTest     - 测试结果: 101
+24-07-01.12:06:46.147 [main            ] INFO  StrategyArmoryTest     - 测试结果: 101
+24-07-01.12:06:46.150 [main            ] INFO  StrategyArmoryTest     - 测试结果: 101
+24-07-01.12:06:46.153 [main            ] INFO  StrategyArmoryTest     - 测试结果: 101
+24-07-01.12:06:46.158 [main            ] INFO  StrategyArmoryTest     - 测试结果: 101
+24-07-01.12:06:46.162 [main            ] INFO  StrategyArmoryTest     - 测试结果: 101
+24-07-01.12:06:46.165 [main            ] INFO  StrategyArmoryTest     - 测试结果: 101
+24-07-01.12:06:46.168 [main            ] INFO  StrategyArmoryTest     - 测试结果: 102
+24-07-01.12:06:46.171 [main            ] INFO  StrategyArmoryTest     - 测试结果: 101
+24-07-01.12:06:46.175 [main            ] INFO  StrategyArmoryTest     - 测试结果: 101
+24-07-01.12:06:46.178 [main            ] INFO  StrategyArmoryTest     - 测试结果: 101
+24-07-01.12:06:46.181 [main            ] INFO  StrategyArmoryTest     - 测试结果: 101
+24-07-01.12:06:46.183 [main            ] INFO  StrategyArmoryTest     - 测试结果: 101
+24-07-01.12:06:46.187 [main            ] INFO  StrategyArmoryTest     - 测试结果: 102
+24-07-01.12:06:46.190 [main            ] INFO  StrategyArmoryTest     - 测试结果: 101
+24-07-01.12:06:46.192 [main            ] INFO  StrategyArmoryTest     - 测试结果: 101
+24-07-01.12:06:46.195 [main            ] INFO  StrategyArmoryTest     - 测试结果: 101
+24-07-01.12:06:46.198 [main            ] INFO  StrategyArmoryTest     - 测试结果: 101
+24-07-01.12:06:46.201 [main            ] INFO  StrategyArmoryTest     - 测试结果: 101
+24-07-01.12:06:46.205 [main            ] INFO  StrategyArmoryTest     - 测试结果: 102
+24-07-01.12:06:46.208 [main            ] INFO  StrategyArmoryTest     - 测试结果: 101
+24-07-01.12:06:46.212 [main            ] INFO  StrategyArmoryTest     - 测试结果: 101
+24-07-01.12:06:46.215 [main            ] INFO  StrategyArmoryTest     - 测试结果: 101
+24-07-01.12:06:46.220 [main            ] INFO  StrategyArmoryTest     - 测试结果: 101
+24-07-01.12:06:46.224 [main            ] INFO  StrategyArmoryTest     - 测试结果: 102
+24-07-01.12:06:46.227 [main            ] INFO  StrategyArmoryTest     - 测试结果: 102
+24-07-01.12:06:46.230 [main            ] INFO  StrategyArmoryTest     - 测试结果: 101
+24-07-01.12:06:46.235 [main            ] INFO  StrategyArmoryTest     - 测试结果: 101
+24-07-01.12:06:46.238 [main            ] INFO  StrategyArmoryTest     - 测试结果: 102
+24-07-01.12:06:46.242 [main            ] INFO  StrategyArmoryTest     - 测试结果: 102
+24-07-01.12:06:46.245 [main            ] INFO  StrategyArmoryTest     - 测试结果: 101
+24-07-01.12:06:46.249 [main            ] INFO  StrategyArmoryTest     - 测试结果: 101
+24-07-01.12:06:46.252 [main            ] INFO  StrategyArmoryTest     - 测试结果: 101
+24-07-01.12:06:46.256 [main            ] INFO  StrategyArmoryTest     - 测试结果: 102
+24-07-01.12:06:46.260 [main            ] INFO  StrategyArmoryTest     - 测试结果: 101
+24-07-01.12:06:46.263 [main            ] INFO  StrategyArmoryTest     - 测试结果: 101
