@@ -19,7 +19,7 @@ public class StrategyArmory implements IStrategyArmory {
     private IStrategyRepository repository;
 
     @Override
-    public void assembleLotteryStrategy(Long strategyId) {  //构建概率链表
+    public void assembleLotteryStrategy(Long strategyId) {
         List<StrategyAwardEntity> strategyAwardEntities = repository.queryStrategyAwardList(strategyId);
 
         //获取最小概率值
@@ -35,7 +35,7 @@ public class StrategyArmory implements IStrategyArmory {
                 .map(StrategyAwardEntity::getAwardRate)
                 .reduce(BigDecimal.ZERO, BigDecimal::add);
 
-        //获取概率范围
+        //获取概率范围，即需要分多少个格子
         BigDecimal rateRange = totalAwardRate.divide(minAwardRate, 0, RoundingMode.CEILING);
 
         //概率查找表
@@ -66,7 +66,7 @@ public class StrategyArmory implements IStrategyArmory {
 
     @Override
     public Integer getRandomAwardId(Long strategyId) {
-        int rateRange = repository.getRateRange(strategyId);
+        int rateRange = repository.getRateRange(strategyId);  //获取概率总和
         return repository.getStrategyAwardAssemble(strategyId, new SecureRandom().nextInt(rateRange));
     }
 }

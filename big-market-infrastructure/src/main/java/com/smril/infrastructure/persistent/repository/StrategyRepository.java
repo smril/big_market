@@ -23,7 +23,7 @@ public class StrategyRepository implements IStrategyRepository {
     @Resource
     IRedisService redisService;
     @Override
-    public List<StrategyAwardEntity> queryStrategyAwardList(Long strategyId) {  //返回一个奖品策略表，每个奖品的一些信息，比如概率
+    public List<StrategyAwardEntity> queryStrategyAwardList(Long strategyId) {
         String cacheKey = Constants.RedisKey.STRATEGY_AWARD_KEY + strategyId;
         List<StrategyAwardEntity> strategyAwardEntities = redisService.getValue(cacheKey);
         if(strategyAwardEntities != null && !strategyAwardEntities.isEmpty()) {
