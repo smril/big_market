@@ -303,3 +303,49 @@
 24-07-04.22:39:35.216 [main            ] INFO  StrategyTest           - 测试结果: 105 6000 策略配置
 24-07-04.22:39:35.271 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
 24-07-04.22:39:35.300 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+24-07-04.22:44:28.212 [main            ] INFO  StrategyTest           - Starting StrategyTest using Java 1.8.0_402 on Iroha with PID 41878 (started by smril in /Users/smril/IdeaProjects/big-market/big-market-app)
+24-07-04.22:44:28.213 [main            ] INFO  StrategyTest           - The following 1 profile is active: "dev"
+24-07-04.22:44:29.336 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+24-07-04.22:44:29.339 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+24-07-04.22:44:29.364 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 10 ms. Found 0 Redis repository interfaces.
+24-07-04.22:44:31.364 [main            ] INFO  Version                - Redisson 3.23.4
+24-07-04.22:44:31.401 [main            ] WARN  DnsServerAddressStreamProviders - Can not find io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider in the classpath, fallback to system defaults. This may result in incorrect DNS resolutions on MacOS. Check whether you have a dependency on 'io.netty:netty-resolver-dns-native-macos'
+24-07-04.22:44:31.751 [redisson-netty-2-5] INFO  MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
+24-07-04.22:44:31.780 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
+24-07-04.22:44:33.691 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+24-07-04.22:44:33.781 [main            ] INFO  StrategyTest           - Started StrategyTest in 6.317 seconds (JVM running for 7.183)
+24-07-04.22:44:34.573 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+24-07-04.22:44:34.934 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+24-07-04.22:44:35.025 [main            ] INFO  StrategyTest           - Strategy armory: true
+24-07-04.22:44:35.030 [main            ] INFO  StrategyTest           - 测试结果: 102 4000 策略配置
+24-07-04.22:44:35.033 [main            ] INFO  StrategyTest           - 测试结果: 107 5000 策略配置
+24-07-04.22:44:35.036 [main            ] INFO  StrategyTest           - 测试结果: 106 6000 策略配置
+24-07-04.22:44:35.039 [main            ] INFO  StrategyTest           - 测试结果: 102 4000 策略配置
+24-07-04.22:44:35.042 [main            ] INFO  StrategyTest           - 测试结果: 105 5000 策略配置
+24-07-04.22:44:35.047 [main            ] INFO  StrategyTest           - 测试结果: 107 6000 策略配置
+24-07-04.22:44:35.050 [main            ] INFO  StrategyTest           - 测试结果: 104 4000 策略配置
+24-07-04.22:44:35.052 [main            ] INFO  StrategyTest           - 测试结果: 105 5000 策略配置
+24-07-04.22:44:35.055 [main            ] INFO  StrategyTest           - 测试结果: 102 6000 策略配置
+24-07-04.22:44:35.058 [main            ] INFO  StrategyTest           - 测试结果: 104 4000 策略配置
+24-07-04.22:44:35.061 [main            ] INFO  StrategyTest           - 测试结果: 104 5000 策略配置
+24-07-04.22:44:35.065 [main            ] INFO  StrategyTest           - 测试结果: 103 6000 策略配置
+24-07-04.22:44:35.067 [main            ] INFO  StrategyTest           - 测试结果: 102 4000 策略配置
+24-07-04.22:44:35.069 [main            ] INFO  StrategyTest           - 测试结果: 106 5000 策略配置
+24-07-04.22:44:35.072 [main            ] INFO  StrategyTest           - 测试结果: 104 6000 策略配置
+24-07-04.22:44:35.074 [main            ] INFO  StrategyTest           - 测试结果: 103 4000 策略配置
+24-07-04.22:44:35.077 [main            ] INFO  StrategyTest           - 测试结果: 105 5000 策略配置
+24-07-04.22:44:35.079 [main            ] INFO  StrategyTest           - 测试结果: 104 6000 策略配置
+24-07-04.22:44:35.082 [main            ] INFO  StrategyTest           - 测试结果: 102 4000 策略配置
+24-07-04.22:44:35.084 [main            ] INFO  StrategyTest           - 测试结果: 105 5000 策略配置
+24-07-04.22:44:35.087 [main            ] INFO  StrategyTest           - 测试结果: 103 6000 策略配置
+24-07-04.22:44:35.089 [main            ] INFO  StrategyTest           - 测试结果: 105 4000 策略配置
+24-07-04.22:44:35.092 [main            ] INFO  StrategyTest           - 测试结果: 103 5000 策略配置
+24-07-04.22:44:35.095 [main            ] INFO  StrategyTest           - 测试结果: 102 6000 策略配置
+24-07-04.22:44:35.097 [main            ] INFO  StrategyTest           - 测试结果: 105 4000 策略配置
+24-07-04.22:44:35.099 [main            ] INFO  StrategyTest           - 测试结果: 105 5000 策略配置
+24-07-04.22:44:35.102 [main            ] INFO  StrategyTest           - 测试结果: 105 6000 策略配置
+24-07-04.22:44:35.104 [main            ] INFO  StrategyTest           - 测试结果: 105 4000 策略配置
+24-07-04.22:44:35.107 [main            ] INFO  StrategyTest           - 测试结果: 102 5000 策略配置
+24-07-04.22:44:35.109 [main            ] INFO  StrategyTest           - 测试结果: 108 6000 策略配置
+24-07-04.22:44:35.159 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+24-07-04.22:44:35.175 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
