@@ -1,351 +1,72 @@
-24-07-04.20:08:55.339 [main            ] INFO  StrategyArmoryTest     - Starting StrategyArmoryTest using Java 1.8.0_402 on Iroha with PID 40674 (started by smril in /Users/smril/IdeaProjects/big-market/big-market-app)
-24-07-04.20:08:55.340 [main            ] INFO  StrategyArmoryTest     - The following 1 profile is active: "dev"
-24-07-04.20:08:56.410 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
-24-07-04.20:08:56.415 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-24-07-04.20:08:56.451 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 13 ms. Found 0 Redis repository interfaces.
-24-07-04.20:08:58.242 [main            ] INFO  Version                - Redisson 3.23.4
-24-07-04.20:08:58.277 [main            ] WARN  DnsServerAddressStreamProviders - Can not find io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider in the classpath, fallback to system defaults. This may result in incorrect DNS resolutions on MacOS. Check whether you have a dependency on 'io.netty:netty-resolver-dns-native-macos'
-24-07-04.20:08:58.542 [redisson-netty-2-4] INFO  MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
-24-07-04.20:08:58.562 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
-24-07-04.20:09:00.545 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
-24-07-04.20:09:00.617 [main            ] INFO  StrategyArmoryTest     - Started StrategyArmoryTest in 5.817 seconds (JVM running for 6.853)
-24-07-04.20:09:01.141 [main            ] INFO  StrategyArmoryTest     - 测试结果: 101
-24-07-04.20:09:01.145 [main            ] INFO  StrategyArmoryTest     - 测试结果: 102
-24-07-04.20:09:01.148 [main            ] INFO  StrategyArmoryTest     - 测试结果: 101
-24-07-04.20:09:01.151 [main            ] INFO  StrategyArmoryTest     - 测试结果: 102
-24-07-04.20:09:01.155 [main            ] INFO  StrategyArmoryTest     - 测试结果: 101
-24-07-04.20:09:01.158 [main            ] INFO  StrategyArmoryTest     - 测试结果: 102
-24-07-04.20:09:01.161 [main            ] INFO  StrategyArmoryTest     - 测试结果: 101
-24-07-04.20:09:01.164 [main            ] INFO  StrategyArmoryTest     - 测试结果: 101
-24-07-04.20:09:01.169 [main            ] INFO  StrategyArmoryTest     - 测试结果: 102
-24-07-04.20:09:01.172 [main            ] INFO  StrategyArmoryTest     - 测试结果: 101
-24-07-04.20:09:01.175 [main            ] INFO  StrategyArmoryTest     - 测试结果: 101
-24-07-04.20:09:01.178 [main            ] INFO  StrategyArmoryTest     - 测试结果: 101
-24-07-04.20:09:01.181 [main            ] INFO  StrategyArmoryTest     - 测试结果: 102
-24-07-04.20:09:01.184 [main            ] INFO  StrategyArmoryTest     - 测试结果: 101
-24-07-04.20:09:01.187 [main            ] INFO  StrategyArmoryTest     - 测试结果: 101
-24-07-04.20:09:01.190 [main            ] INFO  StrategyArmoryTest     - 测试结果: 101
-24-07-04.20:09:01.193 [main            ] INFO  StrategyArmoryTest     - 测试结果: 101
-24-07-04.20:09:01.196 [main            ] INFO  StrategyArmoryTest     - 测试结果: 102
-24-07-04.20:09:01.198 [main            ] INFO  StrategyArmoryTest     - 测试结果: 101
-24-07-04.20:09:01.201 [main            ] INFO  StrategyArmoryTest     - 测试结果: 101
-24-07-04.20:09:01.203 [main            ] INFO  StrategyArmoryTest     - 测试结果: 102
-24-07-04.20:09:01.205 [main            ] INFO  StrategyArmoryTest     - 测试结果: 102
-24-07-04.20:09:01.208 [main            ] INFO  StrategyArmoryTest     - 测试结果: 102
-24-07-04.20:09:01.210 [main            ] INFO  StrategyArmoryTest     - 测试结果: 101
-24-07-04.20:09:01.213 [main            ] INFO  StrategyArmoryTest     - 测试结果: 101
-24-07-04.20:09:01.215 [main            ] INFO  StrategyArmoryTest     - 测试结果: 102
-24-07-04.20:09:01.218 [main            ] INFO  StrategyArmoryTest     - 测试结果: 101
-24-07-04.20:09:01.221 [main            ] INFO  StrategyArmoryTest     - 测试结果: 101
-24-07-04.20:09:01.223 [main            ] INFO  StrategyArmoryTest     - 测试结果: 101
-24-07-04.20:09:01.226 [main            ] INFO  StrategyArmoryTest     - 测试结果: 102
-24-07-04.20:09:01.229 [main            ] INFO  StrategyArmoryTest     - 测试结果: 101
-24-07-04.20:09:01.231 [main            ] INFO  StrategyArmoryTest     - 测试结果: 101
-24-07-04.20:09:01.233 [main            ] INFO  StrategyArmoryTest     - 测试结果: 101
-24-07-04.20:09:01.236 [main            ] INFO  StrategyArmoryTest     - 测试结果: 101
-24-07-04.20:09:01.238 [main            ] INFO  StrategyArmoryTest     - 测试结果: 101
-24-07-04.20:09:01.240 [main            ] INFO  StrategyArmoryTest     - 测试结果: 102
-24-07-04.20:09:01.243 [main            ] INFO  StrategyArmoryTest     - 测试结果: 102
-24-07-04.20:09:01.245 [main            ] INFO  StrategyArmoryTest     - 测试结果: 101
-24-07-04.20:09:01.248 [main            ] INFO  StrategyArmoryTest     - 测试结果: 101
-24-07-04.20:09:01.250 [main            ] INFO  StrategyArmoryTest     - 测试结果: 101
-24-07-04.20:09:01.253 [main            ] INFO  StrategyArmoryTest     - 测试结果: 101
-24-07-04.20:09:01.255 [main            ] INFO  StrategyArmoryTest     - 测试结果: 101
-24-07-04.20:09:01.257 [main            ] INFO  StrategyArmoryTest     - 测试结果: 101
-24-07-04.20:09:01.259 [main            ] INFO  StrategyArmoryTest     - 测试结果: 101
-24-07-04.20:09:01.262 [main            ] INFO  StrategyArmoryTest     - 测试结果: 101
-24-07-04.20:09:01.264 [main            ] INFO  StrategyArmoryTest     - 测试结果: 101
-24-07-04.20:09:01.266 [main            ] INFO  StrategyArmoryTest     - 测试结果: 102
-24-07-04.20:09:01.268 [main            ] INFO  StrategyArmoryTest     - 测试结果: 101
-24-07-04.20:09:01.271 [main            ] INFO  StrategyArmoryTest     - 测试结果: 101
-24-07-04.20:09:01.273 [main            ] INFO  StrategyArmoryTest     - 测试结果: 101
-24-07-04.20:09:01.276 [main            ] INFO  StrategyArmoryTest     - 测试结果: 102
-24-07-04.20:09:01.278 [main            ] INFO  StrategyArmoryTest     - 测试结果: 101
-24-07-04.20:09:01.280 [main            ] INFO  StrategyArmoryTest     - 测试结果: 101
-24-07-04.20:09:01.282 [main            ] INFO  StrategyArmoryTest     - 测试结果: 102
-24-07-04.20:09:01.285 [main            ] INFO  StrategyArmoryTest     - 测试结果: 101
-24-07-04.20:09:01.287 [main            ] INFO  StrategyArmoryTest     - 测试结果: 102
-24-07-04.20:09:01.289 [main            ] INFO  StrategyArmoryTest     - 测试结果: 102
-24-07-04.20:09:01.291 [main            ] INFO  StrategyArmoryTest     - 测试结果: 101
-24-07-04.20:09:01.294 [main            ] INFO  StrategyArmoryTest     - 测试结果: 102
-24-07-04.20:09:01.296 [main            ] INFO  StrategyArmoryTest     - 测试结果: 101
-24-07-04.20:09:01.299 [main            ] INFO  StrategyArmoryTest     - 测试结果: 101
-24-07-04.20:09:01.301 [main            ] INFO  StrategyArmoryTest     - 测试结果: 102
-24-07-04.20:09:01.303 [main            ] INFO  StrategyArmoryTest     - 测试结果: 101
-24-07-04.20:09:01.306 [main            ] INFO  StrategyArmoryTest     - 测试结果: 101
-24-07-04.20:09:01.308 [main            ] INFO  StrategyArmoryTest     - 测试结果: 101
-24-07-04.20:09:01.310 [main            ] INFO  StrategyArmoryTest     - 测试结果: 102
-24-07-04.20:09:01.312 [main            ] INFO  StrategyArmoryTest     - 测试结果: 101
-24-07-04.20:09:01.314 [main            ] INFO  StrategyArmoryTest     - 测试结果: 101
-24-07-04.20:09:01.316 [main            ] INFO  StrategyArmoryTest     - 测试结果: 102
-24-07-04.20:09:01.319 [main            ] INFO  StrategyArmoryTest     - 测试结果: 101
-24-07-04.20:09:01.321 [main            ] INFO  StrategyArmoryTest     - 测试结果: 102
-24-07-04.20:09:01.323 [main            ] INFO  StrategyArmoryTest     - 测试结果: 101
-24-07-04.20:09:01.325 [main            ] INFO  StrategyArmoryTest     - 测试结果: 101
-24-07-04.20:09:01.327 [main            ] INFO  StrategyArmoryTest     - 测试结果: 101
-24-07-04.20:09:01.330 [main            ] INFO  StrategyArmoryTest     - 测试结果: 101
-24-07-04.20:09:01.332 [main            ] INFO  StrategyArmoryTest     - 测试结果: 102
-24-07-04.20:09:01.334 [main            ] INFO  StrategyArmoryTest     - 测试结果: 101
-24-07-04.20:09:01.336 [main            ] INFO  StrategyArmoryTest     - 测试结果: 101
-24-07-04.20:09:01.338 [main            ] INFO  StrategyArmoryTest     - 测试结果: 101
-24-07-04.20:09:01.340 [main            ] INFO  StrategyArmoryTest     - 测试结果: 101
-24-07-04.20:09:01.342 [main            ] INFO  StrategyArmoryTest     - 测试结果: 101
-24-07-04.20:09:01.344 [main            ] INFO  StrategyArmoryTest     - 测试结果: 101
-24-07-04.20:09:01.347 [main            ] INFO  StrategyArmoryTest     - 测试结果: 101
-24-07-04.20:09:01.349 [main            ] INFO  StrategyArmoryTest     - 测试结果: 101
-24-07-04.20:09:01.352 [main            ] INFO  StrategyArmoryTest     - 测试结果: 101
-24-07-04.20:09:01.355 [main            ] INFO  StrategyArmoryTest     - 测试结果: 101
-24-07-04.20:09:01.357 [main            ] INFO  StrategyArmoryTest     - 测试结果: 101
-24-07-04.20:09:01.360 [main            ] INFO  StrategyArmoryTest     - 测试结果: 101
-24-07-04.20:09:01.362 [main            ] INFO  StrategyArmoryTest     - 测试结果: 102
-24-07-04.20:09:01.365 [main            ] INFO  StrategyArmoryTest     - 测试结果: 102
-24-07-04.20:09:01.368 [main            ] INFO  StrategyArmoryTest     - 测试结果: 101
-24-07-04.20:09:01.370 [main            ] INFO  StrategyArmoryTest     - 测试结果: 102
-24-07-04.20:09:01.373 [main            ] INFO  StrategyArmoryTest     - 测试结果: 101
-24-07-04.20:09:01.375 [main            ] INFO  StrategyArmoryTest     - 测试结果: 102
-24-07-04.20:09:01.378 [main            ] INFO  StrategyArmoryTest     - 测试结果: 101
-24-07-04.20:09:01.381 [main            ] INFO  StrategyArmoryTest     - 测试结果: 101
-24-07-04.20:09:01.384 [main            ] INFO  StrategyArmoryTest     - 测试结果: 102
-24-07-04.20:09:01.386 [main            ] INFO  StrategyArmoryTest     - 测试结果: 101
-24-07-04.20:09:01.389 [main            ] INFO  StrategyArmoryTest     - 测试结果: 102
-24-07-04.20:09:01.391 [main            ] INFO  StrategyArmoryTest     - 测试结果: 102
-24-07-04.20:38:57.096 [main            ] INFO  StrategyArmoryTest     - Starting StrategyArmoryTest using Java 1.8.0_402 on Iroha with PID 40907 (started by smril in /Users/smril/IdeaProjects/big-market/big-market-app)
-24-07-04.20:38:57.097 [main            ] INFO  StrategyArmoryTest     - The following 1 profile is active: "dev"
-24-07-04.20:38:58.158 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
-24-07-04.20:38:58.162 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-24-07-04.20:38:58.198 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 14 ms. Found 0 Redis repository interfaces.
-24-07-04.20:39:00.047 [main            ] INFO  Version                - Redisson 3.23.4
-24-07-04.20:39:00.086 [main            ] WARN  DnsServerAddressStreamProviders - Can not find io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider in the classpath, fallback to system defaults. This may result in incorrect DNS resolutions on MacOS. Check whether you have a dependency on 'io.netty:netty-resolver-dns-native-macos'
-24-07-04.20:39:00.377 [redisson-netty-2-4] INFO  MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
-24-07-04.20:39:00.399 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
-24-07-04.20:39:02.233 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
-24-07-04.20:39:02.304 [main            ] INFO  StrategyArmoryTest     - Started StrategyArmoryTest in 5.647 seconds (JVM running for 6.6)
-24-07-04.20:39:11.800 [main            ] INFO  StrategyArmoryTest     - Starting StrategyArmoryTest using Java 1.8.0_402 on Iroha with PID 40918 (started by smril in /Users/smril/IdeaProjects/big-market/big-market-app)
-24-07-04.20:39:11.801 [main            ] INFO  StrategyArmoryTest     - The following 1 profile is active: "dev"
-24-07-04.20:39:12.739 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
-24-07-04.20:39:12.742 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-24-07-04.20:39:12.767 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 10 ms. Found 0 Redis repository interfaces.
-24-07-04.20:39:14.211 [main            ] INFO  Version                - Redisson 3.23.4
-24-07-04.20:39:14.242 [main            ] WARN  DnsServerAddressStreamProviders - Can not find io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider in the classpath, fallback to system defaults. This may result in incorrect DNS resolutions on MacOS. Check whether you have a dependency on 'io.netty:netty-resolver-dns-native-macos'
-24-07-04.20:39:14.486 [redisson-netty-2-4] INFO  MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
-24-07-04.20:39:14.511 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
-24-07-04.20:39:16.240 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
-24-07-04.20:39:16.325 [main            ] INFO  StrategyArmoryTest     - Started StrategyArmoryTest in 5.01 seconds (JVM running for 6.237)
-24-07-04.20:39:16.826 [main            ] INFO  StrategyArmoryTest     - 测试结果: 102
-24-07-04.20:39:16.830 [main            ] INFO  StrategyArmoryTest     - 测试结果: 101
-24-07-04.20:39:16.834 [main            ] INFO  StrategyArmoryTest     - 测试结果: 102
-24-07-04.20:39:16.837 [main            ] INFO  StrategyArmoryTest     - 测试结果: 102
-24-07-04.20:39:16.840 [main            ] INFO  StrategyArmoryTest     - 测试结果: 101
-24-07-04.20:39:16.843 [main            ] INFO  StrategyArmoryTest     - 测试结果: 101
-24-07-04.20:39:16.846 [main            ] INFO  StrategyArmoryTest     - 测试结果: 101
-24-07-04.20:39:16.850 [main            ] INFO  StrategyArmoryTest     - 测试结果: 101
-24-07-04.20:39:16.853 [main            ] INFO  StrategyArmoryTest     - 测试结果: 101
-24-07-04.20:39:16.856 [main            ] INFO  StrategyArmoryTest     - 测试结果: 101
-24-07-04.20:39:16.859 [main            ] INFO  StrategyArmoryTest     - 测试结果: 101
-24-07-04.20:39:16.862 [main            ] INFO  StrategyArmoryTest     - 测试结果: 102
-24-07-04.20:39:16.866 [main            ] INFO  StrategyArmoryTest     - 测试结果: 101
-24-07-04.20:39:16.869 [main            ] INFO  StrategyArmoryTest     - 测试结果: 101
-24-07-04.20:39:16.872 [main            ] INFO  StrategyArmoryTest     - 测试结果: 101
-24-07-04.20:39:16.875 [main            ] INFO  StrategyArmoryTest     - 测试结果: 101
-24-07-04.20:39:16.879 [main            ] INFO  StrategyArmoryTest     - 测试结果: 101
-24-07-04.20:39:16.881 [main            ] INFO  StrategyArmoryTest     - 测试结果: 101
-24-07-04.20:39:16.885 [main            ] INFO  StrategyArmoryTest     - 测试结果: 101
-24-07-04.20:39:16.887 [main            ] INFO  StrategyArmoryTest     - 测试结果: 101
-24-07-04.20:39:16.890 [main            ] INFO  StrategyArmoryTest     - 测试结果: 101
-24-07-04.20:39:16.893 [main            ] INFO  StrategyArmoryTest     - 测试结果: 101
-24-07-04.20:39:16.896 [main            ] INFO  StrategyArmoryTest     - 测试结果: 101
-24-07-04.20:39:16.899 [main            ] INFO  StrategyArmoryTest     - 测试结果: 101
-24-07-04.20:39:16.902 [main            ] INFO  StrategyArmoryTest     - 测试结果: 102
-24-07-04.20:39:16.905 [main            ] INFO  StrategyArmoryTest     - 测试结果: 101
-24-07-04.20:39:16.908 [main            ] INFO  StrategyArmoryTest     - 测试结果: 102
-24-07-04.20:39:16.911 [main            ] INFO  StrategyArmoryTest     - 测试结果: 101
-24-07-04.20:39:16.914 [main            ] INFO  StrategyArmoryTest     - 测试结果: 106
-24-07-04.20:39:16.916 [main            ] INFO  StrategyArmoryTest     - 测试结果: 101
-24-07-04.20:39:16.919 [main            ] INFO  StrategyArmoryTest     - 测试结果: 101
-24-07-04.20:39:16.922 [main            ] INFO  StrategyArmoryTest     - 测试结果: 101
-24-07-04.20:39:16.925 [main            ] INFO  StrategyArmoryTest     - 测试结果: 101
-24-07-04.20:39:16.927 [main            ] INFO  StrategyArmoryTest     - 测试结果: 102
-24-07-04.20:39:16.930 [main            ] INFO  StrategyArmoryTest     - 测试结果: 101
-24-07-04.20:39:16.932 [main            ] INFO  StrategyArmoryTest     - 测试结果: 101
-24-07-04.20:39:16.935 [main            ] INFO  StrategyArmoryTest     - 测试结果: 101
-24-07-04.20:39:16.937 [main            ] INFO  StrategyArmoryTest     - 测试结果: 102
-24-07-04.20:39:16.940 [main            ] INFO  StrategyArmoryTest     - 测试结果: 102
-24-07-04.20:39:16.945 [main            ] INFO  StrategyArmoryTest     - 测试结果: 101
-24-07-04.20:39:16.947 [main            ] INFO  StrategyArmoryTest     - 测试结果: 101
-24-07-04.20:39:16.950 [main            ] INFO  StrategyArmoryTest     - 测试结果: 101
-24-07-04.20:39:16.952 [main            ] INFO  StrategyArmoryTest     - 测试结果: 101
-24-07-04.20:39:16.955 [main            ] INFO  StrategyArmoryTest     - 测试结果: 102
-24-07-04.20:39:16.958 [main            ] INFO  StrategyArmoryTest     - 测试结果: 102
-24-07-04.20:39:16.960 [main            ] INFO  StrategyArmoryTest     - 测试结果: 101
-24-07-04.20:39:16.963 [main            ] INFO  StrategyArmoryTest     - 测试结果: 101
-24-07-04.20:39:16.966 [main            ] INFO  StrategyArmoryTest     - 测试结果: 101
-24-07-04.20:39:16.968 [main            ] INFO  StrategyArmoryTest     - 测试结果: 101
-24-07-04.20:39:16.970 [main            ] INFO  StrategyArmoryTest     - 测试结果: 101
-24-07-04.20:39:16.973 [main            ] INFO  StrategyArmoryTest     - 测试结果: 101
-24-07-04.20:39:16.977 [main            ] INFO  StrategyArmoryTest     - 测试结果: 102
-24-07-04.20:39:16.980 [main            ] INFO  StrategyArmoryTest     - 测试结果: 102
-24-07-04.20:39:16.982 [main            ] INFO  StrategyArmoryTest     - 测试结果: 101
-24-07-04.20:39:16.985 [main            ] INFO  StrategyArmoryTest     - 测试结果: 102
-24-07-04.20:39:16.987 [main            ] INFO  StrategyArmoryTest     - 测试结果: 101
-24-07-04.20:39:16.990 [main            ] INFO  StrategyArmoryTest     - 测试结果: 101
-24-07-04.20:39:16.992 [main            ] INFO  StrategyArmoryTest     - 测试结果: 101
-24-07-04.20:39:16.995 [main            ] INFO  StrategyArmoryTest     - 测试结果: 106
-24-07-04.20:39:16.997 [main            ] INFO  StrategyArmoryTest     - 测试结果: 101
-24-07-04.20:39:17.000 [main            ] INFO  StrategyArmoryTest     - 测试结果: 101
-24-07-04.20:39:17.002 [main            ] INFO  StrategyArmoryTest     - 测试结果: 101
-24-07-04.20:39:17.004 [main            ] INFO  StrategyArmoryTest     - 测试结果: 101
-24-07-04.20:39:17.007 [main            ] INFO  StrategyArmoryTest     - 测试结果: 101
-24-07-04.20:39:17.010 [main            ] INFO  StrategyArmoryTest     - 测试结果: 101
-24-07-04.20:39:17.012 [main            ] INFO  StrategyArmoryTest     - 测试结果: 101
-24-07-04.20:39:17.015 [main            ] INFO  StrategyArmoryTest     - 测试结果: 101
-24-07-04.20:39:17.017 [main            ] INFO  StrategyArmoryTest     - 测试结果: 101
-24-07-04.20:39:17.020 [main            ] INFO  StrategyArmoryTest     - 测试结果: 101
-24-07-04.20:39:17.022 [main            ] INFO  StrategyArmoryTest     - 测试结果: 101
-24-07-04.20:39:17.025 [main            ] INFO  StrategyArmoryTest     - 测试结果: 102
-24-07-04.20:39:17.027 [main            ] INFO  StrategyArmoryTest     - 测试结果: 101
-24-07-04.20:39:17.030 [main            ] INFO  StrategyArmoryTest     - 测试结果: 102
-24-07-04.20:39:17.032 [main            ] INFO  StrategyArmoryTest     - 测试结果: 101
-24-07-04.20:39:17.036 [main            ] INFO  StrategyArmoryTest     - 测试结果: 101
-24-07-04.20:39:17.039 [main            ] INFO  StrategyArmoryTest     - 测试结果: 101
-24-07-04.20:39:17.041 [main            ] INFO  StrategyArmoryTest     - 测试结果: 102
-24-07-04.20:39:17.044 [main            ] INFO  StrategyArmoryTest     - 测试结果: 101
-24-07-04.20:39:17.046 [main            ] INFO  StrategyArmoryTest     - 测试结果: 101
-24-07-04.20:39:17.049 [main            ] INFO  StrategyArmoryTest     - 测试结果: 101
-24-07-04.20:39:17.052 [main            ] INFO  StrategyArmoryTest     - 测试结果: 101
-24-07-04.20:39:17.055 [main            ] INFO  StrategyArmoryTest     - 测试结果: 101
-24-07-04.20:39:17.057 [main            ] INFO  StrategyArmoryTest     - 测试结果: 101
-24-07-04.20:39:17.060 [main            ] INFO  StrategyArmoryTest     - 测试结果: 101
-24-07-04.20:39:17.063 [main            ] INFO  StrategyArmoryTest     - 测试结果: 101
-24-07-04.20:39:17.066 [main            ] INFO  StrategyArmoryTest     - 测试结果: 101
-24-07-04.20:39:17.069 [main            ] INFO  StrategyArmoryTest     - 测试结果: 102
-24-07-04.20:39:17.072 [main            ] INFO  StrategyArmoryTest     - 测试结果: 102
-24-07-04.20:39:17.074 [main            ] INFO  StrategyArmoryTest     - 测试结果: 101
-24-07-04.20:39:17.077 [main            ] INFO  StrategyArmoryTest     - 测试结果: 101
-24-07-04.20:39:17.080 [main            ] INFO  StrategyArmoryTest     - 测试结果: 101
-24-07-04.20:39:17.082 [main            ] INFO  StrategyArmoryTest     - 测试结果: 101
-24-07-04.20:39:17.085 [main            ] INFO  StrategyArmoryTest     - 测试结果: 101
-24-07-04.20:39:17.088 [main            ] INFO  StrategyArmoryTest     - 测试结果: 101
-24-07-04.20:39:17.090 [main            ] INFO  StrategyArmoryTest     - 测试结果: 101
-24-07-04.20:39:17.093 [main            ] INFO  StrategyArmoryTest     - 测试结果: 101
-24-07-04.20:39:17.096 [main            ] INFO  StrategyArmoryTest     - 测试结果: 101
-24-07-04.20:39:17.098 [main            ] INFO  StrategyArmoryTest     - 测试结果: 101
-24-07-04.20:39:17.101 [main            ] INFO  StrategyArmoryTest     - 测试结果: 101
-24-07-04.20:39:17.104 [main            ] INFO  StrategyArmoryTest     - 测试结果: 101
-24-07-04.22:36:54.102 [main            ] INFO  StrategyTest           - Starting StrategyTest using Java 1.8.0_402 on Iroha with PID 41681 (started by smril in /Users/smril/IdeaProjects/big-market/big-market-app)
-24-07-04.22:36:54.102 [main            ] INFO  StrategyTest           - The following 1 profile is active: "dev"
-24-07-04.22:36:55.062 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
-24-07-04.22:36:55.066 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-24-07-04.22:36:55.098 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 12 ms. Found 0 Redis repository interfaces.
-24-07-04.22:36:56.792 [main            ] INFO  Version                - Redisson 3.23.4
-24-07-04.22:36:56.831 [main            ] WARN  DnsServerAddressStreamProviders - Can not find io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider in the classpath, fallback to system defaults. This may result in incorrect DNS resolutions on MacOS. Check whether you have a dependency on 'io.netty:netty-resolver-dns-native-macos'
-24-07-04.22:36:57.083 [redisson-netty-2-4] INFO  MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
-24-07-04.22:36:57.103 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
-24-07-04.22:36:59.304 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
-24-07-04.22:36:59.370 [main            ] INFO  StrategyTest           - Started StrategyTest in 5.729 seconds (JVM running for 6.703)
-24-07-04.22:36:59.916 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
-24-07-04.22:37:00.443 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
-24-07-04.22:37:00.848 [main            ] INFO  StrategyTest           - Strategy armory: true
-24-07-04.22:37:00.855 [main            ] INFO  StrategyTest           - 测试结果: 101
-24-07-04.22:37:00.859 [main            ] INFO  StrategyTest           - 测试结果: 101
-24-07-04.22:37:00.862 [main            ] INFO  StrategyTest           - 测试结果: 102
-24-07-04.22:37:00.865 [main            ] INFO  StrategyTest           - 测试结果: 103
-24-07-04.22:37:00.868 [main            ] INFO  StrategyTest           - 测试结果: 105
-24-07-04.22:37:00.871 [main            ] INFO  StrategyTest           - 测试结果: 102
-24-07-04.22:37:00.873 [main            ] INFO  StrategyTest           - 测试结果: 104
-24-07-04.22:37:00.875 [main            ] INFO  StrategyTest           - 测试结果: 108
-24-07-04.22:37:00.877 [main            ] INFO  StrategyTest           - 测试结果: 101
-24-07-04.22:37:00.879 [main            ] INFO  StrategyTest           - 测试结果: 102
-24-07-04.22:37:00.922 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
-24-07-04.22:37:00.942 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
-24-07-04.22:39:29.337 [main            ] INFO  StrategyTest           - Starting StrategyTest using Java 1.8.0_402 on Iroha with PID 41698 (started by smril in /Users/smril/IdeaProjects/big-market/big-market-app)
-24-07-04.22:39:29.338 [main            ] INFO  StrategyTest           - The following 1 profile is active: "dev"
-24-07-04.22:39:30.243 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
-24-07-04.22:39:30.246 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-24-07-04.22:39:30.277 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 13 ms. Found 0 Redis repository interfaces.
-24-07-04.22:39:31.961 [main            ] INFO  Version                - Redisson 3.23.4
-24-07-04.22:39:31.997 [main            ] WARN  DnsServerAddressStreamProviders - Can not find io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider in the classpath, fallback to system defaults. This may result in incorrect DNS resolutions on MacOS. Check whether you have a dependency on 'io.netty:netty-resolver-dns-native-macos'
-24-07-04.22:39:32.250 [redisson-netty-2-4] INFO  MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
-24-07-04.22:39:32.271 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
-24-07-04.22:39:33.977 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
-24-07-04.22:39:34.042 [main            ] INFO  StrategyTest           - Started StrategyTest in 5.367 seconds (JVM running for 6.366)
-24-07-04.22:39:34.693 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
-24-07-04.22:39:35.039 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
-24-07-04.22:39:35.124 [main            ] INFO  StrategyTest           - Strategy armory: true
-24-07-04.22:39:35.128 [main            ] INFO  StrategyTest           - 测试结果: 102 4000 策略配置
-24-07-04.22:39:35.131 [main            ] INFO  StrategyTest           - 测试结果: 102 5000 策略配置
-24-07-04.22:39:35.134 [main            ] INFO  StrategyTest           - 测试结果: 104 6000 策略配置
-24-07-04.22:39:35.137 [main            ] INFO  StrategyTest           - 测试结果: 103 4000 策略配置
-24-07-04.22:39:35.140 [main            ] INFO  StrategyTest           - 测试结果: 103 5000 策略配置
-24-07-04.22:39:35.143 [main            ] INFO  StrategyTest           - 测试结果: 102 6000 策略配置
-24-07-04.22:39:35.147 [main            ] INFO  StrategyTest           - 测试结果: 102 4000 策略配置
-24-07-04.22:39:35.150 [main            ] INFO  StrategyTest           - 测试结果: 102 5000 策略配置
-24-07-04.22:39:35.153 [main            ] INFO  StrategyTest           - 测试结果: 102 6000 策略配置
-24-07-04.22:39:35.155 [main            ] INFO  StrategyTest           - 测试结果: 102 4000 策略配置
-24-07-04.22:39:35.158 [main            ] INFO  StrategyTest           - 测试结果: 106 5000 策略配置
-24-07-04.22:39:35.161 [main            ] INFO  StrategyTest           - 测试结果: 105 6000 策略配置
-24-07-04.22:39:35.165 [main            ] INFO  StrategyTest           - 测试结果: 102 4000 策略配置
-24-07-04.22:39:35.168 [main            ] INFO  StrategyTest           - 测试结果: 102 5000 策略配置
-24-07-04.22:39:35.170 [main            ] INFO  StrategyTest           - 测试结果: 103 6000 策略配置
-24-07-04.22:39:35.172 [main            ] INFO  StrategyTest           - 测试结果: 103 4000 策略配置
-24-07-04.22:39:35.175 [main            ] INFO  StrategyTest           - 测试结果: 102 5000 策略配置
-24-07-04.22:39:35.178 [main            ] INFO  StrategyTest           - 测试结果: 104 6000 策略配置
-24-07-04.22:39:35.180 [main            ] INFO  StrategyTest           - 测试结果: 102 4000 策略配置
-24-07-04.22:39:35.183 [main            ] INFO  StrategyTest           - 测试结果: 104 5000 策略配置
-24-07-04.22:39:35.185 [main            ] INFO  StrategyTest           - 测试结果: 106 6000 策略配置
-24-07-04.22:39:35.188 [main            ] INFO  StrategyTest           - 测试结果: 102 4000 策略配置
-24-07-04.22:39:35.190 [main            ] INFO  StrategyTest           - 测试结果: 102 5000 策略配置
-24-07-04.22:39:35.193 [main            ] INFO  StrategyTest           - 测试结果: 103 6000 策略配置
-24-07-04.22:39:35.203 [main            ] INFO  StrategyTest           - 测试结果: 102 4000 策略配置
-24-07-04.22:39:35.206 [main            ] INFO  StrategyTest           - 测试结果: 102 5000 策略配置
-24-07-04.22:39:35.209 [main            ] INFO  StrategyTest           - 测试结果: 107 6000 策略配置
-24-07-04.22:39:35.211 [main            ] INFO  StrategyTest           - 测试结果: 105 4000 策略配置
-24-07-04.22:39:35.214 [main            ] INFO  StrategyTest           - 测试结果: 105 5000 策略配置
-24-07-04.22:39:35.216 [main            ] INFO  StrategyTest           - 测试结果: 105 6000 策略配置
-24-07-04.22:39:35.271 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
-24-07-04.22:39:35.300 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
-24-07-04.22:44:28.212 [main            ] INFO  StrategyTest           - Starting StrategyTest using Java 1.8.0_402 on Iroha with PID 41878 (started by smril in /Users/smril/IdeaProjects/big-market/big-market-app)
-24-07-04.22:44:28.213 [main            ] INFO  StrategyTest           - The following 1 profile is active: "dev"
-24-07-04.22:44:29.336 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
-24-07-04.22:44:29.339 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-24-07-04.22:44:29.364 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 10 ms. Found 0 Redis repository interfaces.
-24-07-04.22:44:31.364 [main            ] INFO  Version                - Redisson 3.23.4
-24-07-04.22:44:31.401 [main            ] WARN  DnsServerAddressStreamProviders - Can not find io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider in the classpath, fallback to system defaults. This may result in incorrect DNS resolutions on MacOS. Check whether you have a dependency on 'io.netty:netty-resolver-dns-native-macos'
-24-07-04.22:44:31.751 [redisson-netty-2-5] INFO  MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
-24-07-04.22:44:31.780 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
-24-07-04.22:44:33.691 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
-24-07-04.22:44:33.781 [main            ] INFO  StrategyTest           - Started StrategyTest in 6.317 seconds (JVM running for 7.183)
-24-07-04.22:44:34.573 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
-24-07-04.22:44:34.934 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
-24-07-04.22:44:35.025 [main            ] INFO  StrategyTest           - Strategy armory: true
-24-07-04.22:44:35.030 [main            ] INFO  StrategyTest           - 测试结果: 102 4000 策略配置
-24-07-04.22:44:35.033 [main            ] INFO  StrategyTest           - 测试结果: 107 5000 策略配置
-24-07-04.22:44:35.036 [main            ] INFO  StrategyTest           - 测试结果: 106 6000 策略配置
-24-07-04.22:44:35.039 [main            ] INFO  StrategyTest           - 测试结果: 102 4000 策略配置
-24-07-04.22:44:35.042 [main            ] INFO  StrategyTest           - 测试结果: 105 5000 策略配置
-24-07-04.22:44:35.047 [main            ] INFO  StrategyTest           - 测试结果: 107 6000 策略配置
-24-07-04.22:44:35.050 [main            ] INFO  StrategyTest           - 测试结果: 104 4000 策略配置
-24-07-04.22:44:35.052 [main            ] INFO  StrategyTest           - 测试结果: 105 5000 策略配置
-24-07-04.22:44:35.055 [main            ] INFO  StrategyTest           - 测试结果: 102 6000 策略配置
-24-07-04.22:44:35.058 [main            ] INFO  StrategyTest           - 测试结果: 104 4000 策略配置
-24-07-04.22:44:35.061 [main            ] INFO  StrategyTest           - 测试结果: 104 5000 策略配置
-24-07-04.22:44:35.065 [main            ] INFO  StrategyTest           - 测试结果: 103 6000 策略配置
-24-07-04.22:44:35.067 [main            ] INFO  StrategyTest           - 测试结果: 102 4000 策略配置
-24-07-04.22:44:35.069 [main            ] INFO  StrategyTest           - 测试结果: 106 5000 策略配置
-24-07-04.22:44:35.072 [main            ] INFO  StrategyTest           - 测试结果: 104 6000 策略配置
-24-07-04.22:44:35.074 [main            ] INFO  StrategyTest           - 测试结果: 103 4000 策略配置
-24-07-04.22:44:35.077 [main            ] INFO  StrategyTest           - 测试结果: 105 5000 策略配置
-24-07-04.22:44:35.079 [main            ] INFO  StrategyTest           - 测试结果: 104 6000 策略配置
-24-07-04.22:44:35.082 [main            ] INFO  StrategyTest           - 测试结果: 102 4000 策略配置
-24-07-04.22:44:35.084 [main            ] INFO  StrategyTest           - 测试结果: 105 5000 策略配置
-24-07-04.22:44:35.087 [main            ] INFO  StrategyTest           - 测试结果: 103 6000 策略配置
-24-07-04.22:44:35.089 [main            ] INFO  StrategyTest           - 测试结果: 105 4000 策略配置
-24-07-04.22:44:35.092 [main            ] INFO  StrategyTest           - 测试结果: 103 5000 策略配置
-24-07-04.22:44:35.095 [main            ] INFO  StrategyTest           - 测试结果: 102 6000 策略配置
-24-07-04.22:44:35.097 [main            ] INFO  StrategyTest           - 测试结果: 105 4000 策略配置
-24-07-04.22:44:35.099 [main            ] INFO  StrategyTest           - 测试结果: 105 5000 策略配置
-24-07-04.22:44:35.102 [main            ] INFO  StrategyTest           - 测试结果: 105 6000 策略配置
-24-07-04.22:44:35.104 [main            ] INFO  StrategyTest           - 测试结果: 105 4000 策略配置
-24-07-04.22:44:35.107 [main            ] INFO  StrategyTest           - 测试结果: 102 5000 策略配置
-24-07-04.22:44:35.109 [main            ] INFO  StrategyTest           - 测试结果: 108 6000 策略配置
-24-07-04.22:44:35.159 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
-24-07-04.22:44:35.175 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+24-07-20.21:08:31.648 [main            ] INFO  StrategyTest           - Starting StrategyTest using Java 1.8.0_402 on Iroha.lan with PID 17504 (started by smril in /Users/smril/IdeaProjects/big-market/big-market-app)
+24-07-20.21:08:31.649 [main            ] INFO  StrategyTest           - The following 1 profile is active: "dev"
+24-07-20.21:08:32.829 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+24-07-20.21:08:32.836 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+24-07-20.21:08:32.875 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 13 ms. Found 0 Redis repository interfaces.
+24-07-20.21:08:34.809 [main            ] INFO  Version                - Redisson 3.23.4
+24-07-20.21:08:34.848 [main            ] WARN  DnsServerAddressStreamProviders - Can not find io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider in the classpath, fallback to system defaults. This may result in incorrect DNS resolutions on MacOS. Check whether you have a dependency on 'io.netty:netty-resolver-dns-native-macos'
+24-07-20.21:08:35.172 [redisson-netty-2-4] INFO  MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
+24-07-20.21:08:35.198 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
+24-07-20.21:08:37.306 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+24-07-20.21:08:37.391 [main            ] INFO  StrategyTest           - Started StrategyTest in 6.253 seconds (JVM running for 7.324)
+24-07-20.21:08:38.273 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+24-07-20.21:08:38.784 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+24-07-20.21:08:38.879 [main            ] INFO  StrategyTest           - Strategy armory: true
+24-07-20.21:08:38.884 [main            ] INFO  StrategyTest           - 测试结果: 105 4000 策略配置
+24-07-20.21:08:38.887 [main            ] INFO  StrategyTest           - 测试结果: 103 5000 策略配置
+24-07-20.21:08:38.891 [main            ] INFO  StrategyTest           - 测试结果: 105 6000 策略配置
+24-07-20.21:08:38.895 [main            ] INFO  StrategyTest           - 测试结果: 104 4000 策略配置
+24-07-20.21:08:38.899 [main            ] INFO  StrategyTest           - 测试结果: 103 5000 策略配置
+24-07-20.21:08:38.902 [main            ] INFO  StrategyTest           - 测试结果: 102 6000 策略配置
+24-07-20.21:08:38.905 [main            ] INFO  StrategyTest           - 测试结果: 102 4000 策略配置
+24-07-20.21:08:38.908 [main            ] INFO  StrategyTest           - 测试结果: 105 5000 策略配置
+24-07-20.21:08:38.912 [main            ] INFO  StrategyTest           - 测试结果: 102 6000 策略配置
+24-07-20.21:08:38.915 [main            ] INFO  StrategyTest           - 测试结果: 103 4000 策略配置
+24-07-20.21:08:38.918 [main            ] INFO  StrategyTest           - 测试结果: 103 5000 策略配置
+24-07-20.21:08:38.921 [main            ] INFO  StrategyTest           - 测试结果: 103 6000 策略配置
+24-07-20.21:08:38.925 [main            ] INFO  StrategyTest           - 测试结果: 102 4000 策略配置
+24-07-20.21:08:38.928 [main            ] INFO  StrategyTest           - 测试结果: 102 5000 策略配置
+24-07-20.21:08:38.930 [main            ] INFO  StrategyTest           - 测试结果: 104 6000 策略配置
+24-07-20.21:08:38.933 [main            ] INFO  StrategyTest           - 测试结果: 105 4000 策略配置
+24-07-20.21:08:38.935 [main            ] INFO  StrategyTest           - 测试结果: 103 5000 策略配置
+24-07-20.21:08:38.938 [main            ] INFO  StrategyTest           - 测试结果: 107 6000 策略配置
+24-07-20.21:08:38.941 [main            ] INFO  StrategyTest           - 测试结果: 102 4000 策略配置
+24-07-20.21:08:38.944 [main            ] INFO  StrategyTest           - 测试结果: 107 5000 策略配置
+24-07-20.21:08:38.946 [main            ] INFO  StrategyTest           - 测试结果: 106 6000 策略配置
+24-07-20.21:08:38.949 [main            ] INFO  StrategyTest           - 测试结果: 103 4000 策略配置
+24-07-20.21:08:38.952 [main            ] INFO  StrategyTest           - 测试结果: 103 5000 策略配置
+24-07-20.21:08:38.955 [main            ] INFO  StrategyTest           - 测试结果: 106 6000 策略配置
+24-07-20.21:08:38.957 [main            ] INFO  StrategyTest           - 测试结果: 105 4000 策略配置
+24-07-20.21:08:38.959 [main            ] INFO  StrategyTest           - 测试结果: 102 5000 策略配置
+24-07-20.21:08:38.962 [main            ] INFO  StrategyTest           - 测试结果: 103 6000 策略配置
+24-07-20.21:08:38.965 [main            ] INFO  StrategyTest           - 测试结果: 104 4000 策略配置
+24-07-20.21:08:38.967 [main            ] INFO  StrategyTest           - 测试结果: 105 5000 策略配置
+24-07-20.21:08:38.970 [main            ] INFO  StrategyTest           - 测试结果: 103 6000 策略配置
+24-07-20.21:08:39.022 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+24-07-20.21:08:39.036 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+24-07-20.22:15:05.015 [main            ] INFO  StrategyTest           - Starting StrategyTest using Java 1.8.0_402 on Iroha.lan with PID 18235 (started by smril in /Users/smril/IdeaProjects/big-market/big-market-app)
+24-07-20.22:15:05.016 [main            ] INFO  StrategyTest           - The following 1 profile is active: "dev"
+24-07-20.22:15:05.950 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+24-07-20.22:15:05.955 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+24-07-20.22:15:05.990 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 14 ms. Found 0 Redis repository interfaces.
+24-07-20.22:15:07.444 [main            ] INFO  Version                - Redisson 3.23.4
+24-07-20.22:15:07.478 [main            ] WARN  DnsServerAddressStreamProviders - Can not find io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider in the classpath, fallback to system defaults. This may result in incorrect DNS resolutions on MacOS. Check whether you have a dependency on 'io.netty:netty-resolver-dns-native-macos'
+24-07-20.22:15:07.731 [redisson-netty-2-5] INFO  MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
+24-07-20.22:15:07.749 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
+24-07-20.22:15:09.524 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+24-07-20.22:15:09.591 [main            ] INFO  StrategyTest           - Started StrategyTest in 5.043 seconds (JVM running for 6.093)
+24-07-20.22:15:10.342 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+24-07-20.22:15:10.778 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+24-07-20.22:15:10.870 [main            ] INFO  StrategyTest           - Strategy armory: true
+24-07-20.22:15:10.875 [main            ] INFO  StrategyTest           - 测试结果: 102
+24-07-20.22:15:10.878 [main            ] INFO  StrategyTest           - 测试结果: 105
+24-07-20.22:15:10.881 [main            ] INFO  StrategyTest           - 测试结果: 101
+24-07-20.22:15:10.884 [main            ] INFO  StrategyTest           - 测试结果: 107
+24-07-20.22:15:10.887 [main            ] INFO  StrategyTest           - 测试结果: 101
+24-07-20.22:15:10.890 [main            ] INFO  StrategyTest           - 测试结果: 104
+24-07-20.22:15:10.893 [main            ] INFO  StrategyTest           - 测试结果: 103
+24-07-20.22:15:10.896 [main            ] INFO  StrategyTest           - 测试结果: 102
+24-07-20.22:15:10.898 [main            ] INFO  StrategyTest           - 测试结果: 101
+24-07-20.22:15:10.901 [main            ] INFO  StrategyTest           - 测试结果: 103
+24-07-20.22:15:10.949 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+24-07-20.22:15:10.965 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.

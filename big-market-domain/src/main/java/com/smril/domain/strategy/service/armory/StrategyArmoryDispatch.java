@@ -19,16 +19,22 @@ import java.util.*;
 @Service
 public class StrategyArmoryDispatch implements IStrategyArmory, IStrategyDispatch {
 
+    /* 仓储层 */
     @Resource
     private IStrategyRepository repository;
 
+    /*  */
     @Override
     public boolean assembleLotteryStrategy(Long strategyId) {
+        /* 根据策略ID从仓储层拿到奖品概率 */
         List<StrategyAwardEntity> strategyAwardEntities = repository.queryStrategyAwardList(strategyId);
+        /* 调用同名函数，将生成的概率表map结构存入redis */
         assembleLotteryStrategy(String.valueOf(strategyId), strategyAwardEntities);
 
-        // 权重策略配置
+        /* 权重策略配置 */
+        //用仓储层根据策略ID获取到策略
         StrategyEntity strategyEntity = repository.queryStrategyEntityByStrategyId(strategyId);
+
         String ruleWeight = strategyEntity.getRuleWeight();
         if (ruleWeight == null) return true;
 
@@ -50,26 +56,26 @@ public class StrategyArmoryDispatch implements IStrategyArmory, IStrategyDispatc
     }
 
     private void assembleLotteryStrategy(String key, List<StrategyAwardEntity> strategyAwardEntities) {
-        //获取最小概率值
+        /* 获取最小概率值 */
         BigDecimal minAwardRate = strategyAwardEntities
                 .stream()
                 .map(StrategyAwardEntity::getAwardRate)
                 .min(BigDecimal::compareTo)
                 .orElse(BigDecimal.ZERO);
 
-        //获取概率综合
+        /* 获取概率综合 */
         BigDecimal totalAwardRate = strategyAwardEntities
                 .stream()
                 .map(StrategyAwardEntity::getAwardRate)
                 .reduce(BigDecimal.ZERO, BigDecimal::add);
 
-        //获取概率范围，即需要分多少个格子
+        /* 获取概率范围，即需要分多少个格子 */
         BigDecimal rateRange = totalAwardRate.divide(minAwardRate, 0, RoundingMode.CEILING);
 
-        //概率查找表
+        /* 概率查找表 */
         List<Integer> strategyAwardSearchRateTables = new ArrayList<>(rateRange.intValue());
 
-        //构造概率查找表
+        /* 构造概率查找表中的奖品 */
         for (StrategyAwardEntity strategyAward : strategyAwardEntities) {
             Integer awardId = strategyAward.getAwardId();
             BigDecimal awardRate = strategyAward.getAwardRate();
@@ -79,6 +85,7 @@ public class StrategyArmoryDispatch implements IStrategyArmory, IStrategyDispatc
             }
         }
 
+        /* 打乱顺序 */
         Collections.shuffle(strategyAwardSearchRateTables);
 
         HashMap<Integer, Integer> shuffledStrategyAwardSearchRateTables = new HashMap<>();
@@ -87,7 +94,7 @@ public class StrategyArmoryDispatch implements IStrategyArmory, IStrategyDispatc
             shuffledStrategyAwardSearchRateTables.put(i, strategyAwardSearchRateTables.get(i));
         }
 
-        //redis
+        /* 存入redis */
         repository.storeStrategyAwardSearchRateTables(key, shuffledStrategyAwardSearchRateTables.size(), shuffledStrategyAwardSearchRateTables);
     }
 

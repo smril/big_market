@@ -15,9 +15,12 @@ import javax.annotation.Resource;
 @RunWith(SpringRunner.class)
 @SpringBootTest
 public class StrategyTest {
+
+    /* 构造概率表的对象 */
     @Resource
     private IStrategyArmory strategyArmory;
 
+    /* 随机抽奖的对象 */
     @Resource
     private IStrategyDispatch strategyDispatch;
 
