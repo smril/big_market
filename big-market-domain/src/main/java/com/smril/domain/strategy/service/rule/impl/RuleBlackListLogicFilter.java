@@ -8,6 +8,7 @@ import com.smril.domain.strategy.service.annotation.LogicStrategy;
 import com.smril.domain.strategy.service.rule.ILogicFilter;
 import com.smril.domain.strategy.service.rule.factory.DefaultLogicFactory;
 import com.smril.types.common.Constants;
+import com.smril.types.exception.AppException;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Component;
 
@@ -28,6 +29,10 @@ public class RuleBlackListLogicFilter implements ILogicFilter<RuleActionEntity.R
 
         /* 查询数据库strategy_rule表中的rule_value字段 */
         String ruleValue = repository.queryStrategyRuleValue(ruleMatterEntity.getStrategyId(), ruleMatterEntity.getAwardId(), ruleMatterEntity.getRuleModel());
+        if(ruleValue == null) {
+            throw new AppException("This field or data does not exist in the database");
+        }
+
         String[] splitRuleValue = ruleValue.split(Constants.COLON);
         Integer awardId = Integer.parseInt(splitRuleValue[0]);  //黑名单用户能拿到的奖品
 
