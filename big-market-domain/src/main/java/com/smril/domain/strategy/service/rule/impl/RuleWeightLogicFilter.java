@@ -30,30 +30,34 @@ public class RuleWeightLogicFilter implements ILogicFilter<RuleActionEntity.Raff
         log.info("规则过滤-权重范围 userId:{} strategyId:{} ruleModel:{}", ruleMatterEntity.getUserId(), ruleMatterEntity.getStrategyId(), ruleMatterEntity.getRuleModel());
         String userId = ruleMatterEntity.getUserId();
         Long strategyId = ruleMatterEntity.getStrategyId();
+        /* rule_value字段 */
         String ruleValue = repository.queryStrategyRuleValue(ruleMatterEntity.getStrategyId(), ruleMatterEntity.getAwardId(), ruleMatterEntity.getRuleModel());
 
-        /* 根据用户ID查询用户积分的消耗值 */
+        /* 查询到rule_value字段并进行分割放入Map */
         Map<Long, String> analyticalValueGroup = getAnalyticalValue(ruleValue);
-        if(null == analyticalValueGroup) {
+        if(null == analyticalValueGroup) {  //没有规则就直接放行
             return RuleActionEntity.<RuleActionEntity.RaffleBeforeEntity>builder()
                     .code(RuleLogicCheckTypeVO.ALLOW.getCode())
                     .info(RuleLogicCheckTypeVO.ALLOW.getInfo())
                     .build();
         }
 
+        /* 对档位进行排序 */
         List<Long> analyticalSortedKeys = new ArrayList<>(analyticalValueGroup.keySet());
         Collections.sort(analyticalSortedKeys);
 
+        /* 找到第一个比用户积分小的档，就对应了用户的档位 */
         Long nextValue = analyticalSortedKeys.stream()
                 .filter(key -> userScore >= key)
                 .findFirst()
                 .orElse(null);
 
+
         if (null != nextValue) {
             return RuleActionEntity.<RuleActionEntity.RaffleBeforeEntity>builder()
                     .data(RuleActionEntity.RaffleBeforeEntity.builder()
                             .strategyId(strategyId)
-                            .ruleWeightValueKey(analyticalValueGroup.get(nextValue))
+                            .ruleWeightValueKey(analyticalValueGroup.get(nextValue))  //拿到档位中的奖品信息
                             .build())
                     .ruleModel(DefaultLogicFactory.LogicModel.RULE_WIGHT.getCode())
                     .code(RuleLogicCheckTypeVO.TAKE_OVER.getCode())

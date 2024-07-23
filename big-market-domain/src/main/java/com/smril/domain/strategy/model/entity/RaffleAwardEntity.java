@@ -9,6 +9,7 @@ import lombok.NoArgsConstructor;
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
+/* 要发的奖 */
 public class RaffleAwardEntity {
     private Long strategyId;
     private Integer awardId;

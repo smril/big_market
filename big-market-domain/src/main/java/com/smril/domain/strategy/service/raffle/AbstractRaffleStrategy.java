@@ -41,7 +41,7 @@ public abstract class AbstractRaffleStrategy implements IRaffleStrategy {
         /* 查询策略，将目前所用的策略查询出来 */
         StrategyEntity strategy = repository.queryStrategyEntityByStrategyId(strategyId);
 
-        /* 抽奖前过滤 */
+        /* 抽奖前过滤，仅规定，由子类实现 */
         RuleActionEntity<RuleActionEntity.RaffleBeforeEntity> ruleActionEntity = this.doCheckRaffleBeforeLogic(RaffleFactorEntity.builder().userId(userId).strategyId(strategyId).build(), strategy.ruleModels());
 
         if(RuleLogicCheckTypeVO.TAKE_OVER.getCode().equals(ruleActionEntity.getCode())) {

@@ -9,6 +9,7 @@ import lombok.NoArgsConstructor;
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
+/*  */
 public class RaffleFactorEntity {
     private String userId;
     private Long strategyId;
