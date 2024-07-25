@@ -3,6 +3,7 @@ package com.smril.infrastructure.persistent.repository;
 import com.smril.domain.strategy.model.entity.StrategyAwardEntity;
 import com.smril.domain.strategy.model.entity.StrategyEntity;
 import com.smril.domain.strategy.model.entity.StrategyRuleEntity;
+import com.smril.domain.strategy.model.valobj.StrategyAwardRuleModelVO;
 import com.smril.domain.strategy.repository.IStrategyRepository;
 import com.smril.infrastructure.persistent.dao.IStrategyAwardDao;
 import com.smril.infrastructure.persistent.dao.IStrategyDao;
@@ -12,6 +13,7 @@ import com.smril.infrastructure.persistent.po.StrategyRule;
 import com.smril.infrastructure.persistent.redis.IRedisService;
 import com.smril.infrastructure.persistent.po.StrategyAward;
 import com.smril.types.common.Constants;
+import com.smril.types.exception.AppException;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Repository;
@@ -106,6 +108,13 @@ public class StrategyRepository implements IStrategyRepository {
         strategyRuleReq.setStrategyId(strategyId);
         strategyRuleReq.setRuleModel(ruleModel);
         StrategyRule strategyRuleRes = strategyRuleDao.queryStrategyRule(strategyRuleReq);
+
+        System.out.println(strategyId);
+        System.out.println(ruleModel);
+
+        if(strategyRuleRes == null) {
+            throw new AppException("strategyRuleRes is empty!");
+        }
                return StrategyRuleEntity.builder()
                               .strategyId(strategyRuleRes.getStrategyId())
                               .awardId(strategyRuleRes.getAwardId())
@@ -123,5 +132,14 @@ public class StrategyRepository implements IStrategyRepository {
         strategyRule.setAwardId(awardId);
         strategyRule.setRuleModel(ruleModel);
         return strategyRuleDao.queryStrategyRuleValue(strategyRule);
+    }
+
+    @Override
+    public StrategyAwardRuleModelVO queryStrategyAwardRuleModel(Long strategyId, Integer awardId) {
+        StrategyAward strategyAward = new StrategyAward();
+        strategyAward.setStrategyId(strategyId);
+        strategyAward.setAwardId(awardId);
+        String ruleModels = strategyAwardDao.queryStrategyAwardRuleModels(strategyAward);
+        return StrategyAwardRuleModelVO.builder().ruleModels(ruleModels).build();
     }
 }

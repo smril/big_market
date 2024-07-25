@@ -2,7 +2,7 @@ package com.smril.domain.strategy.service.rule.impl;
 
 import com.smril.domain.strategy.model.entity.RuleActionEntity;
 import com.smril.domain.strategy.model.entity.RuleMatterEntity;
-import com.smril.domain.strategy.model.vo.RuleLogicCheckTypeVO;
+import com.smril.domain.strategy.model.valobj.RuleLogicCheckTypeVO;
 import com.smril.domain.strategy.repository.IStrategyRepository;
 import com.smril.domain.strategy.service.annotation.LogicStrategy;
 import com.smril.domain.strategy.service.rule.ILogicFilter;

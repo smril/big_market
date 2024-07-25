@@ -1,4 +1,4 @@
-package com.smril.domain.strategy.model.vo;
+package com.smril.domain.strategy.model.valobj;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;

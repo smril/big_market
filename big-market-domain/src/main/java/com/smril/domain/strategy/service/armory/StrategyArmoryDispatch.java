@@ -26,17 +26,27 @@ public class StrategyArmoryDispatch implements IStrategyArmory, IStrategyDispatc
     /*  */
     @Override
     public boolean assembleLotteryStrategy(Long strategyId) {
-        /* 根据策略ID从仓储层拿到奖品概率 */
+        /* 根据策略ID从仓储层拿到奖品概率,与strategy_award表交互 */
         List<StrategyAwardEntity> strategyAwardEntities = repository.queryStrategyAwardList(strategyId);
+        //判空
+        if(strategyAwardEntities == null || strategyAwardEntities.isEmpty()) {
+            throw new AppException("strategy award list is empty!");
+        }
+
         /* 调用同名函数，将生成的概率表map结构存入redis */
         assembleLotteryStrategy(String.valueOf(strategyId), strategyAwardEntities);
 
         /* 权重策略配置 */
         //用仓储层根据策略ID获取到策略
         StrategyEntity strategyEntity = repository.queryStrategyEntityByStrategyId(strategyId);
+        if(strategyEntity == null) {
+            throw new AppException("strategy entity is null!");
+        }
 
         String ruleWeight = strategyEntity.getRuleWeight();
-        if (ruleWeight == null) return true;
+        if (ruleWeight == null) {
+            return true;
+        }
 
         StrategyRuleEntity strategyRuleEntity = repository.queryStrategyRule(strategyId, ruleWeight);
         if(strategyRuleEntity == null) {

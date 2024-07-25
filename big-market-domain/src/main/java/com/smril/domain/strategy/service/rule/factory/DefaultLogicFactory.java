@@ -34,11 +34,18 @@ public class DefaultLogicFactory {
     @Getter
     @AllArgsConstructor
     public enum LogicModel {
-        RULE_WIGHT("rule_weight", "根据抽奖权重返回可抽奖范围key"),
-        RULE_BLACKLIST("rule_blacklist", "黑名单规则过滤，黑名单直接返回"),
+        RULE_WIGHT("rule_weight", "before", "根据抽奖权重返回可抽奖范围key"),
+        RULE_BLACKLIST("rule_blacklist", "before", "黑名单规则过滤，黑名单直接返回"),
+        RULE_LOCK("rule_lock", "center","抽奖n次后可解锁的奖品"),
+        RULE_LUCK_AWARD("rule_luck_award", "after","幸运奖兜底"),
             ;
 
         private final String code;
+        private final String type;
         private final String info;
+
+        public static boolean isCenter(String code) {
+            return "center".equals(LogicModel.valueOf(code.toUpperCase()).type);
+        }
     }
 }

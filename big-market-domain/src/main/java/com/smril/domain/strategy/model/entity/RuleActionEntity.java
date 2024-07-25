@@ -1,6 +1,6 @@
 package com.smril.domain.strategy.model.entity;
 
-import com.smril.domain.strategy.model.vo.RuleLogicCheckTypeVO;
+import com.smril.domain.strategy.model.valobj.RuleLogicCheckTypeVO;
 import lombok.*;
 
 @Data

@@ -4,7 +4,8 @@ import com.smril.domain.strategy.model.entity.RaffleAwardEntity;
 import com.smril.domain.strategy.model.entity.RaffleFactorEntity;
 import com.smril.domain.strategy.model.entity.RuleActionEntity;
 import com.smril.domain.strategy.model.entity.StrategyEntity;
-import com.smril.domain.strategy.model.vo.RuleLogicCheckTypeVO;
+import com.smril.domain.strategy.model.valobj.RuleLogicCheckTypeVO;
+import com.smril.domain.strategy.model.valobj.StrategyAwardRuleModelVO;
 import com.smril.domain.strategy.repository.IStrategyRepository;
 import com.smril.domain.strategy.service.IRaffleStrategy;
 import com.smril.domain.strategy.service.armory.IStrategyDispatch;
@@ -13,9 +14,6 @@ import com.smril.types.enums.ResponseCode;
 import com.smril.types.exception.AppException;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang3.StringUtils;
-
-import javax.xml.ws.Response;
-import java.net.ResponseCache;
 
 @Slf4j
 public abstract class AbstractRaffleStrategy implements IRaffleStrategy {
@@ -63,10 +61,29 @@ public abstract class AbstractRaffleStrategy implements IRaffleStrategy {
 
         /* 默认抽奖流程 */
         Integer awardId = strategyDispatch.getRandomAwardId(strategyId);
+
+
+        StrategyAwardRuleModelVO strategyAwardRuleModelVO = repository.queryStrategyAwardRuleModel(strategyId, awardId);
+        /* 抽奖中规则过滤 */
+        RuleActionEntity<RuleActionEntity.RaffleCenterEntity> ruleActionCenterEntity = this.doCheckRaffleCenterLogic(RaffleFactorEntity.builder()
+                .userId(userId)
+                .strategyId(strategyId)
+                .awardId(awardId)
+                .build(), strategyAwardRuleModelVO.raffleCenterRuleModelList()
+        );
+
+        if(RuleLogicCheckTypeVO.TAKE_OVER.getCode().equals(ruleActionCenterEntity.getCode())) {
+            log.info("抽奖中规则拦截");
+            return RaffleAwardEntity.builder()
+                    .awardDesc("抽奖中规则拦截")
+                    .build();
+        }
+
         return RaffleAwardEntity.builder()
                 .awardId(awardId)
                 .build();
     }
 
     protected abstract RuleActionEntity<RuleActionEntity.RaffleBeforeEntity> doCheckRaffleBeforeLogic(RaffleFactorEntity build, String ...logics);
+    protected abstract RuleActionEntity<RuleActionEntity.RaffleCenterEntity> doCheckRaffleCenterLogic(RaffleFactorEntity build, String ...logics);
 }
