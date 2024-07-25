@@ -169,3 +169,26 @@
 24-07-25.18:00:02.675 [main            ] INFO  RaffleStrategyTest     - 测试结果：{"awardDesc":"抽奖中规则拦截"}
 24-07-25.18:00:02.716 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
 24-07-25.18:00:02.736 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+24-07-25.18:00:58.292 [main            ] INFO  RaffleStrategyTest     - Starting RaffleStrategyTest using Java 1.8.0_402 on Iroha.lan with PID 63989 (started by smril in /Users/smril/IdeaProjects/big-market/big-market-app)
+24-07-25.18:00:58.293 [main            ] INFO  RaffleStrategyTest     - The following 1 profile is active: "dev"
+24-07-25.18:00:59.081 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+24-07-25.18:00:59.084 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+24-07-25.18:00:59.112 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 13 ms. Found 0 Redis repository interfaces.
+24-07-25.18:01:00.370 [main            ] INFO  Version                - Redisson 3.23.4
+24-07-25.18:01:00.395 [main            ] WARN  DnsServerAddressStreamProviders - Can not find io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider in the classpath, fallback to system defaults. This may result in incorrect DNS resolutions on MacOS. Check whether you have a dependency on 'io.netty:netty-resolver-dns-native-macos'
+24-07-25.18:01:00.585 [redisson-netty-2-4] INFO  MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
+24-07-25.18:01:00.605 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
+24-07-25.18:01:02.057 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+24-07-25.18:01:02.114 [main            ] INFO  RaffleStrategyTest     - Started RaffleStrategyTest in 7.387 seconds (JVM running for 8.239)
+24-07-25.18:01:02.686 [main            ] INFO  RaffleStrategyTest     - 测试结果: true
+24-07-25.18:01:02.714 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+24-07-25.18:01:03.021 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+24-07-25.18:01:03.076 [main            ] INFO  RaffleStrategyTest     - 测试结果: true
+24-07-25.18:01:03.081 [main            ] INFO  RaffleStrategyTest     - 测试结果: true
+24-07-25.18:01:03.093 [main            ] INFO  RuleLockLogicFilter    - 规则过滤-次数锁 userId:smril strategyId:10003 ruleModel:rule_lock
+24-07-25.18:01:03.111 [main            ] INFO  DefaultRaffleStrategy  - 抽奖中规则过滤 userId: smril ruleModel: rule_lock code: 0001 info: 接管，受规则影响
+24-07-25.18:01:03.111 [main            ] INFO  AbstractRaffleStrategy - 抽奖中规则拦截
+24-07-25.18:01:03.315 [main            ] INFO  RaffleStrategyTest     - 请求参数：{"strategyId":10003,"userId":"smril"}
+24-07-25.18:01:03.319 [main            ] INFO  RaffleStrategyTest     - 测试结果：{"awardDesc":"抽奖中规则拦截"}
+24-07-25.18:01:03.355 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+24-07-25.18:01:03.374 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
