@@ -23,7 +23,7 @@ public class DefaultTreeFactory {
     }
 
     public IDecisionTreeEngine openLogicTree(RuleTreeVO ruleTreeVO) {
-        return new DecisionTreeEngine(logicTreeNodeGroup, ruleTreeVO);
+        return new DecisionTreeEngine(logicTreeNodeGroup, ruleTreeVO);  //返回一个执行引擎
     }
 
     @Data

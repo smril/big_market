@@ -15,6 +15,7 @@ import java.util.Map;
 @Slf4j
 public class DecisionTreeEngine implements IDecisionTreeEngine {
 
+    /* 规则Map */
     private final Map<String, ILogicTreeNode> logicTreeNodeGroup;
 
     private final RuleTreeVO ruleTreeVO;
@@ -29,14 +30,17 @@ public class DecisionTreeEngine implements IDecisionTreeEngine {
     public DefaultTreeFactory.StrategyAwardData process(String userId, Long strategyId, Integer awardId) {
         DefaultTreeFactory.StrategyAwardData strategyAwardData = null;
 
-        String nextNode = ruleTreeVO.getTreeRootRuleNode();
-        Map<String, RuleTreeNodeVO> treeNodeMap = ruleTreeVO.getTreeNodeMap();
+        String nextNode = ruleTreeVO.getTreeRootRuleNode();  //获取根节点
+        Map<String, RuleTreeNodeVO> treeNodeMap = ruleTreeVO.getTreeNodeMap();  //获取规则节点
 
-        RuleTreeNodeVO ruleTreeNode = treeNodeMap.get(nextNode);  //起始节点，第一个要执行的规则
+        RuleTreeNodeVO ruleTreeNode = treeNodeMap.get(nextNode);  //根节点的规则节点，第一个要执行的规则
         while (nextNode != null) {
+            //ruleTreeNode.getRulKey()代表获取到代表规则的Key，然后通过Map拿到规则接口
             ILogicTreeNode logicTreeNode = logicTreeNodeGroup.get(ruleTreeNode.getRuleKey());
 
+            //通过拿到的规则过滤
             DefaultTreeFactory.TreeActionEntity logicEntity = logicTreeNode.logic(userId, strategyId, awardId);
+            //拿到本次过滤的结果
             RuleLogicCheckTypeVO ruleLogicCheckTypeVO = logicEntity.getRuleLogicCheckType();
             strategyAwardData = logicEntity.getStrategyAwardData();
             log.info("决策树引擎【{}】 treeId: {}, node: {}, code: {}", ruleTreeVO.getTreeName(), ruleTreeVO.getTreeId(), nextNode, ruleLogicCheckTypeVO.getCode());
@@ -49,11 +53,12 @@ public class DecisionTreeEngine implements IDecisionTreeEngine {
         return strategyAwardData;
     }
 
+    /* 负责决定下一个节点 */
     private String nextNode(String matterValue, List<RuleTreeNodeLineVO> ruleTreeNodeLineVOList) {
         if(null == ruleTreeNodeLineVOList || ruleTreeNodeLineVOList.isEmpty()) {
             return null;
         }
-        for(RuleTreeNodeLineVO nodeLine : ruleTreeNodeLineVOList) {
+        for(RuleTreeNodeLineVO nodeLine : ruleTreeNodeLineVOList) {  //遍历规则连线里的规则
             if(decisionLogic(matterValue, nodeLine)) {
                 return nodeLine.getRuleNodeTo();
             }

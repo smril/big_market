@@ -414,3 +414,18 @@ Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No q
 24-07-26.20:33:07.991 [main            ] INFO  DecisionTreeEngine     - 决策树引擎【决策树规则；增加dall-e-3画图模型】 treeId: 100000001, node: rule_stock, code: 0001
 24-07-26.20:33:07.992 [main            ] INFO  DecisionTreeEngine     - 决策树引擎【决策树规则；增加dall-e-3画图模型】 treeId: 100000001, node: rule_luck_award, code: 0001
 24-07-26.20:33:08.221 [main            ] INFO  LogicTreeTest          - 测试结果：{"awardId":101,"awardRuleValue":"1,100"}
+24-07-26.21:08:26.195 [main            ] INFO  LogicTreeTest          - Starting LogicTreeTest using Java 1.8.0_402 on Iroha.lan with PID 76203 (started by smril in /Users/smril/IdeaProjects/big-market/big-market-app)
+24-07-26.21:08:26.197 [main            ] INFO  LogicTreeTest          - The following 1 profile is active: "dev"
+24-07-26.21:08:27.377 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+24-07-26.21:08:27.381 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+24-07-26.21:08:27.421 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 21 ms. Found 0 Redis repository interfaces.
+24-07-26.21:08:29.221 [main            ] INFO  Version                - Redisson 3.23.4
+24-07-26.21:08:29.290 [main            ] WARN  DnsServerAddressStreamProviders - Can not find io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider in the classpath, fallback to system defaults. This may result in incorrect DNS resolutions on MacOS. Check whether you have a dependency on 'io.netty:netty-resolver-dns-native-macos'
+24-07-26.21:08:29.696 [redisson-netty-2-4] INFO  MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
+24-07-26.21:08:29.719 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
+24-07-26.21:08:32.038 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+24-07-26.21:08:32.142 [main            ] INFO  LogicTreeTest          - Started LogicTreeTest in 6.55 seconds (JVM running for 8.649)
+24-07-26.21:08:32.754 [main            ] INFO  DecisionTreeEngine     - 决策树引擎【决策树规则；增加dall-e-3画图模型】 treeId: 100000001, node: rule_lock, code: 0000
+24-07-26.21:08:32.756 [main            ] INFO  DecisionTreeEngine     - 决策树引擎【决策树规则；增加dall-e-3画图模型】 treeId: 100000001, node: rule_stock, code: 0001
+24-07-26.21:08:32.759 [main            ] INFO  DecisionTreeEngine     - 决策树引擎【决策树规则；增加dall-e-3画图模型】 treeId: 100000001, node: rule_luck_award, code: 0001
+24-07-26.21:08:33.174 [main            ] INFO  LogicTreeTest          - 测试结果：{"awardId":101,"awardRuleValue":"1,100"}
