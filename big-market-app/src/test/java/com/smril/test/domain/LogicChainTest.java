@@ -4,7 +4,7 @@ import com.smril.domain.strategy.service.armory.IStrategyArmory;
 import com.smril.domain.strategy.service.rule.chain.ILogicChain;
 import com.smril.domain.strategy.service.rule.chain.factory.DefaultChainFactory;
 import com.smril.domain.strategy.service.rule.chain.impl.RuleWeightLogicChain;
-import com.smril.domain.strategy.service.rule.impl.RuleLockLogicFilter;
+import com.smril.domain.strategy.service.rule.filter.impl.RuleLockLogicFilter;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.Before;
 import org.junit.Test;

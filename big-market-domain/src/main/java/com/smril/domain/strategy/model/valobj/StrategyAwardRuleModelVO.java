@@ -1,6 +1,6 @@
 package com.smril.domain.strategy.model.valobj;
 
-import com.smril.domain.strategy.service.rule.factory.DefaultLogicFactory;
+import com.smril.domain.strategy.service.rule.filter.factory.DefaultLogicFactory;
 import com.smril.types.common.Constants;
 import lombok.AllArgsConstructor;
 import lombok.Builder;

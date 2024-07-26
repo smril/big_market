@@ -1,4 +1,4 @@
-package com.smril.domain.strategy.service.rule;
+package com.smril.domain.strategy.service.rule.filter;
 
 import com.smril.domain.strategy.model.entity.RuleActionEntity;
 import com.smril.domain.strategy.model.entity.RuleMatterEntity;
