@@ -1,431 +1,287 @@
-24-07-26.13:01:37.722 [main            ] INFO  LogicChainTest         - Starting LogicChainTest using Java 1.8.0_402 on Iroha.lan with PID 71998 (started by smril in /Users/smril/IdeaProjects/big-market/big-market-app)
-24-07-26.13:01:37.723 [main            ] INFO  LogicChainTest         - The following 1 profile is active: "dev"
-24-07-26.13:01:38.715 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
-24-07-26.13:01:38.720 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-24-07-26.13:01:38.759 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 16 ms. Found 0 Redis repository interfaces.
-24-07-26.13:01:40.366 [main            ] INFO  Version                - Redisson 3.23.4
-24-07-26.13:01:40.401 [main            ] WARN  DnsServerAddressStreamProviders - Can not find io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider in the classpath, fallback to system defaults. This may result in incorrect DNS resolutions on MacOS. Check whether you have a dependency on 'io.netty:netty-resolver-dns-native-macos'
-24-07-26.13:01:40.674 [redisson-netty-2-4] INFO  MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
-24-07-26.13:01:40.692 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
-24-07-26.13:01:42.705 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
-24-07-26.13:01:42.788 [main            ] INFO  LogicChainTest         - Started LogicChainTest in 5.55 seconds (JVM running for 6.457)
-24-07-26.13:01:42.891 [main            ] ERROR TestContextManager     - Caught exception while allowing TestExecutionListener [org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@2de23121] to prepare test instance [com.smril.test.domain.LogicChainTest@631bc9f4]
-org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'com.smril.test.domain.LogicChainTest': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.smril.domain.strategy.service.rule.chain.factory.DefaultChainFactory' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@javax.annotation.Resource(shareable=true, lookup=, name=, description=, authenticationType=CONTAINER, type=class java.lang.Object, mappedName=)}
-	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessProperties(CommonAnnotationBeanPostProcessor.java:332)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1431)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireBeanProperties(AbstractAutowireCapableBeanFactory.java:417)
-	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:119)
-	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:83)
-	at org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener.prepareTestInstance(SpringBootDependencyInjectionTestExecutionListener.java:43)
-	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:248)
-	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:227)
-	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:289)
-	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
-	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:291)
-	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:246)
-	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97)
-	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
-	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
-	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
-	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
-	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
-	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:190)
-	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
-	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:69)
-	at com.intellij.rt.junit.IdeaTestRunner$Repeater$1.execute(IdeaTestRunner.java:38)
-	at com.intellij.rt.execution.junit.TestsRepeater.repeat(TestsRepeater.java:11)
-	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:35)
-	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:232)
-	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:55)
-Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.smril.domain.strategy.service.rule.chain.factory.DefaultChainFactory' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@javax.annotation.Resource(shareable=true, lookup=, name=, description=, authenticationType=CONTAINER, type=class java.lang.Object, mappedName=)}
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.raiseNoMatchingBeanFound(DefaultListableBeanFactory.java:1801)
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1357)
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1311)
-	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.autowireResource(CommonAnnotationBeanPostProcessor.java:544)
-	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.getResource(CommonAnnotationBeanPostProcessor.java:520)
-	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor$ResourceElement.getResourceToInject(CommonAnnotationBeanPostProcessor.java:673)
-	at org.springframework.beans.factory.annotation.InjectionMetadata$InjectedElement.inject(InjectionMetadata.java:228)
-	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119)
-	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessProperties(CommonAnnotationBeanPostProcessor.java:329)
-	... 29 common frames omitted
-24-07-26.13:03:00.769 [main            ] INFO  LogicChainTest         - Starting LogicChainTest using Java 1.8.0_402 on Iroha.lan with PID 72016 (started by smril in /Users/smril/IdeaProjects/big-market/big-market-app)
-24-07-26.13:03:00.770 [main            ] INFO  LogicChainTest         - The following 1 profile is active: "dev"
-24-07-26.13:03:01.565 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
-24-07-26.13:03:01.569 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-24-07-26.13:03:01.598 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 14 ms. Found 0 Redis repository interfaces.
-24-07-26.13:03:02.879 [main            ] INFO  Version                - Redisson 3.23.4
-24-07-26.13:03:02.903 [main            ] WARN  DnsServerAddressStreamProviders - Can not find io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider in the classpath, fallback to system defaults. This may result in incorrect DNS resolutions on MacOS. Check whether you have a dependency on 'io.netty:netty-resolver-dns-native-macos'
-24-07-26.13:03:03.093 [redisson-netty-2-4] INFO  MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
-24-07-26.13:03:03.108 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
-24-07-26.13:03:04.720 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
-24-07-26.13:03:04.787 [main            ] INFO  LogicChainTest         - Started LogicChainTest in 4.424 seconds (JVM running for 5.292)
-24-07-26.13:03:05.308 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
-24-07-26.13:03:05.813 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
-24-07-26.13:03:05.964 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
-24-07-26.13:03:05.993 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
-24-07-26.13:10:13.488 [main            ] INFO  LogicChainTest         - Starting LogicChainTest using Java 1.8.0_402 on Iroha.lan with PID 72108 (started by smril in /Users/smril/IdeaProjects/big-market/big-market-app)
-24-07-26.13:10:13.490 [main            ] INFO  LogicChainTest         - The following 1 profile is active: "dev"
-24-07-26.13:10:14.818 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
-24-07-26.13:10:14.825 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-24-07-26.13:10:14.888 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 32 ms. Found 0 Redis repository interfaces.
-24-07-26.13:10:16.625 [main            ] INFO  Version                - Redisson 3.23.4
-24-07-26.13:10:16.652 [main            ] WARN  DnsServerAddressStreamProviders - Can not find io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider in the classpath, fallback to system defaults. This may result in incorrect DNS resolutions on MacOS. Check whether you have a dependency on 'io.netty:netty-resolver-dns-native-macos'
-24-07-26.13:10:16.877 [redisson-netty-2-4] INFO  MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
-24-07-26.13:10:16.898 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
-24-07-26.13:10:18.736 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
-24-07-26.13:10:18.816 [main            ] INFO  LogicChainTest         - Started LogicChainTest in 6.068 seconds (JVM running for 7.022)
-24-07-26.13:15:03.301 [main            ] INFO  LogicChainTest         - Starting LogicChainTest using Java 1.8.0_402 on Iroha.lan with PID 72149 (started by smril in /Users/smril/IdeaProjects/big-market/big-market-app)
-24-07-26.13:15:03.303 [main            ] INFO  LogicChainTest         - The following 1 profile is active: "dev"
-24-07-26.13:15:04.140 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
-24-07-26.13:15:04.143 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-24-07-26.13:15:04.173 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 15 ms. Found 0 Redis repository interfaces.
-24-07-26.13:15:05.639 [main            ] INFO  Version                - Redisson 3.23.4
-24-07-26.13:15:05.686 [main            ] WARN  DnsServerAddressStreamProviders - Can not find io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider in the classpath, fallback to system defaults. This may result in incorrect DNS resolutions on MacOS. Check whether you have a dependency on 'io.netty:netty-resolver-dns-native-macos'
-24-07-26.13:15:05.932 [redisson-netty-2-4] INFO  MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
-24-07-26.13:15:05.953 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
-24-07-26.13:15:08.825 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
-24-07-26.13:15:08.935 [main            ] INFO  LogicChainTest         - Started LogicChainTest in 6.06 seconds (JVM running for 6.94)
-24-07-26.13:15:09.627 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
-24-07-26.13:15:10.229 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
-24-07-26.13:15:10.589 [main            ] INFO  LogicChainTest         - 测试结果: true
-24-07-26.13:15:10.619 [main            ] INFO  LogicChainTest         - 测试结果: true
-24-07-26.13:15:10.629 [main            ] INFO  LogicChainTest         - 测试结果: true
-24-07-26.13:15:10.678 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
-24-07-26.13:15:10.698 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
-24-07-26.15:16:48.235 [main            ] INFO  LogicChainTest         - Starting LogicChainTest using Java 1.8.0_402 on Iroha.lan with PID 72869 (started by smril in /Users/smril/IdeaProjects/big-market/big-market-app)
-24-07-26.15:16:48.236 [main            ] INFO  LogicChainTest         - The following 1 profile is active: "dev"
-24-07-26.15:16:49.148 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
-24-07-26.15:16:49.152 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-24-07-26.15:16:49.187 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 16 ms. Found 0 Redis repository interfaces.
-24-07-26.15:16:50.791 [main            ] INFO  Version                - Redisson 3.23.4
-24-07-26.15:16:50.823 [main            ] WARN  DnsServerAddressStreamProviders - Can not find io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider in the classpath, fallback to system defaults. This may result in incorrect DNS resolutions on MacOS. Check whether you have a dependency on 'io.netty:netty-resolver-dns-native-macos'
-24-07-26.15:16:51.061 [redisson-netty-2-5] INFO  MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
-24-07-26.15:16:51.079 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
-24-07-26.15:16:53.030 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
-24-07-26.15:16:53.098 [main            ] INFO  LogicChainTest         - Started LogicChainTest in 5.325 seconds (JVM running for 6.365)
-24-07-26.15:16:53.856 [main            ] INFO  LogicChainTest         - 测试结果: true
-24-07-26.15:16:53.899 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
-24-07-26.15:16:54.362 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
-24-07-26.15:16:54.432 [main            ] INFO  LogicChainTest         - 测试结果: true
-24-07-26.15:16:54.438 [main            ] INFO  LogicChainTest         - 测试结果: true
-24-07-26.15:16:54.492 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
-24-07-26.15:16:54.518 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
-24-07-26.15:19:34.417 [main            ] INFO  LogicChainTest         - Starting LogicChainTest using Java 1.8.0_402 on Iroha.lan with PID 72903 (started by smril in /Users/smril/IdeaProjects/big-market/big-market-app)
-24-07-26.15:19:34.418 [main            ] INFO  LogicChainTest         - The following 1 profile is active: "dev"
-24-07-26.15:19:35.203 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
-24-07-26.15:19:35.207 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-24-07-26.15:19:35.235 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 14 ms. Found 0 Redis repository interfaces.
-24-07-26.15:19:36.520 [main            ] INFO  Version                - Redisson 3.23.4
-24-07-26.15:19:36.543 [main            ] WARN  DnsServerAddressStreamProviders - Can not find io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider in the classpath, fallback to system defaults. This may result in incorrect DNS resolutions on MacOS. Check whether you have a dependency on 'io.netty:netty-resolver-dns-native-macos'
-24-07-26.15:19:36.729 [redisson-netty-2-4] INFO  MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
-24-07-26.15:19:36.746 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
-24-07-26.15:19:38.187 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
-24-07-26.15:19:38.251 [main            ] INFO  LogicChainTest         - Started LogicChainTest in 4.232 seconds (JVM running for 5.096)
-24-07-26.15:19:38.894 [main            ] INFO  LogicChainTest         - 测试结果: true
-24-07-26.15:19:38.927 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
-24-07-26.15:19:39.278 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
-24-07-26.15:19:39.340 [main            ] INFO  LogicChainTest         - 测试结果: true
-24-07-26.15:19:39.347 [main            ] INFO  LogicChainTest         - 测试结果: true
-24-07-26.15:19:39.394 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
-24-07-26.15:19:39.425 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
-24-07-26.15:23:26.072 [main            ] INFO  LogicChainTest         - Starting LogicChainTest using Java 1.8.0_402 on Iroha.lan with PID 72952 (started by smril in /Users/smril/IdeaProjects/big-market/big-market-app)
-24-07-26.15:23:26.074 [main            ] INFO  LogicChainTest         - The following 1 profile is active: "dev"
-24-07-26.15:23:27.479 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
-24-07-26.15:23:27.483 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-24-07-26.15:23:27.529 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 26 ms. Found 0 Redis repository interfaces.
-24-07-26.15:23:29.147 [main            ] INFO  Version                - Redisson 3.23.4
-24-07-26.15:23:29.176 [main            ] WARN  DnsServerAddressStreamProviders - Can not find io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider in the classpath, fallback to system defaults. This may result in incorrect DNS resolutions on MacOS. Check whether you have a dependency on 'io.netty:netty-resolver-dns-native-macos'
-24-07-26.15:23:29.432 [redisson-netty-2-5] INFO  MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
-24-07-26.15:23:29.452 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
-24-07-26.15:23:31.345 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
-24-07-26.15:23:31.427 [main            ] INFO  LogicChainTest         - Started LogicChainTest in 6.291 seconds (JVM running for 7.509)
-24-07-26.15:23:32.136 [main            ] INFO  LogicChainTest         - 测试结果: true
-24-07-26.15:23:32.171 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
-24-07-26.15:23:32.547 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
-24-07-26.15:23:32.606 [main            ] INFO  LogicChainTest         - 测试结果: true
-24-07-26.15:23:32.611 [main            ] INFO  LogicChainTest         - 测试结果: true
-24-07-26.15:23:32.615 [main            ] INFO  BlackListLogicChain    - 抽奖责任链-黑名单开始: userId: user001, strategyId: 10001, ruleModel: rule_blacklist
-24-07-26.15:23:32.707 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
-24-07-26.15:23:32.715 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
-24-07-26.15:27:41.501 [main            ] INFO  LogicChainTest         - Starting LogicChainTest using Java 1.8.0_402 on Iroha.lan with PID 72981 (started by smril in /Users/smril/IdeaProjects/big-market/big-market-app)
-24-07-26.15:27:41.502 [main            ] INFO  LogicChainTest         - The following 1 profile is active: "dev"
-24-07-26.15:27:42.304 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
-24-07-26.15:27:42.307 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-24-07-26.15:27:42.338 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 16 ms. Found 0 Redis repository interfaces.
-24-07-26.15:27:43.629 [main            ] INFO  Version                - Redisson 3.23.4
-24-07-26.15:27:43.653 [main            ] WARN  DnsServerAddressStreamProviders - Can not find io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider in the classpath, fallback to system defaults. This may result in incorrect DNS resolutions on MacOS. Check whether you have a dependency on 'io.netty:netty-resolver-dns-native-macos'
-24-07-26.15:27:43.854 [redisson-netty-2-4] INFO  MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
-24-07-26.15:27:43.872 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
-24-07-26.15:27:45.509 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
-24-07-26.15:27:45.578 [main            ] INFO  LogicChainTest         - Started LogicChainTest in 4.476 seconds (JVM running for 5.326)
-24-07-26.15:27:46.330 [main            ] INFO  LogicChainTest         - 测试结果: true
-24-07-26.15:27:46.366 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
-24-07-26.15:27:46.770 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
-24-07-26.15:27:46.831 [main            ] INFO  LogicChainTest         - 测试结果: true
-24-07-26.15:27:46.838 [main            ] INFO  LogicChainTest         - 测试结果: true
-24-07-26.15:27:46.842 [main            ] INFO  BlackListLogicChain    - 抽奖责任链-黑名单开始: userId: user001, strategyId: 10001, ruleModel: rule_blacklist
-24-07-26.15:27:46.913 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
-24-07-26.15:27:46.921 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
-24-07-26.15:29:51.507 [main            ] INFO  LogicChainTest         - Starting LogicChainTest using Java 1.8.0_402 on Iroha.lan with PID 73004 (started by smril in /Users/smril/IdeaProjects/big-market/big-market-app)
-24-07-26.15:29:51.508 [main            ] INFO  LogicChainTest         - The following 1 profile is active: "dev"
-24-07-26.15:29:52.318 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
-24-07-26.15:29:52.321 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-24-07-26.15:29:52.349 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 14 ms. Found 0 Redis repository interfaces.
-24-07-26.15:29:53.784 [main            ] INFO  Version                - Redisson 3.23.4
-24-07-26.15:29:53.811 [main            ] WARN  DnsServerAddressStreamProviders - Can not find io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider in the classpath, fallback to system defaults. This may result in incorrect DNS resolutions on MacOS. Check whether you have a dependency on 'io.netty:netty-resolver-dns-native-macos'
-24-07-26.15:29:54.025 [redisson-netty-2-4] INFO  MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
-24-07-26.15:29:54.044 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
-24-07-26.15:29:55.721 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
-24-07-26.15:29:55.789 [main            ] INFO  LogicChainTest         - Started LogicChainTest in 4.706 seconds (JVM running for 5.606)
-24-07-26.15:29:56.487 [main            ] INFO  LogicChainTest         - 测试结果: true
-24-07-26.15:29:56.517 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
-24-07-26.15:29:56.884 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
-24-07-26.15:29:56.947 [main            ] INFO  LogicChainTest         - 测试结果: true
-24-07-26.15:29:56.953 [main            ] INFO  LogicChainTest         - 测试结果: true
-24-07-26.15:29:56.956 [main            ] INFO  BlackListLogicChain    - 抽奖责任链-黑名单开始: userId: user001, strategyId: 10001, ruleModel: rule_blacklist
-24-07-26.15:29:56.979 [main            ] INFO  BlackListLogicChain    - strategyId: 10001, ruleModel: rule_blacklist
-24-07-26.15:29:57.029 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
-24-07-26.15:29:57.039 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
-24-07-26.15:32:39.912 [main            ] INFO  LogicChainTest         - Starting LogicChainTest using Java 1.8.0_402 on Iroha.lan with PID 73046 (started by smril in /Users/smril/IdeaProjects/big-market/big-market-app)
-24-07-26.15:32:39.913 [main            ] INFO  LogicChainTest         - The following 1 profile is active: "dev"
-24-07-26.15:32:40.841 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
-24-07-26.15:32:40.845 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-24-07-26.15:32:40.879 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 16 ms. Found 0 Redis repository interfaces.
-24-07-26.15:32:42.422 [main            ] INFO  Version                - Redisson 3.23.4
-24-07-26.15:32:42.454 [main            ] WARN  DnsServerAddressStreamProviders - Can not find io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider in the classpath, fallback to system defaults. This may result in incorrect DNS resolutions on MacOS. Check whether you have a dependency on 'io.netty:netty-resolver-dns-native-macos'
-24-07-26.15:32:42.692 [redisson-netty-2-5] INFO  MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
-24-07-26.15:32:42.710 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
-24-07-26.15:32:44.359 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
-24-07-26.15:32:44.422 [main            ] INFO  LogicChainTest         - Started LogicChainTest in 4.908 seconds (JVM running for 6.03)
-24-07-26.15:32:44.931 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
-24-07-26.15:32:45.401 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
-24-07-26.15:32:45.761 [main            ] INFO  LogicChainTest         - 测试结果: true
-24-07-26.15:32:45.791 [main            ] INFO  LogicChainTest         - 测试结果: true
-24-07-26.15:32:45.805 [main            ] INFO  LogicChainTest         - 测试结果: true
-24-07-26.15:32:45.846 [main            ] INFO  BlackListLogicChain    - 抽奖责任链-黑名单开始: userId: user001, strategyId: 10001, ruleModel: rule_blacklist
-24-07-26.15:32:45.881 [main            ] INFO  BlackListLogicChain    - strategyId: 10001, ruleModel: rule_blacklist
-24-07-26.15:32:45.937 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
-24-07-26.15:32:45.959 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
-24-07-26.15:34:13.361 [main            ] INFO  LogicChainTest         - Starting LogicChainTest using Java 1.8.0_402 on Iroha.lan with PID 73065 (started by smril in /Users/smril/IdeaProjects/big-market/big-market-app)
-24-07-26.15:34:13.362 [main            ] INFO  LogicChainTest         - The following 1 profile is active: "dev"
-24-07-26.15:34:14.318 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
-24-07-26.15:34:14.323 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-24-07-26.15:34:14.367 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 23 ms. Found 0 Redis repository interfaces.
-24-07-26.15:34:16.135 [main            ] INFO  Version                - Redisson 3.23.4
-24-07-26.15:34:16.177 [main            ] WARN  DnsServerAddressStreamProviders - Can not find io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider in the classpath, fallback to system defaults. This may result in incorrect DNS resolutions on MacOS. Check whether you have a dependency on 'io.netty:netty-resolver-dns-native-macos'
-24-07-26.15:34:16.457 [redisson-netty-2-4] INFO  MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
-24-07-26.15:34:16.478 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
-24-07-26.15:34:18.356 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
-24-07-26.15:34:18.433 [main            ] INFO  LogicChainTest         - Started LogicChainTest in 5.498 seconds (JVM running for 6.437)
-24-07-26.15:34:19.131 [main            ] INFO  LogicChainTest         - 测试结果: true
-24-07-26.15:34:19.162 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
-24-07-26.15:34:19.563 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
-24-07-26.15:34:19.629 [main            ] INFO  LogicChainTest         - 测试结果: true
-24-07-26.15:34:19.635 [main            ] INFO  LogicChainTest         - 测试结果: true
-24-07-26.15:34:19.639 [main            ] INFO  BlackListLogicChain    - 抽奖责任链-黑名单开始: userId: user001, strategyId: 10001, ruleModel: rule_blacklist
-24-07-26.15:34:19.667 [main            ] INFO  BlackListLogicChain    - 抽奖责任链-没有黑名单信息: userId: user001, strategyId: 10001, ruleModel: rule_blacklist
-24-07-26.15:34:19.671 [main            ] INFO  DefaultLogicChain      - 抽奖责任链，默认处理 userId: user001, strategyId: 10001, ruleModel: default, awardId: 102
-24-07-26.15:34:19.671 [main            ] INFO  LogicChainTest         - 测试结果: 102
-24-07-26.15:34:19.720 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
-24-07-26.15:34:19.746 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
-24-07-26.15:34:52.662 [main            ] INFO  LogicChainTest         - Starting LogicChainTest using Java 1.8.0_402 on Iroha.lan with PID 73076 (started by smril in /Users/smril/IdeaProjects/big-market/big-market-app)
-24-07-26.15:34:52.663 [main            ] INFO  LogicChainTest         - The following 1 profile is active: "dev"
-24-07-26.15:34:53.464 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
-24-07-26.15:34:53.468 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-24-07-26.15:34:53.498 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 16 ms. Found 0 Redis repository interfaces.
-24-07-26.15:34:54.982 [main            ] INFO  Version                - Redisson 3.23.4
-24-07-26.15:34:55.015 [main            ] WARN  DnsServerAddressStreamProviders - Can not find io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider in the classpath, fallback to system defaults. This may result in incorrect DNS resolutions on MacOS. Check whether you have a dependency on 'io.netty:netty-resolver-dns-native-macos'
-24-07-26.15:34:55.229 [redisson-netty-2-4] INFO  MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
-24-07-26.15:34:55.246 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
-24-07-26.15:34:56.993 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
-24-07-26.15:34:57.065 [main            ] INFO  LogicChainTest         - Started LogicChainTest in 4.813 seconds (JVM running for 5.698)
-24-07-26.15:34:57.729 [main            ] INFO  LogicChainTest         - 测试结果: true
-24-07-26.15:34:57.758 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
-24-07-26.15:34:58.148 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
-24-07-26.15:34:58.211 [main            ] INFO  LogicChainTest         - 测试结果: true
-24-07-26.15:34:58.218 [main            ] INFO  LogicChainTest         - 测试结果: true
-24-07-26.15:34:58.222 [main            ] INFO  BlackListLogicChain    - 抽奖责任链-黑名单开始: userId: user001, strategyId: 10002, ruleModel: rule_blacklist
-24-07-26.15:34:58.246 [main            ] INFO  BlackListLogicChain    - 抽奖责任链-黑名单接管: userId: user001, strategyId: 10002, ruleModel: rule_blacklist, awardId: 100
-24-07-26.15:34:58.246 [main            ] INFO  LogicChainTest         - 测试结果: 100
-24-07-26.15:34:58.293 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
-24-07-26.15:34:58.326 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
-24-07-26.15:41:07.143 [main            ] INFO  LogicChainTest         - Starting LogicChainTest using Java 1.8.0_402 on Iroha.lan with PID 73127 (started by smril in /Users/smril/IdeaProjects/big-market/big-market-app)
-24-07-26.15:41:07.144 [main            ] INFO  LogicChainTest         - The following 1 profile is active: "dev"
-24-07-26.15:41:07.930 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
-24-07-26.15:41:07.933 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-24-07-26.15:41:07.961 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 14 ms. Found 0 Redis repository interfaces.
-24-07-26.15:41:09.298 [main            ] INFO  Version                - Redisson 3.23.4
-24-07-26.15:41:09.322 [main            ] WARN  DnsServerAddressStreamProviders - Can not find io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider in the classpath, fallback to system defaults. This may result in incorrect DNS resolutions on MacOS. Check whether you have a dependency on 'io.netty:netty-resolver-dns-native-macos'
-24-07-26.15:41:09.512 [redisson-netty-2-4] INFO  MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
-24-07-26.15:41:09.530 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
-24-07-26.15:41:11.113 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
-24-07-26.15:41:11.181 [main            ] INFO  LogicChainTest         - Started LogicChainTest in 4.445 seconds (JVM running for 5.275)
-24-07-26.15:41:11.877 [main            ] INFO  LogicChainTest         - 测试结果: true
-24-07-26.15:41:11.909 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
-24-07-26.15:41:12.267 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
-24-07-26.15:41:12.329 [main            ] INFO  LogicChainTest         - 测试结果: true
-24-07-26.15:41:12.335 [main            ] INFO  LogicChainTest         - 测试结果: true
-24-07-26.15:41:12.338 [main            ] INFO  BlackListLogicChain    - 抽奖责任链-黑名单开始: userId: smril, strategyId: 10002, ruleModel: rule_blacklist
-24-07-26.15:41:12.363 [main            ] INFO  BlackListLogicChain    - 抽奖责任链-黑名单放行: userId: smril, strategyId: 10002, ruleModel: rule_blacklist
-24-07-26.15:41:12.363 [main            ] INFO  RuleWeightLogicChain   - 抽奖责任链-权重开始: userId: smril, strategyId: 10002, ruleModel: rule_weight
-24-07-26.15:41:12.370 [main            ] INFO  RuleWeightLogicChain   - 抽奖责任链-权重接管: userId: smril, strategyId: 10002, ruleModel: rule_weight, awardId: 102
-24-07-26.15:41:12.370 [main            ] INFO  LogicChainTest         - 测试结果: 102
-24-07-26.15:41:12.416 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
-24-07-26.15:41:12.451 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
-24-07-26.15:44:07.049 [main            ] INFO  LogicChainTest         - Starting LogicChainTest using Java 1.8.0_402 on Iroha.lan with PID 73183 (started by smril in /Users/smril/IdeaProjects/big-market/big-market-app)
-24-07-26.15:44:07.050 [main            ] INFO  LogicChainTest         - The following 1 profile is active: "dev"
-24-07-26.15:44:07.853 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
-24-07-26.15:44:07.856 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-24-07-26.15:44:07.886 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 14 ms. Found 0 Redis repository interfaces.
-24-07-26.15:44:09.295 [main            ] INFO  Version                - Redisson 3.23.4
-24-07-26.15:44:09.318 [main            ] WARN  DnsServerAddressStreamProviders - Can not find io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider in the classpath, fallback to system defaults. This may result in incorrect DNS resolutions on MacOS. Check whether you have a dependency on 'io.netty:netty-resolver-dns-native-macos'
-24-07-26.15:44:09.509 [redisson-netty-2-4] INFO  MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
-24-07-26.15:44:09.527 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
-24-07-26.15:44:11.282 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
-24-07-26.15:44:11.352 [main            ] INFO  LogicChainTest         - Started LogicChainTest in 4.717 seconds (JVM running for 5.577)
-24-07-26.15:44:11.823 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
-24-07-26.15:44:12.198 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
-24-07-26.15:44:12.529 [main            ] INFO  LogicChainTest         - 测试结果: true
-24-07-26.15:44:12.558 [main            ] INFO  LogicChainTest         - 测试结果: true
-24-07-26.15:44:12.571 [main            ] INFO  LogicChainTest         - 测试结果: true
-24-07-26.15:44:12.609 [main            ] INFO  DefaultLogicChain      - 抽奖责任链，默认处理 userId: smril, strategyId: 10003, ruleModel: default, awardId: 107
-24-07-26.15:44:12.610 [main            ] INFO  LogicChainTest         - 测试结果: 107
-24-07-26.15:44:12.648 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
-24-07-26.15:44:12.669 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
-24-07-26.15:45:21.222 [main            ] INFO  LogicChainTest         - Starting LogicChainTest using Java 1.8.0_402 on Iroha.lan with PID 73202 (started by smril in /Users/smril/IdeaProjects/big-market/big-market-app)
-24-07-26.15:45:21.223 [main            ] INFO  LogicChainTest         - The following 1 profile is active: "dev"
-24-07-26.15:45:22.070 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
-24-07-26.15:45:22.073 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-24-07-26.15:45:22.114 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 23 ms. Found 0 Redis repository interfaces.
-24-07-26.15:45:23.542 [main            ] INFO  Version                - Redisson 3.23.4
-24-07-26.15:45:23.566 [main            ] WARN  DnsServerAddressStreamProviders - Can not find io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider in the classpath, fallback to system defaults. This may result in incorrect DNS resolutions on MacOS. Check whether you have a dependency on 'io.netty:netty-resolver-dns-native-macos'
-24-07-26.15:45:23.773 [redisson-netty-2-4] INFO  MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
-24-07-26.15:45:23.791 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
-24-07-26.15:45:25.867 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
-24-07-26.15:45:26.012 [main            ] INFO  LogicChainTest         - Started LogicChainTest in 5.233 seconds (JVM running for 6.285)
-24-07-26.15:45:26.919 [main            ] INFO  LogicChainTest         - 测试结果: true
-24-07-26.15:45:26.956 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
-24-07-26.15:45:27.327 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
-24-07-26.15:45:27.389 [main            ] INFO  LogicChainTest         - 测试结果: true
-24-07-26.15:45:27.397 [main            ] INFO  LogicChainTest         - 测试结果: true
-24-07-26.15:45:27.401 [main            ] INFO  BlackListLogicChain    - 抽奖责任链-黑名单开始: userId: smril, strategyId: 10002, ruleModel: rule_blacklist
-24-07-26.15:45:27.434 [main            ] INFO  BlackListLogicChain    - 抽奖责任链-黑名单放行: userId: smril, strategyId: 10002, ruleModel: rule_blacklist
-24-07-26.15:45:27.434 [main            ] INFO  RuleWeightLogicChain   - 抽奖责任链-权重开始: userId: smril, strategyId: 10002, ruleModel: rule_weight
-24-07-26.15:45:27.444 [main            ] INFO  RuleWeightLogicChain   - 抽奖责任链-权重接管: userId: smril, strategyId: 10002, ruleModel: rule_weight, awardId: 102
-24-07-26.15:45:27.445 [main            ] INFO  LogicChainTest         - 测试结果: 102
-24-07-26.15:45:27.492 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
-24-07-26.15:45:27.517 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
-24-07-26.15:45:34.906 [main            ] INFO  LogicChainTest         - Starting LogicChainTest using Java 1.8.0_402 on Iroha.lan with PID 73210 (started by smril in /Users/smril/IdeaProjects/big-market/big-market-app)
-24-07-26.15:45:34.907 [main            ] INFO  LogicChainTest         - The following 1 profile is active: "dev"
-24-07-26.15:45:36.522 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
-24-07-26.15:45:36.530 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-24-07-26.15:45:36.594 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 34 ms. Found 0 Redis repository interfaces.
-24-07-26.15:45:38.768 [main            ] INFO  Version                - Redisson 3.23.4
-24-07-26.15:45:38.805 [main            ] WARN  DnsServerAddressStreamProviders - Can not find io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider in the classpath, fallback to system defaults. This may result in incorrect DNS resolutions on MacOS. Check whether you have a dependency on 'io.netty:netty-resolver-dns-native-macos'
-24-07-26.15:45:39.080 [redisson-netty-2-5] INFO  MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
-24-07-26.15:45:39.102 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
-24-07-26.15:45:41.013 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
-24-07-26.15:45:41.093 [main            ] INFO  LogicChainTest         - Started LogicChainTest in 6.794 seconds (JVM running for 8.197)
-24-07-26.15:45:41.966 [main            ] INFO  LogicChainTest         - 测试结果: true
-24-07-26.15:45:42.002 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
-24-07-26.15:45:42.385 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
-24-07-26.15:45:42.476 [main            ] INFO  LogicChainTest         - 测试结果: true
-24-07-26.15:45:42.486 [main            ] INFO  LogicChainTest         - 测试结果: true
-24-07-26.15:45:42.502 [main            ] INFO  DefaultLogicChain      - 抽奖责任链，默认处理 userId: smril, strategyId: 10003, ruleModel: default, awardId: 109
-24-07-26.15:45:42.502 [main            ] INFO  LogicChainTest         - 测试结果: 109
-24-07-26.15:45:42.597 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
-24-07-26.15:45:42.640 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
-24-07-26.15:46:53.465 [main            ] INFO  LogicChainTest         - Starting LogicChainTest using Java 1.8.0_402 on Iroha.lan with PID 73224 (started by smril in /Users/smril/IdeaProjects/big-market/big-market-app)
-24-07-26.15:46:53.466 [main            ] INFO  LogicChainTest         - The following 1 profile is active: "dev"
-24-07-26.15:46:54.762 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
-24-07-26.15:46:54.768 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-24-07-26.15:46:54.824 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 30 ms. Found 0 Redis repository interfaces.
-24-07-26.15:46:56.420 [main            ] INFO  Version                - Redisson 3.23.4
-24-07-26.15:46:56.452 [main            ] WARN  DnsServerAddressStreamProviders - Can not find io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider in the classpath, fallback to system defaults. This may result in incorrect DNS resolutions on MacOS. Check whether you have a dependency on 'io.netty:netty-resolver-dns-native-macos'
-24-07-26.15:46:56.786 [redisson-netty-2-4] INFO  MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
-24-07-26.15:46:56.811 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
-24-07-26.15:46:59.401 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
-24-07-26.15:46:59.564 [main            ] INFO  LogicChainTest         - Started LogicChainTest in 6.615 seconds (JVM running for 7.537)
-24-07-26.15:47:00.574 [main            ] INFO  LogicChainTest         - 测试结果: true
-24-07-26.15:47:00.605 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
-24-07-26.15:47:01.137 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
-24-07-26.15:47:01.235 [main            ] INFO  LogicChainTest         - 测试结果: true
-24-07-26.15:47:01.247 [main            ] INFO  LogicChainTest         - 测试结果: true
-24-07-26.15:47:01.262 [main            ] INFO  DefaultLogicChain      - 抽奖责任链，默认处理 userId: smril, strategyId: 10003, ruleModel: default, awardId: 107
-24-07-26.15:47:01.263 [main            ] INFO  LogicChainTest         - 测试结果: 107
-24-07-26.15:47:01.344 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
-24-07-26.15:47:01.370 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
-24-07-26.15:57:25.314 [main            ] INFO  LogicChainTest         - Starting LogicChainTest using Java 1.8.0_402 on Iroha.lan with PID 73394 (started by smril in /Users/smril/IdeaProjects/big-market/big-market-app)
-24-07-26.15:57:25.315 [main            ] INFO  LogicChainTest         - The following 1 profile is active: "dev"
-24-07-26.15:57:26.127 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
-24-07-26.15:57:26.131 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-24-07-26.15:57:26.164 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 17 ms. Found 0 Redis repository interfaces.
-24-07-26.15:57:28.109 [main            ] INFO  Version                - Redisson 3.23.4
-24-07-26.15:57:28.160 [main            ] WARN  DnsServerAddressStreamProviders - Can not find io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider in the classpath, fallback to system defaults. This may result in incorrect DNS resolutions on MacOS. Check whether you have a dependency on 'io.netty:netty-resolver-dns-native-macos'
-24-07-26.15:57:28.519 [redisson-netty-2-4] INFO  MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
-24-07-26.15:57:28.544 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
-24-07-26.15:57:30.501 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
-24-07-26.15:57:30.567 [main            ] INFO  LogicChainTest         - Started LogicChainTest in 5.644 seconds (JVM running for 6.668)
-24-07-26.15:57:31.225 [main            ] INFO  LogicChainTest         - 测试结果: true
-24-07-26.15:57:31.258 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
-24-07-26.15:57:31.627 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
-24-07-26.15:57:31.694 [main            ] INFO  LogicChainTest         - 测试结果: true
-24-07-26.15:57:31.702 [main            ] INFO  LogicChainTest         - 测试结果: true
-24-07-26.15:57:31.712 [main            ] INFO  DefaultLogicChain      - 抽奖责任链，默认处理 userId: smril, strategyId: 10003, ruleModel: default, awardId: 107
-24-07-26.15:57:31.713 [main            ] INFO  LogicChainTest         - 测试结果: 107
-24-07-26.15:57:31.792 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
-24-07-26.15:57:31.824 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
-24-07-26.16:29:51.073 [main            ] INFO  LogicChainTest         - Starting LogicChainTest using Java 1.8.0_402 on Iroha.lan with PID 73812 (started by smril in /Users/smril/IdeaProjects/big-market/big-market-app)
-24-07-26.16:29:51.074 [main            ] INFO  LogicChainTest         - The following 1 profile is active: "dev"
-24-07-26.16:29:52.813 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
-24-07-26.16:29:52.820 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-24-07-26.16:29:52.888 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 36 ms. Found 0 Redis repository interfaces.
-24-07-26.16:29:55.521 [main            ] INFO  Version                - Redisson 3.23.4
-24-07-26.16:29:55.564 [main            ] WARN  DnsServerAddressStreamProviders - Can not find io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider in the classpath, fallback to system defaults. This may result in incorrect DNS resolutions on MacOS. Check whether you have a dependency on 'io.netty:netty-resolver-dns-native-macos'
-24-07-26.16:29:55.961 [redisson-netty-2-4] INFO  MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
-24-07-26.16:29:55.986 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
-24-07-26.16:29:58.187 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
-24-07-26.16:29:58.270 [main            ] INFO  LogicChainTest         - Started LogicChainTest in 7.86 seconds (JVM running for 9.354)
-24-07-26.16:29:59.514 [main            ] INFO  LogicChainTest         - 测试结果: true
-24-07-26.16:29:59.568 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
-24-07-26.16:30:00.439 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
-24-07-26.16:30:00.586 [main            ] INFO  LogicChainTest         - 测试结果: true
-24-07-26.16:30:00.619 [main            ] INFO  LogicChainTest         - 测试结果: true
-24-07-26.16:30:00.639 [main            ] INFO  DefaultLogicChain      - 抽奖责任链，默认处理 userId: smril, strategyId: 10003, ruleModel: default, awardId: 107
-24-07-26.16:30:00.639 [main            ] INFO  LogicChainTest         - 测试结果: 107
-24-07-26.16:30:00.720 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
-24-07-26.16:30:00.744 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
-24-07-26.20:33:02.292 [main            ] INFO  LogicTreeTest          - Starting LogicTreeTest using Java 1.8.0_402 on Iroha.lan with PID 75865 (started by smril in /Users/smril/IdeaProjects/big-market/big-market-app)
-24-07-26.20:33:02.293 [main            ] INFO  LogicTreeTest          - The following 1 profile is active: "dev"
-24-07-26.20:33:03.409 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
-24-07-26.20:33:03.413 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-24-07-26.20:33:03.463 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 29 ms. Found 0 Redis repository interfaces.
-24-07-26.20:33:05.225 [main            ] INFO  Version                - Redisson 3.23.4
-24-07-26.20:33:05.258 [main            ] WARN  DnsServerAddressStreamProviders - Can not find io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider in the classpath, fallback to system defaults. This may result in incorrect DNS resolutions on MacOS. Check whether you have a dependency on 'io.netty:netty-resolver-dns-native-macos'
-24-07-26.20:33:05.551 [redisson-netty-2-4] INFO  MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
-24-07-26.20:33:05.573 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
-24-07-26.20:33:07.462 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
-24-07-26.20:33:07.530 [main            ] INFO  LogicTreeTest          - Started LogicTreeTest in 5.712 seconds (JVM running for 6.721)
-24-07-26.20:33:07.990 [main            ] INFO  DecisionTreeEngine     - 决策树引擎【决策树规则；增加dall-e-3画图模型】 treeId: 100000001, node: rule_lock, code: 0000
-24-07-26.20:33:07.991 [main            ] INFO  DecisionTreeEngine     - 决策树引擎【决策树规则；增加dall-e-3画图模型】 treeId: 100000001, node: rule_stock, code: 0001
-24-07-26.20:33:07.992 [main            ] INFO  DecisionTreeEngine     - 决策树引擎【决策树规则；增加dall-e-3画图模型】 treeId: 100000001, node: rule_luck_award, code: 0001
-24-07-26.20:33:08.221 [main            ] INFO  LogicTreeTest          - 测试结果：{"awardId":101,"awardRuleValue":"1,100"}
-24-07-26.21:08:26.195 [main            ] INFO  LogicTreeTest          - Starting LogicTreeTest using Java 1.8.0_402 on Iroha.lan with PID 76203 (started by smril in /Users/smril/IdeaProjects/big-market/big-market-app)
-24-07-26.21:08:26.197 [main            ] INFO  LogicTreeTest          - The following 1 profile is active: "dev"
-24-07-26.21:08:27.377 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
-24-07-26.21:08:27.381 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-24-07-26.21:08:27.421 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 21 ms. Found 0 Redis repository interfaces.
-24-07-26.21:08:29.221 [main            ] INFO  Version                - Redisson 3.23.4
-24-07-26.21:08:29.290 [main            ] WARN  DnsServerAddressStreamProviders - Can not find io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider in the classpath, fallback to system defaults. This may result in incorrect DNS resolutions on MacOS. Check whether you have a dependency on 'io.netty:netty-resolver-dns-native-macos'
-24-07-26.21:08:29.696 [redisson-netty-2-4] INFO  MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
-24-07-26.21:08:29.719 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
-24-07-26.21:08:32.038 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
-24-07-26.21:08:32.142 [main            ] INFO  LogicTreeTest          - Started LogicTreeTest in 6.55 seconds (JVM running for 8.649)
-24-07-26.21:08:32.754 [main            ] INFO  DecisionTreeEngine     - 决策树引擎【决策树规则；增加dall-e-3画图模型】 treeId: 100000001, node: rule_lock, code: 0000
-24-07-26.21:08:32.756 [main            ] INFO  DecisionTreeEngine     - 决策树引擎【决策树规则；增加dall-e-3画图模型】 treeId: 100000001, node: rule_stock, code: 0001
-24-07-26.21:08:32.759 [main            ] INFO  DecisionTreeEngine     - 决策树引擎【决策树规则；增加dall-e-3画图模型】 treeId: 100000001, node: rule_luck_award, code: 0001
-24-07-26.21:08:33.174 [main            ] INFO  LogicTreeTest          - 测试结果：{"awardId":101,"awardRuleValue":"1,100"}
+24-07-27.09:26:06.821 [main            ] INFO  LogicTreeTest          - Starting LogicTreeTest using Java 1.8.0_402 on Iroha.lan with PID 81562 (started by smril in /Users/smril/IdeaProjects/big-market/big-market-app)
+24-07-27.09:26:06.822 [main            ] INFO  LogicTreeTest          - The following 1 profile is active: "dev"
+24-07-27.09:26:07.794 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+24-07-27.09:26:07.798 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+24-07-27.09:26:07.841 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 21 ms. Found 0 Redis repository interfaces.
+24-07-27.09:26:09.472 [main            ] INFO  Version                - Redisson 3.23.4
+24-07-27.09:26:09.507 [main            ] WARN  DnsServerAddressStreamProviders - Can not find io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider in the classpath, fallback to system defaults. This may result in incorrect DNS resolutions on MacOS. Check whether you have a dependency on 'io.netty:netty-resolver-dns-native-macos'
+24-07-27.09:26:09.823 [redisson-netty-2-4] INFO  MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
+24-07-27.09:26:09.843 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
+24-07-27.09:26:11.581 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+24-07-27.09:26:11.646 [main            ] INFO  LogicTreeTest          - Started LogicTreeTest in 5.272 seconds (JVM running for 6.195)
+24-07-27.09:26:12.129 [main            ] INFO  DecisionTreeEngine     - 决策树引擎【决策树规则；增加dall-e-3画图模型】 treeId: 100000001, node: rule_lock, code: 0000
+24-07-27.09:26:12.130 [main            ] INFO  DecisionTreeEngine     - 决策树引擎【决策树规则；增加dall-e-3画图模型】 treeId: 100000001, node: rule_stock, code: 0001
+24-07-27.09:26:12.131 [main            ] INFO  DecisionTreeEngine     - 决策树引擎【决策树规则；增加dall-e-3画图模型】 treeId: 100000001, node: rule_luck_award, code: 0001
+24-07-27.09:26:12.349 [main            ] INFO  LogicTreeTest          - 测试结果：{"awardId":101,"awardRuleValue":"1,100"}
+24-07-27.09:26:52.607 [main            ] INFO  LogicChainTest         - Starting LogicChainTest using Java 1.8.0_402 on Iroha.lan with PID 81576 (started by smril in /Users/smril/IdeaProjects/big-market/big-market-app)
+24-07-27.09:26:52.608 [main            ] INFO  LogicChainTest         - The following 1 profile is active: "dev"
+24-07-27.09:26:53.462 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+24-07-27.09:26:53.464 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+24-07-27.09:26:53.491 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 14 ms. Found 0 Redis repository interfaces.
+24-07-27.09:26:54.903 [main            ] INFO  Version                - Redisson 3.23.4
+24-07-27.09:26:54.928 [main            ] WARN  DnsServerAddressStreamProviders - Can not find io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider in the classpath, fallback to system defaults. This may result in incorrect DNS resolutions on MacOS. Check whether you have a dependency on 'io.netty:netty-resolver-dns-native-macos'
+24-07-27.09:26:55.139 [redisson-netty-2-4] INFO  MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
+24-07-27.09:26:55.158 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
+24-07-27.09:26:56.997 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+24-07-27.09:26:57.081 [main            ] INFO  LogicChainTest         - Started LogicChainTest in 4.875 seconds (JVM running for 5.722)
+24-07-27.09:26:57.562 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+24-07-27.09:26:58.048 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+24-07-27.09:26:58.163 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+24-07-27.09:26:58.197 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+24-07-27.09:33:13.424 [main            ] INFO  LogicChainTest         - Starting LogicChainTest using Java 1.8.0_402 on Iroha.lan with PID 81646 (started by smril in /Users/smril/IdeaProjects/big-market/big-market-app)
+24-07-27.09:33:13.425 [main            ] INFO  LogicChainTest         - The following 1 profile is active: "dev"
+24-07-27.09:33:14.343 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+24-07-27.09:33:14.348 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+24-07-27.09:33:14.386 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 22 ms. Found 0 Redis repository interfaces.
+24-07-27.09:33:15.832 [main            ] INFO  Version                - Redisson 3.23.4
+24-07-27.09:33:15.865 [main            ] WARN  DnsServerAddressStreamProviders - Can not find io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider in the classpath, fallback to system defaults. This may result in incorrect DNS resolutions on MacOS. Check whether you have a dependency on 'io.netty:netty-resolver-dns-native-macos'
+24-07-27.09:33:16.102 [redisson-netty-2-5] INFO  MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
+24-07-27.09:33:16.116 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
+24-07-27.09:33:17.806 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+24-07-27.09:33:17.877 [main            ] INFO  LogicChainTest         - Started LogicChainTest in 4.871 seconds (JVM running for 5.735)
+24-07-27.09:33:18.478 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+24-07-27.09:33:18.982 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+24-07-27.09:33:19.402 [main            ] INFO  LogicChainTest         - 测试结果: true
+24-07-27.09:33:19.414 [main            ] INFO  LogicChainTest         - 测试结果: true
+24-07-27.09:33:19.427 [main            ] INFO  LogicChainTest         - 测试结果: true
+24-07-27.09:33:19.465 [main            ] INFO  BlackListLogicChain    - 抽奖责任链-黑名单开始: userId: user001, strategyId: 100001, ruleModel: rule_blacklist
+24-07-27.09:33:19.498 [main            ] INFO  BlackListLogicChain    - 抽奖责任链-黑名单接管: userId: user001, strategyId: 100001, ruleModel: rule_blacklist, awardId: 100
+24-07-27.09:33:19.498 [main            ] INFO  LogicChainTest         - 测试结果: 100
+24-07-27.09:33:19.557 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+24-07-27.09:33:19.602 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+24-07-27.09:37:10.888 [main            ] INFO  LogicChainTest         - Starting LogicChainTest using Java 1.8.0_402 on Iroha.lan with PID 81667 (started by smril in /Users/smril/IdeaProjects/big-market/big-market-app)
+24-07-27.09:37:10.888 [main            ] INFO  LogicChainTest         - The following 1 profile is active: "dev"
+24-07-27.09:37:11.706 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+24-07-27.09:37:11.709 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+24-07-27.09:37:11.740 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 16 ms. Found 0 Redis repository interfaces.
+24-07-27.09:37:13.046 [main            ] INFO  Version                - Redisson 3.23.4
+24-07-27.09:37:13.069 [main            ] WARN  DnsServerAddressStreamProviders - Can not find io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider in the classpath, fallback to system defaults. This may result in incorrect DNS resolutions on MacOS. Check whether you have a dependency on 'io.netty:netty-resolver-dns-native-macos'
+24-07-27.09:37:13.303 [redisson-netty-2-4] INFO  MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
+24-07-27.09:37:13.318 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
+24-07-27.09:37:14.858 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+24-07-27.09:37:14.942 [main            ] INFO  LogicChainTest         - Started LogicChainTest in 4.485 seconds (JVM running for 5.326)
+24-07-27.09:37:15.595 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+24-07-27.09:37:15.947 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+24-07-27.09:37:16.031 [main            ] INFO  LogicChainTest         - 测试结果: true
+24-07-27.09:37:16.037 [main            ] INFO  LogicChainTest         - 测试结果: true
+24-07-27.09:37:16.043 [main            ] INFO  LogicChainTest         - 测试结果: true
+24-07-27.09:37:16.047 [main            ] INFO  BlackListLogicChain    - 抽奖责任链-黑名单开始: userId: smril, strategyId: 100001, ruleModel: rule_blacklist
+24-07-27.09:37:16.078 [main            ] INFO  BlackListLogicChain    - 抽奖责任链-黑名单放行: userId: smril, strategyId: 100001, ruleModel: rule_blacklist
+24-07-27.09:37:16.078 [main            ] INFO  RuleWeightLogicChain   - 抽奖责任链-权重开始: userId: smril, strategyId: 100001, ruleModel: rule_weight
+24-07-27.09:37:16.084 [main            ] INFO  RuleWeightLogicChain   - 抽奖责任链-权重接管: userId: smril, strategyId: 100001, ruleModel: rule_weight, awardId: 102
+24-07-27.09:37:16.084 [main            ] INFO  LogicChainTest         - 测试结果: 102
+24-07-27.09:37:16.129 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+24-07-27.09:37:16.169 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+24-07-27.17:12:59.373 [main            ] INFO  StrategyRepositoryTest - Starting StrategyRepositoryTest using Java 1.8.0_402 on Iroha.lan with PID 85949 (started by smril in /Users/smril/IdeaProjects/big-market/big-market-app)
+24-07-27.17:12:59.374 [main            ] INFO  StrategyRepositoryTest - The following 1 profile is active: "dev"
+24-07-27.17:13:00.429 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+24-07-27.17:13:00.435 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+24-07-27.17:13:00.509 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 44 ms. Found 0 Redis repository interfaces.
+24-07-27.17:13:02.614 [main            ] INFO  Version                - Redisson 3.23.4
+24-07-27.17:13:02.652 [main            ] WARN  DnsServerAddressStreamProviders - Can not find io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider in the classpath, fallback to system defaults. This may result in incorrect DNS resolutions on MacOS. Check whether you have a dependency on 'io.netty:netty-resolver-dns-native-macos'
+24-07-27.17:13:02.932 [redisson-netty-2-4] INFO  MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
+24-07-27.17:13:02.953 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
+24-07-27.17:13:05.014 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+24-07-27.17:13:05.087 [main            ] INFO  StrategyRepositoryTest - Started StrategyRepositoryTest in 6.062 seconds (JVM running for 7.017)
+24-07-27.17:13:05.643 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+24-07-27.17:13:06.167 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+24-07-27.17:13:06.607 [main            ] INFO  StrategyRepositoryTest - 测试结果: {"treeDesc":"规则树","treeId":"tree_lock","treeName":"规则树","treeNodeMap":{"rule_lock":{"ruleDesc":"限定用户已完成N次抽奖后解锁","ruleKey":"rule_lock","ruleValue":"1","treeId":"tree_lock","treeNodeLineVOList":[{"ruleLimitType":"EQUAL","ruleLimitValue":"ALLOW","ruleNodeFrom":"rule_lock","ruleNodeTo":"rule_stock","treeId":"tree_lock"},{"ruleLimitType":"EQUAL","ruleLimitValue":"TAKE_OVER","ruleNodeFrom":"rule_lock","ruleNodeTo":"rule_luck_award","treeId":"tree_lock"}]},"rule_stock":{"ruleDesc":"库存扣减规则","ruleKey":"rule_stock","treeId":"tree_lock","treeNodeLineVOList":[{"ruleLimitType":"EQUAL","ruleLimitValue":"TAKE_OVER","ruleNodeFrom":"rule_stock","ruleNodeTo":"rule_luck_award","treeId":"tree_lock"}]},"rule_luck_award":{"ruleDesc":"兜底奖品随机积分","ruleKey":"rule_luck_award","ruleValue":"1,100","treeId":"tree_lock"}},"treeRootRuleNode":"rule_lock"}
+24-07-27.17:13:06.651 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+24-07-27.17:13:06.671 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+24-07-27.17:15:56.979 [main            ] INFO  StrategyRepositoryTest - Starting StrategyRepositoryTest using Java 1.8.0_402 on Iroha.lan with PID 85996 (started by smril in /Users/smril/IdeaProjects/big-market/big-market-app)
+24-07-27.17:15:56.980 [main            ] INFO  StrategyRepositoryTest - The following 1 profile is active: "dev"
+24-07-27.17:15:57.792 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+24-07-27.17:15:57.795 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+24-07-27.17:15:57.828 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 17 ms. Found 0 Redis repository interfaces.
+24-07-27.17:15:59.170 [main            ] INFO  Version                - Redisson 3.23.4
+24-07-27.17:15:59.196 [main            ] WARN  DnsServerAddressStreamProviders - Can not find io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider in the classpath, fallback to system defaults. This may result in incorrect DNS resolutions on MacOS. Check whether you have a dependency on 'io.netty:netty-resolver-dns-native-macos'
+24-07-27.17:15:59.419 [redisson-netty-2-5] INFO  MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
+24-07-27.17:15:59.434 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
+24-07-27.17:16:01.145 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+24-07-27.17:16:01.323 [main            ] INFO  StrategyRepositoryTest - Started StrategyRepositoryTest in 4.762 seconds (JVM running for 5.624)
+24-07-27.17:16:02.066 [main            ] INFO  StrategyRepositoryTest - 测试结果: {"treeDesc":"规则树","treeId":"tree_lock","treeName":"规则树","treeNodeMap":{"rule_lock":{"ruleDesc":"限定用户已完成N次抽奖后解锁","ruleKey":"rule_lock","ruleValue":"1","treeId":"tree_lock","treeNodeLineVOList":[{"ruleLimitType":"EQUAL","ruleLimitValue":"ALLOW","ruleNodeFrom":"rule_lock","ruleNodeTo":"rule_stock","treeId":"tree_lock"},{"ruleLimitType":"EQUAL","ruleLimitValue":"TAKE_OVER","ruleNodeFrom":"rule_lock","ruleNodeTo":"rule_luck_award","treeId":"tree_lock"}]},"rule_stock":{"ruleDesc":"库存扣减规则","ruleKey":"rule_stock","treeId":"tree_lock","treeNodeLineVOList":[{"ruleLimitType":"EQUAL","ruleLimitValue":"TAKE_OVER","ruleNodeFrom":"rule_stock","ruleNodeTo":"rule_luck_award","treeId":"tree_lock"}]},"rule_luck_award":{"ruleDesc":"兜底奖品随机积分","ruleKey":"rule_luck_award","ruleValue":"1,100","treeId":"tree_lock"}},"treeRootRuleNode":"rule_lock"}
+24-07-27.17:16:47.675 [main            ] INFO  StrategyRepositoryTest - Starting StrategyRepositoryTest using Java 1.8.0_402 on Iroha.lan with PID 86010 (started by smril in /Users/smril/IdeaProjects/big-market/big-market-app)
+24-07-27.17:16:47.676 [main            ] INFO  StrategyRepositoryTest - The following 1 profile is active: "dev"
+24-07-27.17:16:48.513 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+24-07-27.17:16:48.517 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+24-07-27.17:16:48.549 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 17 ms. Found 0 Redis repository interfaces.
+24-07-27.17:16:49.860 [main            ] INFO  Version                - Redisson 3.23.4
+24-07-27.17:16:49.885 [main            ] WARN  DnsServerAddressStreamProviders - Can not find io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider in the classpath, fallback to system defaults. This may result in incorrect DNS resolutions on MacOS. Check whether you have a dependency on 'io.netty:netty-resolver-dns-native-macos'
+24-07-27.17:16:50.095 [redisson-netty-2-4] INFO  MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
+24-07-27.17:16:50.113 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
+24-07-27.17:16:51.796 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+24-07-27.17:16:51.905 [main            ] INFO  StrategyRepositoryTest - Started StrategyRepositoryTest in 4.649 seconds (JVM running for 5.504)
+24-07-27.17:23:54.127 [main            ] INFO  StrategyRepositoryTest - Starting StrategyRepositoryTest using Java 1.8.0_402 on Iroha.lan with PID 86093 (started by smril in /Users/smril/IdeaProjects/big-market/big-market-app)
+24-07-27.17:23:54.128 [main            ] INFO  StrategyRepositoryTest - The following 1 profile is active: "dev"
+24-07-27.17:23:55.084 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+24-07-27.17:23:55.088 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+24-07-27.17:23:55.129 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 23 ms. Found 0 Redis repository interfaces.
+24-07-27.17:23:56.672 [main            ] INFO  Version                - Redisson 3.23.4
+24-07-27.17:23:56.705 [main            ] WARN  DnsServerAddressStreamProviders - Can not find io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider in the classpath, fallback to system defaults. This may result in incorrect DNS resolutions on MacOS. Check whether you have a dependency on 'io.netty:netty-resolver-dns-native-macos'
+24-07-27.17:23:56.938 [redisson-netty-2-5] INFO  MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
+24-07-27.17:23:56.954 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
+24-07-27.17:23:58.724 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+24-07-27.17:23:58.801 [main            ] INFO  StrategyRepositoryTest - Started StrategyRepositoryTest in 5.107 seconds (JVM running for 6.044)
+24-07-27.17:23:59.379 [main            ] INFO  StrategyRepositoryTest - 测试结果: key: rule_lock, value: RuleTreeNodeVO(treeId=tree_lock, ruleKey=rule_lock, ruleDesc=限定用户已完成N次抽奖后解锁, ruleValue=1, treeNodeLineVOList=[RuleTreeNodeLineVO(treeId=tree_lock, ruleNodeFrom=rule_lock, ruleNodeTo=rule_stock, ruleLimitType=EQUAL, ruleLimitValue=ALLOW), RuleTreeNodeLineVO(treeId=tree_lock, ruleNodeFrom=rule_lock, ruleNodeTo=rule_luck_award, ruleLimitType=EQUAL, ruleLimitValue=TAKE_OVER)])
+24-07-27.17:23:59.379 [main            ] INFO  StrategyRepositoryTest - 测试结果: key: rule_stock, value: RuleTreeNodeVO(treeId=tree_lock, ruleKey=rule_stock, ruleDesc=库存扣减规则, ruleValue=null, treeNodeLineVOList=[RuleTreeNodeLineVO(treeId=tree_lock, ruleNodeFrom=rule_stock, ruleNodeTo=rule_luck_award, ruleLimitType=EQUAL, ruleLimitValue=TAKE_OVER)])
+24-07-27.17:23:59.379 [main            ] INFO  StrategyRepositoryTest - 测试结果: key: rule_luck_award, value: RuleTreeNodeVO(treeId=tree_lock, ruleKey=rule_luck_award, ruleDesc=兜底奖品随机积分, ruleValue=1,100, treeNodeLineVOList=null)
+24-07-27.17:25:14.792 [main            ] INFO  StrategyRepositoryTest - Starting StrategyRepositoryTest using Java 1.8.0_402 on Iroha.lan with PID 86112 (started by smril in /Users/smril/IdeaProjects/big-market/big-market-app)
+24-07-27.17:25:14.793 [main            ] INFO  StrategyRepositoryTest - The following 1 profile is active: "dev"
+24-07-27.17:25:15.678 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+24-07-27.17:25:15.681 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+24-07-27.17:25:15.715 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 19 ms. Found 0 Redis repository interfaces.
+24-07-27.17:25:17.050 [main            ] INFO  Version                - Redisson 3.23.4
+24-07-27.17:25:17.074 [main            ] WARN  DnsServerAddressStreamProviders - Can not find io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider in the classpath, fallback to system defaults. This may result in incorrect DNS resolutions on MacOS. Check whether you have a dependency on 'io.netty:netty-resolver-dns-native-macos'
+24-07-27.17:25:17.276 [redisson-netty-2-5] INFO  MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
+24-07-27.17:25:17.294 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
+24-07-27.17:25:18.968 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+24-07-27.17:25:19.037 [main            ] INFO  StrategyRepositoryTest - Started StrategyRepositoryTest in 4.667 seconds (JVM running for 5.509)
+24-07-27.17:25:19.547 [main            ] INFO  StrategyRepositoryTest - 测试结果: key: rule_lock, value: 限定用户已完成N次抽奖后解锁
+24-07-27.17:25:19.547 [main            ] INFO  StrategyRepositoryTest - 测试结果: key: rule_stock, value: 库存扣减规则
+24-07-27.17:25:19.547 [main            ] INFO  StrategyRepositoryTest - 测试结果: key: rule_luck_award, value: 兜底奖品随机积分
+24-07-27.17:31:23.488 [main            ] INFO  StrategyRepositoryTest - Starting StrategyRepositoryTest using Java 1.8.0_402 on Iroha.lan with PID 86163 (started by smril in /Users/smril/IdeaProjects/big-market/big-market-app)
+24-07-27.17:31:23.489 [main            ] INFO  StrategyRepositoryTest - The following 1 profile is active: "dev"
+24-07-27.17:31:24.364 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+24-07-27.17:31:24.368 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+24-07-27.17:31:24.403 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 18 ms. Found 0 Redis repository interfaces.
+24-07-27.17:31:25.999 [main            ] INFO  Version                - Redisson 3.23.4
+24-07-27.17:31:26.036 [main            ] WARN  DnsServerAddressStreamProviders - Can not find io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider in the classpath, fallback to system defaults. This may result in incorrect DNS resolutions on MacOS. Check whether you have a dependency on 'io.netty:netty-resolver-dns-native-macos'
+24-07-27.17:31:26.336 [redisson-netty-2-4] INFO  MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
+24-07-27.17:31:26.355 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
+24-07-27.17:31:28.213 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+24-07-27.17:31:28.282 [main            ] INFO  StrategyRepositoryTest - Started StrategyRepositoryTest in 5.216 seconds (JVM running for 6.081)
+24-07-27.17:32:21.093 [main            ] INFO  StrategyRepositoryTest - Starting StrategyRepositoryTest using Java 1.8.0_402 on Iroha.lan with PID 86178 (started by smril in /Users/smril/IdeaProjects/big-market/big-market-app)
+24-07-27.17:32:21.094 [main            ] INFO  StrategyRepositoryTest - The following 1 profile is active: "dev"
+24-07-27.17:32:22.042 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+24-07-27.17:32:22.046 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+24-07-27.17:32:22.089 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 24 ms. Found 0 Redis repository interfaces.
+24-07-27.17:32:23.714 [main            ] INFO  Version                - Redisson 3.23.4
+24-07-27.17:32:23.742 [main            ] WARN  DnsServerAddressStreamProviders - Can not find io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider in the classpath, fallback to system defaults. This may result in incorrect DNS resolutions on MacOS. Check whether you have a dependency on 'io.netty:netty-resolver-dns-native-macos'
+24-07-27.17:32:23.991 [redisson-netty-2-4] INFO  MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
+24-07-27.17:32:24.014 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
+24-07-27.17:32:25.679 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+24-07-27.17:32:25.743 [main            ] INFO  StrategyRepositoryTest - Started StrategyRepositoryTest in 5.072 seconds (JVM running for 5.931)
+24-07-27.17:32:26.223 [main            ] INFO  StrategyRepositoryTest - 测试结果: key: rule_lock, value: 限定用户已完成N次抽奖后解锁
+24-07-27.17:32:26.223 [main            ] INFO  StrategyRepositoryTest - 测试结果: key: rule_stock, value: 库存扣减规则
+24-07-27.17:32:26.223 [main            ] INFO  StrategyRepositoryTest - 测试结果: key: rule_luck_award, value: 兜底奖品随机积分
+24-07-27.17:34:01.604 [main            ] INFO  StrategyRepositoryTest - Starting StrategyRepositoryTest using Java 1.8.0_402 on Iroha.lan with PID 86197 (started by smril in /Users/smril/IdeaProjects/big-market/big-market-app)
+24-07-27.17:34:01.605 [main            ] INFO  StrategyRepositoryTest - The following 1 profile is active: "dev"
+24-07-27.17:34:02.418 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+24-07-27.17:34:02.421 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+24-07-27.17:34:02.454 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 18 ms. Found 0 Redis repository interfaces.
+24-07-27.17:34:03.830 [main            ] INFO  Version                - Redisson 3.23.4
+24-07-27.17:34:03.861 [main            ] WARN  DnsServerAddressStreamProviders - Can not find io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider in the classpath, fallback to system defaults. This may result in incorrect DNS resolutions on MacOS. Check whether you have a dependency on 'io.netty:netty-resolver-dns-native-macos'
+24-07-27.17:34:04.132 [redisson-netty-2-4] INFO  MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
+24-07-27.17:34:04.149 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
+24-07-27.17:34:05.906 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+24-07-27.17:34:05.979 [main            ] INFO  StrategyRepositoryTest - Started StrategyRepositoryTest in 4.785 seconds (JVM running for 5.63)
+24-07-27.17:34:06.490 [main            ] INFO  StrategyRepositoryTest - 测试结果: key: rule_lock, value: 限定用户已完成N次抽奖后解锁
+24-07-27.17:34:40.336 [main            ] INFO  StrategyRepositoryTest - Starting StrategyRepositoryTest using Java 1.8.0_402 on Iroha.lan with PID 86203 (started by smril in /Users/smril/IdeaProjects/big-market/big-market-app)
+24-07-27.17:34:40.337 [main            ] INFO  StrategyRepositoryTest - The following 1 profile is active: "dev"
+24-07-27.17:34:41.155 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+24-07-27.17:34:41.158 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+24-07-27.17:34:41.193 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 20 ms. Found 0 Redis repository interfaces.
+24-07-27.17:34:42.580 [main            ] INFO  Version                - Redisson 3.23.4
+24-07-27.17:34:42.609 [main            ] WARN  DnsServerAddressStreamProviders - Can not find io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider in the classpath, fallback to system defaults. This may result in incorrect DNS resolutions on MacOS. Check whether you have a dependency on 'io.netty:netty-resolver-dns-native-macos'
+24-07-27.17:34:42.823 [redisson-netty-2-4] INFO  MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
+24-07-27.17:34:42.841 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
+24-07-27.17:34:44.561 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+24-07-27.17:34:44.634 [main            ] INFO  StrategyRepositoryTest - Started StrategyRepositoryTest in 4.769 seconds (JVM running for 5.77)
+24-07-27.17:34:45.119 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+24-07-27.17:34:45.611 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+24-07-27.17:34:45.741 [main            ] INFO  StrategyRepositoryTest - 测试结果: key: rule_lock, value: 限定用户已完成N次抽奖后解锁
+24-07-27.17:34:45.802 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+24-07-27.17:34:45.812 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+24-07-27.17:44:56.131 [main            ] INFO  StrategyRepositoryTest - Starting StrategyRepositoryTest using Java 1.8.0_402 on Iroha.lan with PID 86296 (started by smril in /Users/smril/IdeaProjects/big-market/big-market-app)
+24-07-27.17:44:56.132 [main            ] INFO  StrategyRepositoryTest - The following 1 profile is active: "dev"
+24-07-27.17:44:57.752 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+24-07-27.17:44:57.758 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+24-07-27.17:44:57.843 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 58 ms. Found 0 Redis repository interfaces.
+24-07-27.17:45:01.027 [main            ] INFO  Version                - Redisson 3.23.4
+24-07-27.17:45:01.079 [main            ] WARN  DnsServerAddressStreamProviders - Can not find io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider in the classpath, fallback to system defaults. This may result in incorrect DNS resolutions on MacOS. Check whether you have a dependency on 'io.netty:netty-resolver-dns-native-macos'
+24-07-27.17:45:01.534 [redisson-netty-2-5] INFO  MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
+24-07-27.17:45:01.558 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
+24-07-27.17:45:05.713 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+24-07-27.17:45:05.906 [main            ] INFO  StrategyRepositoryTest - Started StrategyRepositoryTest in 10.397 seconds (JVM running for 11.589)
+24-07-27.17:45:07.171 [main            ] INFO  StrategyRepositoryTest - 测试结果: {"treeDesc":"规则树","treeId":"tree_lock","treeName":"规则树","treeNodeMap":{"rule_lock":{"ruleDesc":"限定用户已完成N次抽奖后解锁","ruleKey":"rule_lock","ruleValue":"1","treeId":"tree_lock","treeNodeLineVOList":[{"ruleLimitType":"EQUAL","ruleLimitValue":"ALLOW","ruleNodeFrom":"rule_lock","ruleNodeTo":"rule_stock","treeId":"tree_lock"},{"ruleLimitType":"EQUAL","ruleLimitValue":"TAKE_OVER","ruleNodeFrom":"rule_lock","ruleNodeTo":"rule_luck_award","treeId":"tree_lock"}]},"rule_stock":{"ruleDesc":"库存扣减规则","ruleKey":"rule_stock","treeId":"tree_lock","treeNodeLineVOList":[{"ruleLimitType":"EQUAL","ruleLimitValue":"TAKE_OVER","ruleNodeFrom":"rule_stock","ruleNodeTo":"rule_luck_award","treeId":"tree_lock"}]},"rule_luck_award":{"ruleDesc":"兜底奖品随机积分","ruleKey":"rule_luck_award","ruleValue":"1,100","treeId":"tree_lock"}},"treeRootRuleNode":"rule_lock"}
+24-07-27.17:46:30.004 [main            ] INFO  StrategyRepositoryTest - Starting StrategyRepositoryTest using Java 1.8.0_402 on Iroha.lan with PID 86322 (started by smril in /Users/smril/IdeaProjects/big-market/big-market-app)
+24-07-27.17:46:30.005 [main            ] INFO  StrategyRepositoryTest - The following 1 profile is active: "dev"
+24-07-27.17:46:30.896 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+24-07-27.17:46:30.899 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+24-07-27.17:46:30.935 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 19 ms. Found 0 Redis repository interfaces.
+24-07-27.17:46:32.519 [main            ] INFO  Version                - Redisson 3.23.4
+24-07-27.17:46:32.561 [main            ] WARN  DnsServerAddressStreamProviders - Can not find io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider in the classpath, fallback to system defaults. This may result in incorrect DNS resolutions on MacOS. Check whether you have a dependency on 'io.netty:netty-resolver-dns-native-macos'
+24-07-27.17:46:32.809 [redisson-netty-2-4] INFO  MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
+24-07-27.17:46:32.828 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
+24-07-27.17:46:34.874 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+24-07-27.17:46:34.973 [main            ] INFO  StrategyRepositoryTest - Started StrategyRepositoryTest in 5.407 seconds (JVM running for 6.283)
+24-07-27.17:46:35.536 [main            ] INFO  StrategyRepositoryTest - 测试结果: key: rule_lock, value: 限定用户已完成N次抽奖后解锁
+24-07-27.17:46:35.536 [main            ] INFO  StrategyRepositoryTest - 测试结果: key: rule_stock, value: 库存扣减规则
+24-07-27.17:46:35.536 [main            ] INFO  StrategyRepositoryTest - 测试结果: key: rule_luck_award, value: 兜底奖品随机积分
+24-07-27.17:51:33.169 [main            ] INFO  StrategyRepositoryTest - Starting StrategyRepositoryTest using Java 1.8.0_402 on Iroha.lan with PID 86405 (started by smril in /Users/smril/IdeaProjects/big-market/big-market-app)
+24-07-27.17:51:33.170 [main            ] INFO  StrategyRepositoryTest - The following 1 profile is active: "dev"
+24-07-27.17:51:34.191 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+24-07-27.17:51:34.195 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+24-07-27.17:51:34.239 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 22 ms. Found 0 Redis repository interfaces.
+24-07-27.17:51:35.885 [main            ] INFO  Version                - Redisson 3.23.4
+24-07-27.17:51:35.921 [main            ] WARN  DnsServerAddressStreamProviders - Can not find io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider in the classpath, fallback to system defaults. This may result in incorrect DNS resolutions on MacOS. Check whether you have a dependency on 'io.netty:netty-resolver-dns-native-macos'
+24-07-27.17:51:36.201 [redisson-netty-2-4] INFO  MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
+24-07-27.17:51:36.219 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
+24-07-27.17:51:38.224 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+24-07-27.17:51:38.317 [main            ] INFO  StrategyRepositoryTest - Started StrategyRepositoryTest in 5.59 seconds (JVM running for 6.519)
+24-07-27.17:51:38.969 [main            ] INFO  StrategyRepositoryTest - 测试结果: key: rule_lock, value: 限定用户已完成N次抽奖后解锁
+24-07-27.17:51:38.969 [main            ] INFO  StrategyRepositoryTest - Node实体rule_lock: 
+24-07-27.17:51:38.970 [main            ] INFO  StrategyRepositoryTest - 测试结果: key: rule_stock, value: 库存扣减规则
+24-07-27.17:51:38.970 [main            ] INFO  StrategyRepositoryTest - Node实体rule_stock: 
+24-07-27.17:51:38.970 [main            ] INFO  StrategyRepositoryTest - 测试结果: key: rule_luck_award, value: 兜底奖品随机积分
+24-07-27.17:51:38.970 [main            ] INFO  StrategyRepositoryTest - Node实体rule_luck_award: 
+24-07-27.20:01:51.980 [main            ] INFO  RaffleStrategyTest     - Starting RaffleStrategyTest using Java 1.8.0_402 on Iroha.lan with PID 87780 (started by smril in /Users/smril/IdeaProjects/big-market/big-market-app)
+24-07-27.20:01:51.981 [main            ] INFO  RaffleStrategyTest     - The following 1 profile is active: "dev"
+24-07-27.20:01:52.919 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+24-07-27.20:01:52.923 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+24-07-27.20:01:52.959 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 18 ms. Found 0 Redis repository interfaces.
+24-07-27.20:01:54.520 [main            ] INFO  Version                - Redisson 3.23.4
+24-07-27.20:01:54.553 [main            ] WARN  DnsServerAddressStreamProviders - Can not find io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider in the classpath, fallback to system defaults. This may result in incorrect DNS resolutions on MacOS. Check whether you have a dependency on 'io.netty:netty-resolver-dns-native-macos'
+24-07-27.20:01:54.811 [redisson-netty-2-5] INFO  MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
+24-07-27.20:01:54.832 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
+24-07-27.20:01:56.874 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+24-07-27.20:01:56.960 [main            ] INFO  RaffleStrategyTest     - Started RaffleStrategyTest in 5.472 seconds (JVM running for 6.641)
+24-07-27.20:01:57.532 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+24-07-27.20:01:58.002 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+24-07-27.20:01:58.406 [main            ] INFO  RaffleStrategyTest     - 测试结果: true
+24-07-27.20:01:58.418 [main            ] INFO  RaffleStrategyTest     - 测试结果: true
+24-07-27.20:01:58.457 [main            ] INFO  DefaultLogicChain      - 抽奖责任链，默认处理 userId: smril, strategyId: 100006, ruleModel: rule_default, awardId: 102
+24-07-27.20:01:58.458 [main            ] INFO  AbstractRaffleStrategy - 抽奖策略计算-责任链 smril 100006 102 rule_default
+24-07-27.20:01:58.478 [main            ] INFO  DecisionTreeEngine     - 决策树引擎【规则树】 treeId: tree_lock, node: rule_lock, code: 0000
+24-07-27.20:01:58.479 [main            ] INFO  DecisionTreeEngine     - 决策树引擎【规则树】 treeId: tree_lock, node: rule_stock, code: 0001
+24-07-27.20:01:58.479 [main            ] INFO  DecisionTreeEngine     - 决策树引擎【规则树】 treeId: tree_lock, node: rule_luck_award, code: 0001
+24-07-27.20:01:58.479 [main            ] INFO  AbstractRaffleStrategy - 抽奖策略计算-规则树 smril 100006 101 1,100
+24-07-27.20:01:58.711 [main            ] INFO  RaffleStrategyTest     - 请求参数：{"strategyId":100006,"userId":"smril"}
+24-07-27.20:01:58.714 [main            ] INFO  RaffleStrategyTest     - 测试结果：{"awardConfig":"1,100","awardId":101}
+24-07-27.20:01:58.753 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+24-07-27.20:01:58.769 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+24-07-27.20:12:28.583 [main            ] INFO  RaffleStrategyTest     - Starting RaffleStrategyTest using Java 1.8.0_402 on Iroha.lan with PID 87906 (started by smril in /Users/smril/IdeaProjects/big-market/big-market-app)
+24-07-27.20:12:28.584 [main            ] INFO  RaffleStrategyTest     - The following 1 profile is active: "dev"
+24-07-27.20:12:29.452 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+24-07-27.20:12:29.455 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+24-07-27.20:12:29.491 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 19 ms. Found 0 Redis repository interfaces.
+24-07-27.20:12:31.176 [main            ] INFO  Version                - Redisson 3.23.4
+24-07-27.20:12:31.207 [main            ] WARN  DnsServerAddressStreamProviders - Can not find io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider in the classpath, fallback to system defaults. This may result in incorrect DNS resolutions on MacOS. Check whether you have a dependency on 'io.netty:netty-resolver-dns-native-macos'
+24-07-27.20:12:31.500 [redisson-netty-2-4] INFO  MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
+24-07-27.20:12:31.522 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
+24-07-27.20:12:34.561 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+24-07-27.20:12:34.679 [main            ] INFO  RaffleStrategyTest     - Started RaffleStrategyTest in 6.562 seconds (JVM running for 7.428)
+24-07-27.20:12:35.688 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+24-07-27.20:12:36.164 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+24-07-27.20:12:36.321 [main            ] INFO  RaffleStrategyTest     - 测试结果: true
+24-07-27.20:12:36.327 [main            ] INFO  RaffleStrategyTest     - 测试结果: true
+24-07-27.20:12:36.336 [main            ] INFO  DefaultLogicChain      - 抽奖责任链，默认处理 userId: smril, strategyId: 100006, ruleModel: rule_default, awardId: 102
+24-07-27.20:12:36.338 [main            ] INFO  AbstractRaffleStrategy - 抽奖策略计算-责任链 smril 100006 102 rule_default
+24-07-27.20:12:36.368 [main            ] INFO  DecisionTreeEngine     - 决策树引擎【规则树】 treeId: tree_lock, node: rule_lock, code: 0000
+24-07-27.20:12:36.369 [main            ] INFO  DecisionTreeEngine     - 决策树引擎【规则树】 treeId: tree_lock, node: rule_stock, code: 0001
+24-07-27.20:12:36.371 [main            ] INFO  DecisionTreeEngine     - 决策树引擎【规则树】 treeId: tree_lock, node: rule_luck_award, code: 0001
+24-07-27.20:12:36.371 [main            ] INFO  AbstractRaffleStrategy - 抽奖策略计算-规则树 smril 100006 101 1,100
+24-07-27.20:12:36.610 [main            ] INFO  RaffleStrategyTest     - 请求参数：{"strategyId":100006,"userId":"smril"}
+24-07-27.20:12:36.617 [main            ] INFO  RaffleStrategyTest     - 测试结果：{"awardConfig":"1,100","awardId":101}
+24-07-27.20:12:36.673 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+24-07-27.20:12:36.694 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
