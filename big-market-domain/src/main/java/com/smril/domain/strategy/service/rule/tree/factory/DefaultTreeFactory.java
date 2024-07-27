@@ -5,10 +5,7 @@ import com.smril.domain.strategy.model.valobj.RuleTreeVO;
 import com.smril.domain.strategy.service.rule.tree.ILogicTreeNode;
 import com.smril.domain.strategy.service.rule.tree.factory.engine.IDecisionTreeEngine;
 import com.smril.domain.strategy.service.rule.tree.factory.engine.impl.DecisionTreeEngine;
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
 import org.springframework.stereotype.Service;
 
 import java.util.Map;
@@ -46,5 +43,17 @@ public class DefaultTreeFactory {
         private String awardRuleValue;
     }
 
+    @Getter
+    @AllArgsConstructor
+    public enum LogicModel {
+
+        RULE_LOCK("rule_lock", "抽奖次数"),
+        RULE_STOCK("rule_stock", "抽奖库存"),
+        RULE_LUCK_AWARD("rule_luck_award", "抽奖兜底"),
+        ;
+
+        private final String code;
+        private final String info;
+    }
 
 }
