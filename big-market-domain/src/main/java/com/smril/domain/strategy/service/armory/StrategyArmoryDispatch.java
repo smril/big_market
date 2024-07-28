@@ -4,6 +4,7 @@ import com.smril.domain.strategy.model.entity.StrategyAwardEntity;
 import com.smril.domain.strategy.model.entity.StrategyEntity;
 import com.smril.domain.strategy.model.entity.StrategyRuleEntity;
 import com.smril.domain.strategy.repository.IStrategyRepository;
+import com.smril.types.common.Constants;
 import com.smril.types.enums.ResponseCode;
 import com.smril.types.exception.AppException;
 import lombok.extern.slf4j.Slf4j;
@@ -33,6 +34,12 @@ public class StrategyArmoryDispatch implements IStrategyArmory, IStrategyDispatc
             throw new AppException("strategy award list is empty!");
         }
 
+        for(StrategyAwardEntity strategyAwardEntity : strategyAwardEntities) {
+            Integer awardId = strategyAwardEntity.getAwardId();
+            Integer awardCount = strategyAwardEntity.getAwardCount();
+            cacheStrategyAwardCount(strategyId, awardId, awardCount);
+        }
+
         /* 调用同名函数，将生成的概率表map结构存入redis */
         assembleLotteryStrategy(String.valueOf(strategyId), strategyAwardEntities);
 
@@ -59,10 +66,15 @@ public class StrategyArmoryDispatch implements IStrategyArmory, IStrategyDispatc
             List<Integer> ruleWeightValues = ruleWeightValueMap.get(key);
             ArrayList<StrategyAwardEntity> strategyAwardEntitiesCLone = new ArrayList<>(strategyAwardEntities);
             strategyAwardEntitiesCLone.removeIf(entity->!ruleWeightValues.contains(entity.getAwardId()));
-            assembleLotteryStrategy(String.valueOf(strategyId).concat("_").concat(key), strategyAwardEntitiesCLone);
+            assembleLotteryStrategy(String.valueOf(strategyId).concat(Constants.UNDERLINE).concat(key), strategyAwardEntitiesCLone);
         }
         return true;
 
+    }
+
+    private void cacheStrategyAwardCount(Long strategyId, Integer awardId, Integer awardCount) {
+        String cacheKey = Constants.RedisKey.STRATEGY_AWARD_COUNT_KEY + strategyId + Constants.UNDERLINE + awardId;
+        repository.queryCacheStrategyAwardCount(cacheKey, awardCount);
     }
 
     private void assembleLotteryStrategy(String key, List<StrategyAwardEntity> strategyAwardEntities) {
@@ -119,5 +131,11 @@ public class StrategyArmoryDispatch implements IStrategyArmory, IStrategyDispatc
         String key = String.valueOf(strategyId).concat("_").concat(ruleWeightValue);
         int rateRange = repository.getRateRange(key);  //获取概率总和
         return repository.getStrategyAwardAssemble(key, new SecureRandom().nextInt(rateRange));
+    }
+
+    @Override
+    public Boolean subtractionAwardStock(Long strategyId, Integer awardId) {
+        String cacheKey = Constants.RedisKey.STRATEGY_AWARD_COUNT_KEY + strategyId + Constants.UNDERLINE + awardId;
+        return repository.subtractionAwardStock(cacheKey);
     }
 }

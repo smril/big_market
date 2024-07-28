@@ -5,6 +5,7 @@ public class Constants {
     public final static String SPLIT = ",";
     public final static String COLON = ":";
     public final static String SPACE = " ";
+    public final static String UNDERLINE = "_";
 
     public static class RedisKey {
         public static String ACTIVITY_KEY = "big_market_activity_key_";

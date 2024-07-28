@@ -37,9 +37,10 @@ public class DecisionTreeEngine implements IDecisionTreeEngine {
         while (nextNode != null) {
             //ruleTreeNode.getRulKey()代表获取到代表规则的Key，然后通过Map拿到规则接口
             ILogicTreeNode logicTreeNode = logicTreeNodeGroup.get(ruleTreeNode.getRuleKey());
-
+            String ruleValue = ruleTreeNode.getRuleValue();
+            
             //通过拿到的规则过滤
-            DefaultTreeFactory.TreeActionEntity logicEntity = logicTreeNode.logic(userId, strategyId, awardId);
+            DefaultTreeFactory.TreeActionEntity logicEntity = logicTreeNode.logic(userId, strategyId, awardId, ruleValue);
             //拿到本次过滤的结果
             RuleLogicCheckTypeVO ruleLogicCheckTypeVO = logicEntity.getRuleLogicCheckType();
             strategyAwardVO = logicEntity.getStrategyAwardVO();

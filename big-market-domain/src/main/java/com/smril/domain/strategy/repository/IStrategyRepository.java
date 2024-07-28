@@ -5,6 +5,7 @@ import com.smril.domain.strategy.model.entity.StrategyEntity;
 import com.smril.domain.strategy.model.entity.StrategyRuleEntity;
 import com.smril.domain.strategy.model.valobj.RuleTreeVO;
 import com.smril.domain.strategy.model.valobj.StrategyAwardRuleModelVO;
+import com.smril.domain.strategy.model.valobj.StrategyAwardStockKeyVO;
 
 import java.math.BigDecimal;
 import java.util.HashMap;
@@ -36,4 +37,14 @@ public interface IStrategyRepository {
     RuleTreeVO queryRuleTreeVOByTreeId(String treeId);
 
     StrategyAwardRuleModelVO queryStrategyAwardRuleModelVO(Long strategyId, Integer awardId);
+
+    void queryCacheStrategyAwardCount(String cacheKey, Integer awardCount);
+
+    Boolean subtractionAwardStock(String cacheKey);
+
+    void awardStockConsumeSendQueue(StrategyAwardStockKeyVO strategyAwardStockKeyVO);
+
+    StrategyAwardStockKeyVO takeQueueValue();
+
+    void updateStrategyAwardStock(Long strategyId, Integer awardId);
 }
