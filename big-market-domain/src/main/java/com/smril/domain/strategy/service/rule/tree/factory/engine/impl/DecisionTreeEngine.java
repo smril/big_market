@@ -28,6 +28,7 @@ public class DecisionTreeEngine implements IDecisionTreeEngine {
     /* 决策 */
     @Override
     public DefaultTreeFactory.StrategyAwardVO process(String userId, Long strategyId, Integer awardId) {
+        /* 构造返回值 */
         DefaultTreeFactory.StrategyAwardVO strategyAwardVO = null;
 
         String nextNode = ruleTreeVO.getTreeRootRuleNode();  //获取根节点
@@ -64,7 +65,8 @@ public class DecisionTreeEngine implements IDecisionTreeEngine {
                 return nodeLine.getRuleNodeTo();
             }
         }
-        throw new RuntimeException("决策树引擎， nextNode计算失败，未找到可执行节点！");
+        // throw new RuntimeException("决策树引擎， nextNode计算失败，未找到可执行节点！");
+        return null;
     }
 
     public boolean decisionLogic(String matterValue, RuleTreeNodeLineVO nodeLine) {

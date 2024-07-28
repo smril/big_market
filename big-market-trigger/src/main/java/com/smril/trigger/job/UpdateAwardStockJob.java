@@ -24,9 +24,11 @@ public class UpdateAwardStockJob {
     public void exec() {
         try {
             log.info("定时任务，更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】");
+            /* 获取奖品消耗队列 */
             StrategyAwardStockKeyVO strategyAwardStockKeyVO = raffleStock.takeQueueValue();
             if (null == strategyAwardStockKeyVO) return;
             log.info("定时任务，更新奖品消耗库存 strategyId:{} awardId:{}", strategyAwardStockKeyVO.getStrategyId(), strategyAwardStockKeyVO.getAwardId());
+            /* 扣减库存，每次调用扣减1 */
             raffleStock.updateStrategyAwardStock(strategyAwardStockKeyVO.getStrategyId(), strategyAwardStockKeyVO.getAwardId());
         } catch (Exception e) {
             log.error("定时任务，更新奖品消耗库存失败", e);

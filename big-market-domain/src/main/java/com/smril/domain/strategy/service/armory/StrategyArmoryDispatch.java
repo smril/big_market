@@ -34,6 +34,7 @@ public class StrategyArmoryDispatch implements IStrategyArmory, IStrategyDispatc
             throw new AppException("strategy award list is empty!");
         }
 
+        /* 装配时读取奖品库存，并缓存到redis中 */
         for(StrategyAwardEntity strategyAwardEntity : strategyAwardEntities) {
             Integer awardId = strategyAwardEntity.getAwardId();
             Integer awardCount = strategyAwardEntity.getAwardCount();

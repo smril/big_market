@@ -5,11 +5,13 @@ import com.smril.domain.strategy.repository.IStrategyRepository;
 import com.smril.domain.strategy.service.rule.chain.ILogicChain;
 import com.smril.types.exception.AppException;
 import lombok.*;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
 
 import java.util.Map;
 
+@Slf4j
 @Service
 public class DefaultChainFactory {
 
@@ -33,6 +35,9 @@ public class DefaultChainFactory {
         String[] ruleModels = strategy.ruleModels();
         if(null == ruleModels || ruleModels.length == 0) {
             return logicChainGroup.get("default");
+        }
+        for(String ruleModel : ruleModels) {
+            log.info("责任链过滤模型: {}", ruleModel);
         }
         ILogicChain logicChain = logicChainGroup.get(ruleModels[0]);
         ILogicChain current = logicChain;

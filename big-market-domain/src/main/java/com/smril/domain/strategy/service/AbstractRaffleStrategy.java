@@ -15,6 +15,7 @@ import com.smril.types.exception.AppException;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang3.StringUtils;
 
+/* 负责抽奖流程以及更新库表库存 */
 @Slf4j
 public abstract class AbstractRaffleStrategy implements IRaffleStrategy, IRaffleStock {
 
@@ -43,8 +44,9 @@ public abstract class AbstractRaffleStrategy implements IRaffleStrategy, IRaffle
         /* 责任链抽奖过滤 */
         DefaultChainFactory.StrategyAwardVO chainStrategyAwardVO = raffleLogicChain(userId, strategyId);
         log.info("抽奖策略计算-责任链 {} {} {} {}", userId, strategyId, chainStrategyAwardVO.getAwardId(), chainStrategyAwardVO.getLogicModel());
-        //如果责任链过滤后得到的结果是默认抽奖
+        //如果责任链过滤后得到的结果不是默认抽奖
         if(!DefaultChainFactory.LogicModel.RULE_DEFAULT.getCode().equals(chainStrategyAwardVO.getLogicModel())) {
+            log.info("跳过规则树直接返回");
             return RaffleAwardEntity.builder()
                     .awardId(chainStrategyAwardVO.getAwardId())
                     .build();

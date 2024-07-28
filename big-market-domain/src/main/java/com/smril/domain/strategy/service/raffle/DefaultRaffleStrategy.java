@@ -33,23 +33,30 @@ public class DefaultRaffleStrategy extends AbstractRaffleStrategy {
 
     @Override
     public DefaultChainFactory.StrategyAwardVO raffleLogicChain(String userId, Long strategyId) {
+        /* 构造责任链 */
         ILogicChain logicChain = defaultChainFactory.openLogicChain(strategyId);
+        /* 责任链过滤 */
         return logicChain.logic(userId, strategyId);
     }
 
     @Override
     public DefaultTreeFactory.StrategyAwardVO raffleLogicTree(String userId, Long strategyId, Integer awardId) {
+        /* 查询rule_models */
         StrategyAwardRuleModelVO strategyAwardRuleModelVO = repository.queryStrategyAwardRuleModelVO(strategyId, awardId);
+        /* 没有规则限制则直接返回 */
         if(null == strategyAwardRuleModelVO) {
             return DefaultTreeFactory.StrategyAwardVO.builder()
                     .awardId(awardId)
                     .build();
         }
+        /* 数据库中提取规则树 */
         RuleTreeVO ruleTreeVO = repository.queryRuleTreeVOByTreeId(strategyAwardRuleModelVO.getRuleModels());
         if(null == ruleTreeVO) {
             throw new RuntimeException("存在抽奖策略配置的规则模型Key，但未在库表的规则树中找到");
         }
+        /* 规则树上面已经构造好了，这里返回一个执行引擎 */
         IDecisionTreeEngine treeEngine = defaultTreeFactory.openLogicTree(ruleTreeVO);
+        /* 规则树过滤 */
         return treeEngine.process(userId, strategyId, awardId);
     }
 

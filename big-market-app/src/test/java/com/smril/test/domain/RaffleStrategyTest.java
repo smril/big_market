@@ -40,7 +40,7 @@ public class RaffleStrategyTest {
 //        log.info("测试结果: {}", strategyArmory.assembleLotteryStrategy(100001L));
 //        log.info("测试结果: {}", strategyArmory.assembleLotteryStrategy(10003L));
 //        log.info("测试结果: {}", strategyArmory.assembleLotteryStrategy(10003L));
-        log.info("测试结果: {}", strategyArmory.assembleLotteryStrategy(100006L));
+        log.info("装填测试结果: {}", strategyArmory.assembleLotteryStrategy(100006L));
 
         ReflectionTestUtils.setField(ruleWeightLogicChain, "userScore", 4900L);
         ReflectionTestUtils.setField(ruleLockLogicTreeNode, "userCount", 10L);
@@ -49,7 +49,7 @@ public class RaffleStrategyTest {
 
     @Test
     public void test_performRaffle() throws InterruptedException {
-        for(int i = 0; i < 3; ++i) {
+        for(int i = 0; i < 1; ++i) {
             RaffleFactorEntity raffleFactorEntity = RaffleFactorEntity.builder()
                     .userId("smril")
                     .strategyId(100006L)
@@ -58,7 +58,7 @@ public class RaffleStrategyTest {
             log.info("请求参数：{}", JSON.toJSONString(raffleFactorEntity));
             log.info("测试结果：{}", JSON.toJSONString(raffleAwardEntity));
         }
-        new CountDownLatch(1).await();
+        new CountDownLatch(1).await();  //让程序持续运行，检测轮询是否正常
     }
 
     @Test

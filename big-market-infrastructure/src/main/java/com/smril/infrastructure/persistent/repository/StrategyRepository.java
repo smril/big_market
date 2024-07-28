@@ -121,14 +121,14 @@ public class StrategyRepository implements IStrategyRepository {
         if(strategyRuleRes == null) {
             throw new AppException("strategyRuleRes is empty!");
         }
-               return StrategyRuleEntity.builder()
-                              .strategyId(strategyRuleRes.getStrategyId())
-                              .awardId(strategyRuleRes.getAwardId())
-                              .awardType(strategyRuleRes.getAwardType())
-                              .ruleModel(strategyRuleRes.getRuleModel())
-                              .ruleValue(strategyRuleRes.getRuleValue())
-                              .ruleDesc(strategyRuleRes.getRuleDesc())
-                              .build();
+        return StrategyRuleEntity.builder()
+                .strategyId(strategyRuleRes.getStrategyId())
+                .awardId(strategyRuleRes.getAwardId())
+                .awardType(strategyRuleRes.getAwardType())
+                .ruleModel(strategyRuleRes.getRuleModel())
+                .ruleValue(strategyRuleRes.getRuleValue())
+                .ruleDesc(strategyRuleRes.getRuleDesc())
+                .build();
     }
 
     @Override
@@ -222,6 +222,7 @@ public class StrategyRepository implements IStrategyRepository {
                 .build();
     }
 
+    /* 负责装配奖品库存 */
     @Override
     public void queryCacheStrategyAwardCount(String cacheKey, Integer awardCount) {
         Long cacheAwardCount = redisService.getAtomicLong(cacheKey);
@@ -230,6 +231,7 @@ public class StrategyRepository implements IStrategyRepository {
         }
     }
 
+    /*  */
     @Override
     public Boolean subtractionAwardStock(String cacheKey) {
         long surplus = redisService.decr(cacheKey);
@@ -253,6 +255,7 @@ public class StrategyRepository implements IStrategyRepository {
         delayedQueue.offer(strategyAwardStockKeyVO, 3 , TimeUnit.SECONDS);
     }
 
+    /*  */
     @Override
     public StrategyAwardStockKeyVO takeQueueValue() {
         String cacheKey = Constants.RedisKey.STRATEGY_AWARD_COUNT_QUERY_KEY;
