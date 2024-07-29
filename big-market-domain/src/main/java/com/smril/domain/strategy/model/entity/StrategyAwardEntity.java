@@ -17,9 +17,16 @@ public class StrategyAwardEntity {
 
     private Integer awardId;
 
+    private String awardTitle;
+
+    private String awardSubtitle;
+
     private Integer awardCount;
 
     private Integer awardCountSurplus;
 
     private BigDecimal awardRate;
+
+    private Integer sort;
+
 }

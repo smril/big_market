@@ -1,10 +1,13 @@
 package com.smril.domain.strategy.service.raffle;
 
+import com.smril.domain.strategy.model.entity.StrategyAwardEntity;
 import com.smril.domain.strategy.model.valobj.RuleTreeVO;
 import com.smril.domain.strategy.model.valobj.StrategyAwardRuleModelVO;
 import com.smril.domain.strategy.model.valobj.StrategyAwardStockKeyVO;
 import com.smril.domain.strategy.repository.IStrategyRepository;
 import com.smril.domain.strategy.service.AbstractRaffleStrategy;
+import com.smril.domain.strategy.service.IRaffleAward;
+import com.smril.domain.strategy.service.IRaffleStock;
 import com.smril.domain.strategy.service.armory.IStrategyDispatch;
 import com.smril.domain.strategy.service.rule.chain.ILogicChain;
 import com.smril.domain.strategy.service.rule.chain.factory.DefaultChainFactory;
@@ -15,10 +18,12 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
+import java.util.Collections;
+import java.util.List;
 
 @Slf4j
 @Service
-public class DefaultRaffleStrategy extends AbstractRaffleStrategy {
+public class DefaultRaffleStrategy extends AbstractRaffleStrategy implements IRaffleAward, IRaffleStock {
 
     @Autowired
     private DefaultChainFactory defaultChainFactory;
@@ -68,5 +73,10 @@ public class DefaultRaffleStrategy extends AbstractRaffleStrategy {
     @Override
     public void updateStrategyAwardStock(Long strategyId, Integer awardId) {
         repository.updateStrategyAwardStock(strategyId, awardId);
+    }
+
+    @Override
+    public List<StrategyAwardEntity> queryRaffleStrategyAwardList(Long strategyId) {
+        return repository.queryStrategyAwardList(strategyId);
     }
 }
