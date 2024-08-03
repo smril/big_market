@@ -47,9 +47,12 @@ public class DefaultRaffleStrategy extends AbstractRaffleStrategy implements IRa
     @Override
     public DefaultTreeFactory.StrategyAwardVO raffleLogicTree(String userId, Long strategyId, Integer awardId) {
         /* 查询rule_models */
+        log.info("raffleLogicTree userId: {}, strategyId: {}, awardId: {}", userId, strategyId, awardId);
         StrategyAwardRuleModelVO strategyAwardRuleModelVO = repository.queryStrategyAwardRuleModelVO(strategyId, awardId);
+        log.info("查询奖品ruleModels: {}", strategyAwardRuleModelVO.getRuleModels());
         /* 没有规则限制则直接返回 */
         if(null == strategyAwardRuleModelVO) {
+            log.info("规则限制为空");
             return DefaultTreeFactory.StrategyAwardVO.builder()
                     .awardId(awardId)
                     .build();
@@ -59,6 +62,7 @@ public class DefaultRaffleStrategy extends AbstractRaffleStrategy implements IRa
         if(null == ruleTreeVO) {
             throw new RuntimeException("存在抽奖策略配置的规则模型Key，但未在库表的规则树中找到");
         }
+        System.out.println(ruleTreeVO);
         /* 规则树上面已经构造好了，这里返回一个执行引擎 */
         IDecisionTreeEngine treeEngine = defaultTreeFactory.openLogicTree(ruleTreeVO);
         /* 规则树过滤 */

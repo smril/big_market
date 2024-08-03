@@ -34,12 +34,15 @@ import java.util.List;
 @RequestMapping("/api/${app.config.api-version}/raffle/")
 public class IRaffleController implements IRaffleService {
 
+    /* 装配接口 */
     @Resource
     private IStrategyArmory strategyArmory;
 
+    /* 查询奖品列表接口 */
     @Resource
     private IRaffleAward raffleAward;
 
+    /* 抽奖接口 */
     @Resource
     private IRaffleStrategy raffleStrategy;
 
@@ -101,7 +104,7 @@ public class IRaffleController implements IRaffleService {
     /* 抽奖 */
     @RequestMapping(value = "random_raffle", method = RequestMethod.POST)
     @Override
-    public Response<RaffleResponseDTO> randomRaffle(RaffleRequestDTO requestDTO) {
+    public Response<RaffleResponseDTO> randomRaffle(@RequestBody RaffleRequestDTO requestDTO) {
         try {
             log.info("随机抽奖开始 strategyId: {}", requestDTO.getStrategyId());
             // 调用抽奖接口

@@ -51,11 +51,13 @@ public class StrategyArmoryDispatch implements IStrategyArmory, IStrategyDispatc
             throw new AppException("strategy entity is null!");
         }
 
+        /* 找到看有无rule_weight策略 */
         String ruleWeight = strategyEntity.getRuleWeight();
         if (ruleWeight == null) {
             return true;
         }
 
+        /* 查询rule_weight规则的值 */
         StrategyRuleEntity strategyRuleEntity = repository.queryStrategyRule(strategyId, ruleWeight);
         if(strategyRuleEntity == null) {
             throw new AppException(ResponseCode.STRATEGY_RULE_WEIGHT_IS_NULL.getCode(), ResponseCode.STRATEGY_RULE_WEIGHT_IS_NULL.getInfo());
