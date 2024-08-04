@@ -1,4 +1,4 @@
-package com.smril.test.domain;
+package com.smril.test.domain.strategy;
 
 import com.smril.domain.strategy.service.armory.IStrategyArmory;
 import com.smril.domain.strategy.service.rule.chain.ILogicChain;

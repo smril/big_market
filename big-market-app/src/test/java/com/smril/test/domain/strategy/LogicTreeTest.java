@@ -1,4 +1,4 @@
-package com.smril.test.domain;
+package com.smril.test.domain.strategy;
 
 import com.alibaba.fastjson.JSON;
 import com.smril.domain.strategy.model.valobj.*;

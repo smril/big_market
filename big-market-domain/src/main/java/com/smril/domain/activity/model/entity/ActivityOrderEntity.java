@@ -1,22 +1,24 @@
-package com.smril.infrastructure.persistent.po;
+package com.smril.domain.activity.model.entity;
 
+import com.smril.domain.activity.model.valobj.OrderStateVO;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 import java.util.Date;
 
 /**
  * @author smril
- * @create 2024/8/3 16:49
- * @description 抽奖活动单 持久化对象
+ * @create 2024/8/4 20:36
+ * @description
  */
 
 @Data
-public class RaffleActivityOrder {
-    /**
-     * 自增ID
-     */
-    private Long id;
-
+@Builder
+@AllArgsConstructor
+@NoArgsConstructor
+public class ActivityOrderEntity {
     /**
      * 用户ID
      */
@@ -65,16 +67,6 @@ public class RaffleActivityOrder {
     /**
      * 订单状态
      */
-    private String state;
-
-    /**
-     * 创建时间
-     */
-    private Date createTime;
-
-    /**
-     * 更新时间
-     */
-    private Date updateTime;
+    private OrderStateVO state;
 
 }
