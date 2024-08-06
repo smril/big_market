@@ -25,6 +25,11 @@ public class ActivityOrderEntity {
     private String userId;
 
     /**
+     * sku
+     */
+    private Long sku;
+
+    /**
      * 活动ID
      */
     private Long activityId;
@@ -68,5 +73,10 @@ public class ActivityOrderEntity {
      * 订单状态
      */
     private OrderStateVO state;
+
+    /**
+     * 防重
+     */
+    private String outBusinessNo;
 
 }

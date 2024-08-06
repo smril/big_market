@@ -1,162 +1,18 @@
-24-08-04.12:08:36.964 [main            ] INFO  RaffleActivityOrderDaoTest - Starting RaffleActivityOrderDaoTest using Java 1.8.0_402 on Iroha.lan with PID 97239 (started by smril in /Users/smril/IdeaProjects/big-market/big-market-app)
-24-08-04.12:08:36.965 [main            ] INFO  RaffleActivityOrderDaoTest - The following 1 profile is active: "dev"
-24-08-04.12:08:38.063 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
-24-08-04.12:08:38.066 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-24-08-04.12:08:38.097 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 16 ms. Found 0 Redis repository interfaces.
-24-08-04.12:08:40.033 [main            ] INFO  Version                - Redisson 3.23.4
-24-08-04.12:08:40.066 [main            ] WARN  DnsServerAddressStreamProviders - Can not find io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider in the classpath, fallback to system defaults. This may result in incorrect DNS resolutions on MacOS. Check whether you have a dependency on 'io.netty:netty-resolver-dns-native-macos'
-24-08-04.12:08:40.310 [redisson-netty-2-4] INFO  MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
-24-08-04.12:08:40.329 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
-24-08-04.12:08:42.588 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
-24-08-04.12:08:42.665 [main            ] INFO  RaffleActivityOrderDaoTest - Started RaffleActivityOrderDaoTest in 6.163 seconds (JVM running for 7.148)
-24-08-04.12:08:43.028 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Starting...
-24-08-04.12:08:43.502 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Start completed.
-24-08-04.12:18:52.182 [main            ] INFO  RaffleActivityOrderDaoTest - Starting RaffleActivityOrderDaoTest using Java 1.8.0_402 on Iroha.lan with PID 97340 (started by smril in /Users/smril/IdeaProjects/big-market/big-market-app)
-24-08-04.12:18:52.183 [main            ] INFO  RaffleActivityOrderDaoTest - The following 1 profile is active: "dev"
-24-08-04.12:18:53.205 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
-24-08-04.12:18:53.209 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-24-08-04.12:18:53.241 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 16 ms. Found 0 Redis repository interfaces.
-24-08-04.12:18:55.077 [main            ] INFO  Version                - Redisson 3.23.4
-24-08-04.12:18:55.113 [main            ] WARN  DnsServerAddressStreamProviders - Can not find io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider in the classpath, fallback to system defaults. This may result in incorrect DNS resolutions on MacOS. Check whether you have a dependency on 'io.netty:netty-resolver-dns-native-macos'
-24-08-04.12:18:55.347 [redisson-netty-2-4] INFO  MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
-24-08-04.12:18:55.367 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
-24-08-04.12:18:57.626 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
-24-08-04.12:18:57.711 [main            ] INFO  RaffleActivityOrderDaoTest - Started RaffleActivityOrderDaoTest in 5.954 seconds (JVM running for 7.029)
-24-08-04.12:18:58.024 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Starting...
-24-08-04.12:18:58.463 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Start completed.
-24-08-04.12:18:58.507 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Starting...
-24-08-04.12:18:58.542 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Start completed.
-24-08-04.12:23:34.935 [main            ] INFO  RaffleActivityOrderDaoTest - Starting RaffleActivityOrderDaoTest using Java 1.8.0_402 on Iroha.lan with PID 97395 (started by smril in /Users/smril/IdeaProjects/big-market/big-market-app)
-24-08-04.12:23:34.936 [main            ] INFO  RaffleActivityOrderDaoTest - The following 1 profile is active: "dev"
-24-08-04.12:23:35.961 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
-24-08-04.12:23:35.964 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-24-08-04.12:23:35.995 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 16 ms. Found 0 Redis repository interfaces.
-24-08-04.12:23:37.820 [main            ] INFO  Version                - Redisson 3.23.4
-24-08-04.12:23:37.854 [main            ] WARN  DnsServerAddressStreamProviders - Can not find io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider in the classpath, fallback to system defaults. This may result in incorrect DNS resolutions on MacOS. Check whether you have a dependency on 'io.netty:netty-resolver-dns-native-macos'
-24-08-04.12:23:38.083 [redisson-netty-2-4] INFO  MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
-24-08-04.12:23:38.103 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
-24-08-04.12:23:40.344 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
-24-08-04.12:23:40.430 [main            ] INFO  RaffleActivityOrderDaoTest - Started RaffleActivityOrderDaoTest in 5.928 seconds (JVM running for 7.043)
-24-08-04.12:23:40.747 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Starting...
-24-08-04.12:23:41.196 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Start completed.
-24-08-04.12:23:41.494 [main            ] INFO  RaffleActivityOrderDaoTest - 测试结果: [{"activityId":100301,"activityName":"测试活动","orderId":"364465940294","orderTime":1722744523000,"state":"not_used","strategyId":100006,"userId":"smril"}]
-24-08-04.22:03:21.757 [main            ] INFO  RaffleOrderTest        - Starting RaffleOrderTest using Java 1.8.0_402 on Iroha.lan with PID 2010 (started by smril in /Users/smril/IdeaProjects/big-market/big-market-app)
-24-08-04.22:03:21.758 [main            ] INFO  RaffleOrderTest        - The following 1 profile is active: "dev"
-24-08-04.22:03:22.966 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
-24-08-04.22:03:22.969 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-24-08-04.22:03:23.004 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 20 ms. Found 0 Redis repository interfaces.
-24-08-04.22:03:25.048 [main            ] INFO  Version                - Redisson 3.23.4
-24-08-04.22:03:25.081 [main            ] WARN  DnsServerAddressStreamProviders - Can not find io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider in the classpath, fallback to system defaults. This may result in incorrect DNS resolutions on MacOS. Check whether you have a dependency on 'io.netty:netty-resolver-dns-native-macos'
-24-08-04.22:03:25.328 [redisson-netty-2-4] INFO  MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
-24-08-04.22:03:25.347 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
-24-08-04.22:03:25.495 [main            ] WARN  GenericWebApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'raffleActivityService' defined in file [/Users/smril/IdeaProjects/big-market/big-market-domain/target/classes/com/smril/domain/activity/service/RaffleActivityService.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'activityRepository': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.smril.infrastructure.persistent.dao.IRaffleActivitySkuDao' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@javax.annotation.Resource(shareable=true, lookup=, name=, description=, authenticationType=CONTAINER, type=class java.lang.Object, mappedName=)}
-24-08-04.22:03:25.534 [main            ] INFO  ConditionEvaluationReportLoggingListener - 
-
-Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
-24-08-04.22:03:25.574 [main            ] ERROR LoggingFailureAnalysisReporter - 
-
-***************************
-APPLICATION FAILED TO START
-***************************
-
-Description:
-
-Parameter 0 of constructor in com.smril.domain.activity.service.RaffleActivityService required a bean of type 'com.smril.infrastructure.persistent.dao.IRaffleActivitySkuDao' that could not be found.
-
-
-Action:
-
-Consider defining a bean of type 'com.smril.infrastructure.persistent.dao.IRaffleActivitySkuDao' in your configuration.
-
-24-08-04.22:03:25.579 [main            ] ERROR TestContextManager     - Caught exception while allowing TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener@707194ba] to prepare test instance [com.smril.test.domain.activity.RaffleOrderTest@427308f8]
-java.lang.IllegalStateException: Failed to load ApplicationContext
-	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:98)
-	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:124)
-	at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:190)
-	at org.springframework.test.context.web.ServletTestExecutionListener.prepareTestInstance(ServletTestExecutionListener.java:132)
-	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:248)
-	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:227)
-	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:289)
-	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
-	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:291)
-	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:246)
-	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97)
-	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
-	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
-	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
-	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
-	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
-	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:190)
-	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
-	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:69)
-	at com.intellij.rt.junit.IdeaTestRunner$Repeater$1.execute(IdeaTestRunner.java:38)
-	at com.intellij.rt.execution.junit.TestsRepeater.repeat(TestsRepeater.java:11)
-	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:35)
-	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:232)
-	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:55)
-Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'raffleActivityService' defined in file [/Users/smril/IdeaProjects/big-market/big-market-domain/target/classes/com/smril/domain/activity/service/RaffleActivityService.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'activityRepository': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.smril.infrastructure.persistent.dao.IRaffleActivitySkuDao' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@javax.annotation.Resource(shareable=true, lookup=, name=, description=, authenticationType=CONTAINER, type=class java.lang.Object, mappedName=)}
-	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:800)
-	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:229)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1372)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1222)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:955)
-	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:920)
-	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
-	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:731)
-	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307)
-	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:136)
-	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:141)
-	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:90)
-	... 27 common frames omitted
-Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'activityRepository': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.smril.infrastructure.persistent.dao.IRaffleActivitySkuDao' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@javax.annotation.Resource(shareable=true, lookup=, name=, description=, authenticationType=CONTAINER, type=class java.lang.Object, mappedName=)}
-	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessProperties(CommonAnnotationBeanPostProcessor.java:332)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1431)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:619)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
-	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1391)
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1311)
-	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:887)
-	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791)
-	... 45 common frames omitted
-Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.smril.infrastructure.persistent.dao.IRaffleActivitySkuDao' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@javax.annotation.Resource(shareable=true, lookup=, name=, description=, authenticationType=CONTAINER, type=class java.lang.Object, mappedName=)}
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.raiseNoMatchingBeanFound(DefaultListableBeanFactory.java:1801)
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1357)
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1311)
-	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.autowireResource(CommonAnnotationBeanPostProcessor.java:544)
-	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.getResource(CommonAnnotationBeanPostProcessor.java:520)
-	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor$ResourceElement.getResourceToInject(CommonAnnotationBeanPostProcessor.java:673)
-	at org.springframework.beans.factory.annotation.InjectionMetadata$InjectedElement.inject(InjectionMetadata.java:228)
-	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119)
-	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessProperties(CommonAnnotationBeanPostProcessor.java:329)
-	... 57 common frames omitted
-24-08-04.22:08:32.634 [main            ] INFO  RaffleOrderTest        - Starting RaffleOrderTest using Java 1.8.0_402 on Iroha.lan with PID 2055 (started by smril in /Users/smril/IdeaProjects/big-market/big-market-app)
-24-08-04.22:08:32.635 [main            ] INFO  RaffleOrderTest        - The following 1 profile is active: "dev"
-24-08-04.22:08:33.709 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
-24-08-04.22:08:33.712 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-24-08-04.22:08:33.746 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 19 ms. Found 0 Redis repository interfaces.
-24-08-04.22:08:35.590 [main            ] INFO  Version                - Redisson 3.23.4
-24-08-04.22:08:35.621 [main            ] WARN  DnsServerAddressStreamProviders - Can not find io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider in the classpath, fallback to system defaults. This may result in incorrect DNS resolutions on MacOS. Check whether you have a dependency on 'io.netty:netty-resolver-dns-native-macos'
-24-08-04.22:08:35.836 [redisson-netty-2-4] INFO  MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
-24-08-04.22:08:35.855 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
-24-08-04.22:08:38.099 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
-24-08-04.22:08:38.172 [main            ] INFO  RaffleOrderTest        - Started RaffleOrderTest in 5.98 seconds (JVM running for 6.929)
-24-08-04.22:08:38.477 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Starting...
-24-08-04.22:08:38.954 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Start completed.
-24-08-04.22:08:39.382 [main            ] INFO  AbstractRaffleActivity - 查询结果: {"activityCountId":11101,"activityId":100301,"sku":9011,"stockCount":0,"stockCountSurplus":0} {"activityDesc":"测试活动","activityId":100301,"activityName":"测试活动","beginDateTime":1709979310000,"endDateTime":2025512110000,"state":"create","strategyId":100006} {"activityCountId":11101,"dayCount":1,"monthCount":1,"totalCount":1}
-24-08-04.22:08:39.389 [main            ] INFO  RaffleOrderTest        - 测试结果：{}
+24-08-06.18:33:26.768 [main            ] INFO  RaffleOrderTest        - Starting RaffleOrderTest using Java 1.8.0_402 on Iroha.lan with PID 13169 (started by smril in /Users/smril/IdeaProjects/big-market/big-market-app)
+24-08-06.18:33:26.769 [main            ] INFO  RaffleOrderTest        - The following 1 profile is active: "dev"
+24-08-06.18:33:28.088 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+24-08-06.18:33:28.093 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+24-08-06.18:33:28.138 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 22 ms. Found 0 Redis repository interfaces.
+24-08-06.18:33:30.411 [main            ] INFO  Version                - Redisson 3.23.4
+24-08-06.18:33:30.445 [main            ] WARN  DnsServerAddressStreamProviders - Can not find io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider in the classpath, fallback to system defaults. This may result in incorrect DNS resolutions on MacOS. Check whether you have a dependency on 'io.netty:netty-resolver-dns-native-macos'
+24-08-06.18:33:30.703 [redisson-netty-2-4] INFO  MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
+24-08-06.18:33:30.721 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
+24-08-06.18:33:33.369 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+24-08-06.18:33:33.449 [main            ] INFO  RaffleOrderTest        - Started RaffleOrderTest in 7.307 seconds (JVM running for 8.492)
+24-08-06.18:33:33.825 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Starting...
+24-08-06.18:33:34.322 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Start completed.
+24-08-06.18:33:34.455 [main            ] INFO  ActivityBaseActionChain - 活动责任链-基础信息【有效期、状态】校验开始。
+24-08-06.18:33:34.456 [main            ] INFO  ActivitySkuStockActionChain - 活动责任链-商品库存处理【校验&扣减】开始。
+24-08-06.18:33:34.464 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Starting...
+24-08-06.18:33:34.498 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Start completed.
+24-08-06.18:33:34.537 [main            ] INFO  RaffleOrderTest        - 测试结果：039900494110

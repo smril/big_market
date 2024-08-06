@@ -12,6 +12,7 @@ import java.util.Date;
 
 @Data
 public class RaffleActivityOrder {
+
     /**
      * 自增ID
      */
@@ -21,6 +22,11 @@ public class RaffleActivityOrder {
      * 用户ID
      */
     private String userId;
+
+    /**
+     * sku
+     */
+    private Long sku;
 
     /**
      * 活动ID
@@ -68,6 +74,11 @@ public class RaffleActivityOrder {
     private String state;
 
     /**
+     * 业务仿重ID - 外部透传的，确保幂等
+     */
+    private String outBusinessNo;
+
+    /**
      * 创建时间
      */
     private Date createTime;
@@ -76,5 +87,5 @@ public class RaffleActivityOrder {
      * 更新时间
      */
     private Date updateTime;
-
 }
+
