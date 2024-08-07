@@ -26,11 +26,11 @@ public abstract class AbstractRaffleActivity extends RaffleActivitySupport imple
 
     @Override
     public ActivityOrderEntity createRaffleActivityOrder(ActivityShopCartEntity activityShopCartEntity) {
-        //通过Sku查询活动信息
+        //通过Sku查询活动信息，读取raffle_activity_sku表
         ActivitySkuEntity activitySkuEntity = activityRepository.queryActivitySku(activityShopCartEntity.getSku());
-        //查询活动信息
+        //查询活动信息，读取raffle_activity表
         ActivityEntity activityEntity = activityRepository.queryRaffleActivityByActivityId(activitySkuEntity.getActivityId());
-        //查询次数信息
+        //查询次数信息，读取raffle_activity_count表
         ActivityCountEntity activityCountEntity = activityRepository.queryRaffleActivityCountByActivityCountId(activitySkuEntity.getActivityCountId());
 
         log.info("查询结果: {} {} {}", JSON.toJSONString(activitySkuEntity), JSON.toJSONString(activityEntity), JSON.toJSONString(activityCountEntity));
@@ -56,7 +56,7 @@ public abstract class AbstractRaffleActivity extends RaffleActivitySupport imple
         //查询次数信息（用户在活动上可以参与的次数）
         ActivityCountEntity activityCountEntity =queryRaffleActivityCountByActivityCountId(activitySkuEntity.getActivityCountId());
 
-        /* 活动动作规则校验 */
+        /* 活动动作规则校验，责任链 */
         IActionChain actionChain = defaultActivityChainFactory.openActionChain();
         boolean success = actionChain.action(activitySkuEntity, activityEntity, activityCountEntity);
 
